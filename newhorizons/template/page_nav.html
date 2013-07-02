@@ -1,0 +1,26 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if list.paginator.num_pages > 1 %}
+<div class="page_nav">
+    {% if list.has_next %}
+    <div class="next_page">
+        <a href="#" onclick="setContent( '{{ url }}?page={{ list.next_page_number }}' ); return false;">{% trans "next news" %}</a>
+    </div>
+    {% endif %}
+    {% if list.has_previous %}
+    <div class="previous_page">
+        <a href="#" onclick="setContent( '{{ url }}?page={{ list.previous_page_number }}' ); return false;">{% trans "previous news" %}</a>
+    </div>
+    {% endif %}
+    <div class="page_number_list">
+    {% for page_no in list.paginator.page_range %}
+        {% ifequal page_no list.number %}
+            <span class="current">{{ page_no }}</span>
+        {% else %}
+            <a href="#" onclick="setContent( '{{ url }}?page={{ page_no }}' ); return false;"> {{ page_no }}</a>
+        {% endifequal %}
+    {% endfor%}
+    </div>
+</div>
+{% endif %}

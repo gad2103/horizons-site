@@ -1,0 +1,12 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+{% for page in page_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setContent('{% url 'page_details' page.pk %}'); return false;">{{ page.title }}</a>
+        </h3>
+    </li>
+{% endfor %}
+</ul>

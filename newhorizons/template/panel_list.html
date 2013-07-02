@@ -1,0 +1,58 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if title %}
+    <h2>{% if type == 'news_events' %}<a href="{% url "newsandevents" %}">{% endif %}{{ title }}{% if type == 'news_events' %}</a>{% endif %}</h2>
+{% endif %}
+{% include "page_nav.html" %}
+<ul class="{{ type }}">
+    {% for item in list %}
+        <li>
+            {% if item.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.picture }}" />
+            {% elif item.meta.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+            {% endif %}
+            {% if type == 'inthenews' %}
+                <div class="source">{{ item.source }}</div>
+                <div class="publication_date">{{ item.modified|date:"Y - m - d" }}</div>
+            {% endif %}
+            {% if item.title %}<h2>{% if type == 'news_events' %}<a href="{% url "newsandevents" %}">{% endif %}{{ item.title }}{% if type == 'news_events' %}</a>{% endif %}</h2>{% endif %}
+                <div class="description">
+                    {% autoescape off %}
+                        {% if item.exerpt %}
+                            {{ item.exerpt }}
+                        {% elif item.description %}
+                            {{ item.description }}
+                        {% endif %}
+                    {% endautoescape %}
+                    
+                    {% if item.file %}
+                        <a target="_blank" href="{{ item.file.url }}">{% trans "read more" %}</a>
+                    {% elif item.url %}
+                        <a href="{{ item.url }}">{% trans "read more" %}</a>
+                    {% elif item.author %}
+                        {{ item.author }
+                    {% elif type == 'news_events' %}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{% url "newsandevents_page" item.pk %}"><strong>{% trans "more" %} &rArr;</strong></a>
+                    {% else %}
+                        <a href="#" onclick="setContent( '{{ item.details_url }}?page_no={{ list.number }}' ); return false;">
+                            {% trans "read more" %}</a>
+                    {% endif %}
+                </div>
+            
+            <div class="footer">
+            </div>
+            
+            <div class="clearfix"></div>
+            
+        </li>
+    {% endfor %}
+</ul>
+{% include "page_nav.html" %}
+{% if type == 'news_events' %}
+    <div class="footer">
+        <a href="{% url "newsandevents" %}">{% trans "more news" %}</a>
+    </div>
+{% endif %}

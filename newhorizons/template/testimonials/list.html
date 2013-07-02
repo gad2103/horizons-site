@@ -1,0 +1,33 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if title %}<h2>{{ title }}</h2>{% endif %}
+{% include "page_nav.html" %}
+<ul class="{{ type }}">
+    {% for item in list %}
+        <li class="bubble">
+            {% if item.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.picture }}" />
+            {% elif item.meta.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+            {% endif %}
+            
+            {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+            
+            <div class="description">
+                {{ item.description|safe }}
+            </div>
+            
+            <div class="footer">
+                {% if item.author %}
+                    {{ item.author|safe }}
+                {% endif %}
+            </div>
+            <div class="clearfix"></div>
+            <div class="corner"></div>
+        </li>
+    {% empty %}
+        {{ none_message }}        
+    {% endfor %}
+</ul>
+{% include "page_nav.html" %}

@@ -1,0 +1,31 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_class %}aboutus_page neutral_area{% endblock %}
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            setNav('{% url 'aboutus_navigation' %}');
+            setContent('{{ main_url }}');
+            setAdvert('{% url 'advert' %}');
+            setHeader('{{ header }}');
+        });
+    </script>
+{% endblock %}
+
+{% block tab6_class %}active content{% endblock %}
+
+{% block left_bar %}
+    <div class="content" id="secondary_navigation"></div>
+{% endblock %}
+
+{% block main_pane %}
+    <div id="content"></div>
+{% endblock %}
+
+{% block right_bar %}
+    <div class="message">{% autoescape off %}{{ none_message }}{% endautoescape %}</div>
+    <div id="advert_space" class="advert panel"></div>
+{% endblock %}

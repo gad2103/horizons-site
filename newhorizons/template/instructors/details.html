@@ -1,0 +1,34 @@
+{% load url from future %}
+{% load i18n %}
+
+{% include "instructors/page_nav.html" %}
+<ul>
+    {% for instructor in details_list %}
+        <li>
+            <table><tr>
+                <td valign="top" class="left">
+                    {% if instructor.meta.picture %}
+                        <img src="{{ MEDIA_URL }}{{ instructor.meta.picture }}" />
+                    {% else %}
+                        <div style="width:120px"></div>
+                    {% endif %}
+                </td><td valign="top" class="center">
+                    <h2 class="person_name"><span>{{ instructor.last_name }}</span> <span>{{ instructor.first_name }}</span></h2>
+                    <div class="description">
+                            {{ instructor.description|safe }}
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul class="courses">
+                        {% for course in instructor.topic_list %}
+                            <li class="course"><a target="course_window" href="{% url 'course_home' course.pk %}">{{ course.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <div class="clearfix"></div>
+                </td>
+            </tr></table>
+        </li>
+    {% empty %}
+        <div class="message">{{ none_message }}</div>
+    {% endfor %}
+</ul>
+{% include "instructors/page_nav.html" %}

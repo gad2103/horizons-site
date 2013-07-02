@@ -1,0 +1,16 @@
+{% load url from future %}
+{% load i18n %}
+
+<div id="blog_panel" class="panel">
+    <h2>{% trans "blog" %}</h2>
+    <div class="content">
+        {% for item in blog_list %}
+            <div class="item"><a href="{% url "blog_page" item.pk %}" >
+                <div class="title">{{ item.title }}</div>
+            </a></div>
+        {% empty %}
+            <div class="item">{% trans "No posts for now." %}</div>
+        {% endfor %}
+    </div>
+    <div class="footer"><a href="{% url 'blog' %}">{% trans "more blog" %}</a></div>
+</div>

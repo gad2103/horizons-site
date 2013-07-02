@@ -1,0 +1,20 @@
+{% load url from future %}
+{% load i18n %}
+
+
+<div class="page_nav">
+    <div class="back_link">
+        <a href="#" onclick="setContent( '{% url 'news_home_page' %}?page={{ page_no }}' ); return false;">{% trans "back to list"%}</a>
+    </div>
+</div>
+{% if item.meta.picture %}
+    <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+{% endif %}
+<h2>{{ item.title }}</h2>
+{% if item.subtitle %}<h3>{{ item.subtitle }}</h3>{% endif %}
+<div class="publication_date">{{ item.modified|date:"M d, Y" }}</div>
+<div class="description">
+    {% autoescape off %}
+        {{ item.description }}
+    {% endautoescape%}
+</div>

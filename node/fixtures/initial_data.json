@@ -1,0 +1,41 @@
+[
+   {
+      "pk": 1, 
+      "model": "node.DataState", 
+      "fields": { "name": "Submitted" }
+   }, 
+   {
+      "pk": 2, 
+      "model": "node.DataState", 
+      "fields": { "name": "Published" }
+   }, 
+   {
+      "pk": 3, 
+      "model": "node.DataState", 
+      "fields": { "name": "Flagged" }
+   }, 
+   {
+      "pk": 4, 
+      "model": "node.DataState", 
+      "fields": { "name": "Closed" }
+   }, 
+   {
+      "pk": 5, 
+      "model": "node.DataState", 
+      "fields": { "name": "Deleted" }
+   },
+   {
+      "pk": 12,
+      "model": "node.Language",
+      "fields": { "code": "en", "name": "English" }
+   },
+   {
+      "pk": 39, "model": "node.Language",
+      "fields": { "code": "ko", "name": "Korean" }
+   },
+   {
+      "pk": 70,
+      "model": "node.Language",
+      "fields": { "code": "zh-cn", "name": "Simplified Chinese" }
+   }
+]

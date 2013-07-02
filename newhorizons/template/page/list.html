@@ -1,0 +1,26 @@
+{% load url from future %}
+{% load i18n %}
+
+
+{% include "page/page_nav.html" %}
+<ul>
+{% for item in list %}
+    <li>
+        {% if item.meta.picture %}
+            <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+        {% endif %}
+        <div class="publication_date">{{ item.modified|date:"M d, Y" }}</div>
+        <h2>{{ item.title }}</h2>
+        {% if item.subtitle %}<h3>{{ item.subtitle }}</h3>{% endif %}
+        <div class="description">
+            {% autoescape off %}
+                {{ item.description|truncatewords:"50" }}
+            {% endautoescape%}
+        </div>
+        <div class="footer">
+            <a href="#" onclick="setContent( '{% url "page_details" item.pk %}?page_no={{ list.number }}' ); return false;">{% trans "read more" %}</a>
+        </div>
+    </li>
+{% endfor %}
+</ul>
+{% include "page/page_nav.html" %}

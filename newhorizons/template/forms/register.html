@@ -1,0 +1,170 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+<script>
+    $(document).ready(
+        function() {
+            $( 'select#id_portals' ).change(function() {
+                if ($(this).val() == '') {
+                }
+                else {
+                    $( '#target_field' ).load('{% url "register_target" %}?portal=' + $(this).val() );
+                    $( '#course_field' ).load('{% url "register_course" %}?portal=' + $(this).val() );
+                    $( '#class_field' ).load('{% url "register_class" %}?portal=' + $(this).val() );
+                }
+            });
+            setAdvert('{% url 'advert' %}');
+        }
+    )
+    function portal_changed() {
+        p = $( 'select#id_portals' );
+        if (p.val() == '') {
+        } else {
+            $( '#target_field' ).load('{% url "register_target" %}?portal=' + p.val() );
+            $( '#course_field' ).load('{% url "register_course" %}?portal=' + p.val() );
+            $( '#class_field' ).load('{% url "register_class" %}?portal=' + p.val() );
+        }
+    }
+    function target_changed() {
+        t = $( 'select#id_targets' );
+        if (t.val() == '') {
+        } else {
+            $( '#course_field' ).load('{% url "register_course" %}?target=' + t.val() );
+            $( '#class_field' ).load('{% url "register_class" %}?target=' + t.val() );
+        }
+    }
+    function course_changed() {
+        co = $( 'select#id_courses' );
+        if (co.val() == '') {
+        } else {
+            $( '#class_field' ).load('{% url "register_class" %}?course=' + co.val() );
+        }
+    }
+</script>
+{% endblock %}
+
+
+{% block page_class %}registration_page{% endblock %}
+
+{% block tab5_class %}active content{% endblock %}
+
+{% block nivo_head %}{% endblock %}
+
+{% block page_content_header %}{% trans "registration" %}{% endblock %}
+
+{% block left_bar %}{% endblock %}
+
+{% block main_pane %}
+    <div id="content">
+        <form action="/register" method="post">{% csrf_token %}
+            {{ form.non_field_error }}
+            <table>
+                <tr>
+                    <td class="fieldWrapper">
+                        {{ form.student_name.errors }}
+                        <label for="id_student_name" class="required">{% trans "student name" %}</label>
+                        {{ form.student_name }}
+                    </div>
+                    <td class="fieldWrapper">
+                        {{ form.student_email.errors }}
+                        <label for="id_student_email">{% trans "student email" %}</label>
+                        {{ form.student_email }}
+                    </td>
+                </tr><tr>
+                    <td class="fieldWrapper">
+                        {{ form.current_grade.errors }}
+                        <label for="id_current_grade" class="required">{% trans "current grade" %}</label>
+                        {{ form.current_grade }}
+                    </td>
+                    <td class="fieldWrapper">
+                        {{ form.student_mobile.errors }}
+                        <label for="id_student_mobile">{% trans "student mobile" %}</label>
+                        {{ form.student_mobile }}
+                    </td>
+                </tr><tr>
+                    <td class="fieldWrapper">
+                        {{ form.school.errors }}
+                        <label for="id_school" class="required">{% trans "school" %}</label>
+                        {{ form.school }}
+                    </td>
+                </tr>
+            </table>
+            <div class="divider"></div>
+            <table>
+                <tr>
+                    <td class="fieldWrapper">
+                        {{ form.parent_name.errors }}
+                        <label for="id_parent_name" class="required">{% trans "parent name" %}</label>
+                        {{ form.parent_name }}
+                    </td>
+                    <td class="fieldWrapper">
+                        {{ form.parent_email.errors }}
+                        <label for="id_parent_email" class="required">{% trans "parent email" %}</label>
+                        {{ form.parent_email }}
+                    </td>
+                </tr><tr>
+                    <td class="fieldWrapper">
+                        {{ form.preferred_language.errors }}
+                        <label for="id_preferred_language" class="required">{% trans "prefered language" %}</label>
+                        {{ form.preferred_language }}
+                    </td>
+                    <td class="fieldWrapper">
+                        {{ form.parent_mobile.errors }}
+                        <label for="id_parent_mobile" class="required">{% trans "parent mobile" %}</label>
+                        {{ form.parent_mobile }}
+                    </td>
+                </tr><tr>
+                    <td class="fieldWrapper">
+                        {{ form.address1.errors }}
+                        <label for="id_address1">{% trans "address" %}</label>
+                        {{ form.address1 }}
+                        
+                        {{ form.address2.errors }}
+                        <label for="id_address2" class="nolabel"> </label>
+                        {{ form.address2 }}
+                    </td>
+                </tr>
+            </table>
+            <div class="divider"></div>
+            <table>
+                <tr>
+                    <td class="fieldWrapper">
+                        {{ form.portals.errors }}
+                        <label for="id_portals">{% trans "division" %}</label>
+                        <select name="{{ form.portals.name }}" id="id_portals" onchange="target_changed();">
+                            {% for value, field in form.portals.field.choices %}
+                                <option value="{% if value %}{{ value }}{% else %}0{% endif %}" {% ifequal form.initial.portals value %}selected="selected"{% endifequal %}>{{ field }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td class="fieldWrapper" id="target_field">
+                        {% include "forms/target_select.html"%}
+                    </td>
+                </tr><tr>
+                    <td class="fieldWrapper" id="course_field">
+                        {% include "forms/course_select.html"%}
+                    </td>
+                    <td class="fieldWrapper" id="class_field">
+                        {% include "forms/class_select.html"%}
+                    </td>
+                </tr>
+            </table>
+            <div class="clearfix"></div>
+            <div class="legend"><span class="required">{% trans "required field" %}</div>
+            <div class="notice">{{ note.text|safe }}</div>
+            <button>{% trans 'send' %}</button>
+        </form>
+    </div>
+{% endblock %}
+
+{% block right_bar %}
+    
+    <div class="message" id="policy_panel">
+        {{ message.text|safe }}
+    </div>
+    
+    <div id="advert_space" class="advert panel"></div>
+    
+{% endblock %}

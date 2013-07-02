@@ -1,0 +1,34 @@
+[
+    {
+        "pk": 15, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "", 
+            "name": "Downtown"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "", 
+            "name": "Jinqiao"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "", 
+            "name": "Hongqiao"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "", 
+            "name": "Zhudi"
+        }
+    }
+]

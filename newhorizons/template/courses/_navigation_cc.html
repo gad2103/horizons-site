@@ -1,0 +1,12 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+    {% for target in target_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setContent('{% url 'target_details' target.pk %}'); setHeader('<a href=&quot;{% url 'curriculumconsulting_home' %}&quot;>{{ target.category }}</a> > {{ target.name }}'); return false;">{{ target.name }}</a>
+        </h3>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+[
+   {
+      "pk": 1, 
+      "model": "testimonial.TestimonialCategory", 
+      "fields": {
+         "name": "General"
+         }
+   }, 
+   {
+      "pk": 2, 
+      "model": "testimonial.TestimonialCategory", 
+      "fields": {
+         "name": "Language Arts"
+         }
+   }, 
+   {
+      "pk": 3, 
+      "model": "testimonial.TestimonialCategory", 
+      "fields": {
+         "name": "Test Preparation"
+         }
+   }, 
+   {
+      "pk": 4, 
+      "model": "testimonial.TestimonialCategory", 
+      "fields": {
+         "name": "Curriculum Consulting"
+         }
+   } 
+]

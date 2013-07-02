@@ -1,0 +1,90 @@
+.site_outer {
+	background-color: black;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #ffea77;
+}
+
+/**********************************************************************************************/
+/***  Header                                                                                ***/
+/**********************************************************************************************/
+
+.page_header .banner {
+	background-color: #666;
+}
+.page_header .lang_links a:link, .page_header .lang_links a:visited {
+	color: #FFEA77;
+}
+.page_header .navigation {
+	background-color: #ffea77;
+}
+.page_header .navigation .tab {
+	color: white;
+}
+.page_header .navigation .tab div {
+	background-color: #fffbcc;
+}
+.page_header .navigation .tab .active {
+	background-color: #ffea77;
+}
+.page_header .navigation .tab h2 {
+	background-color: #ffea77;
+}
+.page_header .navigation .tab .active h2 {
+	color: #666;
+	background-color: #fffbcc;
+}
+.page_header li h2, .page_header li h2 a {
+	color: #666;
+}
+.page_header .separator1 {
+	background-color: #ffea77;
+}
+.page_header .separator2 {
+	background-color: #fffbcc;
+}
+.page_header #sub_main_navigation {
+	background-color: #fffbcc;
+}
+
+/**********************************************************************************************/
+/***  Content                                                                               ***/
+/**********************************************************************************************/
+
+.page_content {
+	background-color: #666;
+}
+
+/* Left Sidebar */
+
+#left_bar h2, #left_bar h2 a {
+	color: #fffbcc;
+	font-size: 1.3em;
+	margin: 4px 0;
+}
+#left_bar h3, #left_bar h3 a {
+	color: #FFEA77;
+}
+#left_bar h4, #left_bar h4 a {
+	color: #FFEA77;
+}
+
+/* Right Sidebar */
+
+#right_bar {
+	background-color: purple;
+}
+
+/* Main Pane */
+
+#main_pane h2, #main_pane h2 a {
+	color: #FFEA77;
+}
+
+/**********************************************************************************************/
+/***  Footer                                                                                ***/
+/**********************************************************************************************/
+
+.page_footer {
+	background-color: #333;
+}

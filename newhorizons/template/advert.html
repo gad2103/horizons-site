@@ -1,0 +1,8 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if item %}
+    <a href="{{ item.url }}" target="_blank">
+        <img src="{{ MEDIA_URL }}{{ item.picture }}" />
+    </a>
+{% endif %}

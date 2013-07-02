@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<body>
+    <p>You received a registration request.</p>
+    
+    <h2>Student Information</h2>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Name: </div>
+        <div style="font-weight: bold;">{{ n.student_name }}</div>
+    </div>
+    {% if n.student_email %}<div style="background-color: white;">
+        <div style="float: left;">E-mail: </div>
+        <div style="font-weight: bold;">{{ n.student_email }}</div>
+    </div>{% endif %}
+    {% if n.student_mobile %}<div style="background-color: #D5D5D5;">
+        <div style="float: left;">Mobile: </div>
+        <div style="font-weight: bold;">{{ n.student_mobile }}</div>
+    </div>{% endif %}
+    <div style="background-color: white;">
+        <div style="float: left;">School: </div>
+        <div style="font-weight: bold;">{{ n.school }}</div>
+    </div>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Grade: </div>
+        <div style="font-weight: bold;">{{ n.current_grade }}</div>
+    </div>
+    
+    <h2>Parent Information</h2>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Name: </div>
+        <div style="font-weight: bold;">{{ n.parent_name }}</div>
+    </div>
+    <div style="background-color: white;">
+        <div style="float: left;">Email: </div>
+        <div style="font-weight: bold;">{{ n.parent_email }}</div>
+    </div>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Mobile: </div>
+        <div style="font-weight: bold;">{{ n.parent_mobile }}</div>
+    </div>
+    <div style="background-color: white;">
+        <div style="float: left;">Prefered Language: </div>
+        <div style="font-weight: bold;">{{ n.preferred_language }}</div>
+    </div>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Address: </div>
+        <div style="font-weight: bold;">{% if n.address1 %}{{ n.address1 }}{% endif %}{% if n.address2 %}, {{ n.address2 }}{% endif %}</div>
+    </div>
+    
+    <h2>Course Information</h2>
+    <div style="background-color: #D5D5D5;">
+        <div style="float: left;">Class: </div>
+        <div style="font-weight: bold;">{% if n.classes %}{{ n.classes }}{% else %}Next available class{% endif %}</div>
+    </div>
+    {% if n.courses %}<div style="background-color: white;">
+        <div style="float: left;">Course: </div>
+        <div style="font-weight: bold;">{{ n.courses }}</div>
+    </div>{% endif %}
+    {% if n.targets %}<div style="background-color: #D5D5D5;">
+        <div style="float: left;">Program: </div>
+        <div style="font-weight: bold;">{{ n.targets }}</div>
+    </div>{% endif %}
+    {% if n.portals %}<div style="background-color: white;">
+        <div style="float: left;">Division: </div>
+        <div style="font-weight: bold;">{{ n.portals }}</div>
+    </div>{% endif %}
+</body>
+</html>

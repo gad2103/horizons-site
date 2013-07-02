@@ -1,0 +1,110 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    {{ form.media }}
+<script>
+    $(document).ready(
+        function() {
+            $( 'select#id_portals' ).change(function() {
+                if ($(this).val() == '') {
+                }
+                else {
+                    $( '#target_field' ).load('{% url "register_target" %}?portal=' + $(this).val() );
+                    $( '#course_field' ).load('{% url "register_course" %}?portal=' + $(this).val() );
+                    $( '#class_field' ).load('{% url "register_class" %}?portal=' + $(this).val() );
+                }
+            });
+            setAdvert('{% url 'advert' %}');
+        }
+    )
+</script>
+{% endblock %}
+
+{% block page_class %}contactus_page{% endblock %}
+
+{% block tab5_class %}active content{% endblock %}
+
+{% block nivo_head %}{% endblock %}
+
+{% block page_content_header %}{% trans "contact us" %}{% endblock %}
+
+{% block left_bar %}{% endblock %}
+
+{% block main_pane %}
+    <div id="content">
+        <form action="{% url 'contactus' %}" method="post">{% csrf_token %}
+            {{ form.non_field_error }}
+            <div class="form_block">
+                <div class="fieldWrapper">
+                    {{ form.name.errors }}
+                    <label for="id_name" class="required">
+                        {% trans "name" %}
+                    </label>
+                    {{ form.name }}
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.sender.errors }}
+                    <label for="id_sender" class="required">
+                        {% trans "e-mail address" %}
+                    </label>
+                    {{ form.sender }}
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.location.errors }}
+                    <label for="id_location" class="required">
+                        {% trans "location" %}
+                    </label>
+                    {{ form.location }}
+                </div>
+            </div>
+            <div class="form_block">
+                <div class="fieldWrapper">
+                    {{ form.language.errors }}
+                    <label for="id_language">
+                        {% trans "prefered language" %}
+                    </label>
+                    {{ form.language }}
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.reference.errors }}
+                    <label for="id_reference">
+                        {% trans "how did you hear about us?" %}
+                    </label>
+                    {{ form.reference }}
+                </div>
+                <div class="legend"><span class="required">{% trans "required field" %}</span></div>
+            </div>
+            <div class="fieldWrapper">
+                {{ form.subject.errors }}
+                <label for="id_subject">
+                    {% trans "email subject" %}
+                </label>
+                {{ form.subject }}
+            </div>
+            <div class="fieldWrapper" id="contact_message">
+                {{ form.message.errors }}
+                <label for="id_subject">
+                    {% trans "message" %}
+                </label>
+                {{ form.message }}
+            </div>
+            <button>{% trans 'send' %}</button>
+            <div class="clearfix"></div>
+            <div class="message" id="contact_info">
+                {{ message.text|safe }}
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block right_bar %}
+    
+    <div class="message" id="contact_form_message">
+        {{ address.text|safe }}
+    </div>
+    
+    <div id="advert_space" class="advert panel"></div>
+    
+{% endblock %}

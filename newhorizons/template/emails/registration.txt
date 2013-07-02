@@ -1,0 +1,27 @@
+
+=====================  Registration Form  =====================
+==========================================================
+                      {{ n.student_name }}
+==========================================================
+
+Student Information:
+Name: {{ n.student_name }}
+{% if n.student_email %}Email: {{ n.student_email }}{% endif %}
+{% if n.student_mobile %}Mobile: {{ n.student_mobile }}{% endif %}
+School: {{ n.school }}
+Grade: {{ n.current_grade }}
+
+Parent Information:
+Name: {{ n.parent_name }}
+Email: {{ n.parent_email }}
+Mobile: {{ n.parent_mobile }}
+Prefered Language: {{ n.preferred_language }}
+Address: {% if n.address1 %}{{ n.address1 }}{% endif %}{% if n.address2 %}, {{ n.address2 }}{% endif %}
+
+Course Information:
+Class: {% if n.classes %}{{ n.classes }}{% else %}Next available class{% endif %}
+{% if n.courses %}Course: {{ n.courses }}{% endif %}
+{% if n.targets %}Program: {{ n.targets }}{% endif %}
+{% if n.portals %}Division: {{ n.portals }}{% endif %}
+
+==========================================================

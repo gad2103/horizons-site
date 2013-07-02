@@ -1,0 +1,32 @@
+{% load url from future %}
+{% load i18n %}
+
+
+<ul>
+    <li class="course">
+    {% if course.meta %}
+        <h2>{{ course.meta.name}}</h2>
+        {% if course.skills %}
+            <div class="skills">
+                {% trans "skills" %}
+                <ul>
+                {% for skill in course.skill_list %}
+                    <li>{{ skill }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        {% if course.description %}
+            <div class="{% if course.skills %}description{% else %}wide-desc{% endif %}">
+                {{ course.description|safe }}
+            </div>
+        {% endif %}
+        <button class="contact" onclick="location.href='{% url "contactus" %}'">{% trans "contact" %}</button>
+        <button class="register" onclick="location.href='{% url "register" %}?course={{ course.meta.pk }}'">{% trans "register" %}</button>    
+    {% else %}
+        <h2>{{ course.name }}</h2>
+        <button class="contact" onclick="location.href='{% url "contactus" %}'">{% trans "contact" %}</button>
+        <button class="register" onclick="location.href='{% url "register" %}?course={{ course.pk }}'">{% trans "register" %}</button>      
+    {% endif %}
+    </li>
+</ul>

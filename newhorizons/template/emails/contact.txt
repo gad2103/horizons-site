@@ -1,0 +1,12 @@
+
+=====================  Contact Form  =====================
+==========================================================
+                      {{ n.subject }}
+==========================================================
+{{ n.name }} from {{ n.location }} said:
+{{ n.message }}
+
+E-mail: {{ n.sender }}
+Prefered language: {{ n.language }}
+How did you here from us: reference {{ n.reference }}
+==========================================================

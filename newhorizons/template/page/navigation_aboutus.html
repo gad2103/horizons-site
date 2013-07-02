@@ -1,0 +1,22 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+{% for page in page_list %}
+    <li>
+        <h3>
+            <a id="{{ page.pk }}" href="#" onclick="setActive(this); setContent('{% url 'page_details' page.pk %}'); setHeader('<a href=&quot;{% url "aboutus" %}&quot;>{% trans "about us" %}</a><div class=&quot;divider&quot;></div>{{ page.title }}'); return false;">{{ page.title }}</a>
+        </h3>
+    </li>
+{% endfor %}
+    <li class="testimonials">
+        <h3>
+            <a id="testimonials" href="#" onclick="setActive(this); setContent('{% url 'testimonials' %}'); setHeader('<a href=&quot;{% url "aboutus" %}&quot;>{% trans "about us" %}</a><div class=&quot;divider&quot;></div>{% trans "testimonials" %}'); return false;">{% trans "testimonials" %}</a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+            <a id="inthenews" href="#" onclick="setActive(this); setContent('{% url 'inthenews_list' %}'); setHeader('<a href=&quot;{% url "aboutus" %}&quot;>{% trans "about us" %}</a><div class=&quot;divider&quot;></div>{% trans "new horizons in the news" %}'); return false;">{% trans "New Horizons in the News" %}</a>
+        </h3>
+    </li>
+</ul>

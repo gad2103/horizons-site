@@ -1,0 +1,23 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+{% for target in target_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setContent('{% url 'target_details' target.pk %}');setNav('{% url 'curriculumconsulting_nav' target.pk %}')">{{ target.name }}</a>
+            {% if expand|stringformat:"s" = target.pk|stringformat:"s" %}
+                <ul class="course_list">
+                    {% for course in course_list %}
+                        <li>
+                            <h4>
+                                <a href="#" onclick="setContent('{% url 'course_details' course.pk %}');">{{ course.name }}</a>
+                            </h4>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </h3>
+    </li>
+{% endfor %}
+</ul>

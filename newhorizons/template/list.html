@@ -1,0 +1,46 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if title %}<h2>{{ title }}</h2>{% endif %}
+{% include "page_nav.html" %}
+<ul class="{{ type }}">
+    {% for item in list %}
+        <li>
+            {% if item.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.picture }}" />
+            {% elif item.meta.picture %}
+                <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+            {% endif %}
+            
+            {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+            
+            {% if item.exerpt %}
+                <div class="description">
+                    {{ item.exerpt|safe}}
+                </div>
+            {% elif item.description %}
+                <div class="description">
+                    {{ item.description|safe|truncatewords:1300 }}
+                </div>
+            {% endif %}
+            
+            <div class="footer">
+                {% if item.file %}
+                    <a href="{{ item.file.url }}">{% trans "read more" %}</a>
+                {% elif item.url %}
+                    <a href="{{ item.url }}">{% trans "read more" %}</a>
+                {% elif item.author %}
+                    {{ item.author }}
+                    <div class="link"><a href="{% url 'aboutus' %}">{% trans "more testimonials" %}</a></div>
+                {% else %}
+                    <a href="#" onclick="setContent( '{{ item.details_url }}?page_no={{ list.number }}{% if year %}&year={{ year }}{% endif %}{% if trimester %}&trimester={{ trimester }}{% endif %}' ); return false;">
+                        {% trans "read more" %}</a>
+                {% endif %}
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    {% empty %}
+        <div class="message">{{ none_message|safe }}</div>   
+    {% endfor %}
+</ul>
+{% include "page_nav.html" %}

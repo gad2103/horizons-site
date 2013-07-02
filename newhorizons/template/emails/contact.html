@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+    <p>Contact Form: {{ n.name }} sent you a message.</p>
+    <div style="padding: 4px 0; background-color: #D5D5D5;">
+        <div style="float: left;">Name: </div>
+        <div style="font-weight: bold;">{{ n.name }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: white;">
+        <div style="float: left;">Email: </div>
+        <div style="font-weight: bold;">{{ n.sender }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: #D5D5D5;">
+        <div style="float: left;">Location: </div>
+        <div style="font-weight: bold;">{{ n.location }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: white;">
+        <div style="float: left;">Subject: </div>
+        <div style="font-weight: bold;">{{ n.subject }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: #D5D5D5;">
+        <div style="float: left;">Prefered Language: </div>
+        <div style="font-weight: bold;">{{ n.language }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: white;">
+        <div style="float: left;">How did you hear from us: </div>
+        <div style="font-weight: bold;">{{ n.reference }}</div>
+    </div>
+    <div style="padding: 4px 0; background-color: #D5D5D5;">
+        <div style="float: left;">Message: </div>
+        <div style="font-weight: bold;">{{ n.message }}</div>
+    </div>
+</body>
+</html>

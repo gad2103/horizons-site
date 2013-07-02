@@ -1,0 +1,16 @@
+{% load url from future %}
+{% load i18n %}
+
+
+{% if item.meta.picture %}
+    <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+{% endif %}
+{% comment %}
+{% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+{% if item.subtitle %}<h3>{{ item.subtitle }}</h3>{% endif %}
+{% endcomment %}
+<div class="description">
+    {% autoescape off %}
+        {{ item.description }}
+    {% endautoescape%}
+</div>

@@ -1,0 +1,19 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+    <li>
+        <h3>
+            <a href="#" onclick="setActive(this); setContent('{% url 'instructor_home_page' %}'); return false;">
+                {% trans "all instructors" %}
+            </a>
+        </h3>
+    </li>
+{% for target in target_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setActive(this); setContent('{% url 'instructor_details' course.pk %}'); return false;">{{ target.name }}</a>
+        </h3>
+    </li>
+{% endfor %}
+</ul>

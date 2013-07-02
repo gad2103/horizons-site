@@ -1,0 +1,54 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if title %}<h2>{{ title }}</h2>{% endif %}
+{% include "page_nav.html" %}
+<ul class="{{ type }}">
+    {% for item in list %}
+        <li>
+            <table><tr>
+                <td valign="top" class="left">
+                    {% if item.picture %}
+                        <img src="{{ MEDIA_URL }}{{ item.picture }}" />
+                    {% elif item.meta.picture %}
+                        <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+                    {% endif %}
+                </td><td valign="top" class="center">
+                    
+                    {% if type == 'inthenews' %}
+                        <div class="source">{{ item.source }}</div>
+                    {% endif %}
+                        
+                    <div class="pub_date">{% trans "posted on" %} {{ item.published|date:"Y - m - d" }}</div>
+                    {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+                    
+                    <div class="exerpt">
+                        {{ item.exerpt|safe }}
+                        <span class="footer">
+                            {% if type == 'inthenews' %}
+                                {% if item.url %}
+                                    <a target="_blank" href="{{ item.url }}">{% trans "read more" %}</a>
+                                {% endif %}
+                                {% if item.file %}
+                                    <a target="_blank" href="{{ item.file.url }}">{% trans "read more" %}</a>
+                                {% endif %}
+                            {% else %}
+                                <a href="#" onclick="setContent( '{{ item.details_url }}?page_no={{ list.number }}{% if year %}&year={{ year }}{% endif %}{% if trimester %}&trimester={{ trimester }}{% endif %}' ); return false;">
+                                    {% trans "read more" %}
+                                </a>
+                            {% endif %}
+                        </span>
+                    </div>
+                    
+                    <div class="footer">
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                </td>
+            </tr></table>
+        </li>
+    {% empty %}
+        <div class="message">{{ none_message }}</div>   
+    {% endfor %}
+</ul>
+{% include "page_nav.html" %}

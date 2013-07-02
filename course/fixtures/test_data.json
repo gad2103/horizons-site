@@ -1,0 +1,253 @@
+[
+    {
+        "pk": 1, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "SSAT",
+            "shortname": "SSAT"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "Pre-SAT",
+            "shortname": "PreSAT"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "SAT",
+            "shortname": "SAT"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "SAT Subject Tests",
+            "shortname": "Sub"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "ACT",
+            "shortname": "ACT"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1,
+            "name": "AP/IB",
+            "shortname": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2,
+            "name": "Young Starter (G3)",
+            "shortname": "G3"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2,
+            "name": "Early Years (G4-5)",
+            "shortname": "G4/5"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2,
+            "name": "Middle Years (G6-7)",
+            "shortname": "G6/7"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2,
+            "name": "Upper Years (G8-9)",
+            "shortname": "G9/10"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2,
+            "name": "Pre-AB/IP (G9-10)",
+            "shortname": "PreABIP"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "course.course", 
+        "fields": {
+            "target": 1, 
+            "name": "SSAT"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "course.course", 
+        "fields": {
+            "target": 2, 
+            "name": "SAT Foundations"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "course.course", 
+        "fields": {
+            "target": 3, 
+            "name": "SAT Complete Course"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "course.course", 
+        "fields": {
+            "target": 3, 
+            "name": "SAT 2400"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "course.course", 
+        "fields": {
+            "target": 3, 
+            "name": "SAT for CTV"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "course.course", 
+        "fields": {
+            "target": 4, 
+            "name": "SAT Subject Tests"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "course.course", 
+        "fields": {
+            "target": 5, 
+            "name": "ACT Workshop"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "course.course", 
+        "fields": {
+            "target": 6, 
+            "name": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "course.course", 
+        "fields": {
+            "target": 19, 
+            "name": "Reading and Writing"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "course.course", 
+        "fields": { 
+            "target": 20, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "course.course", 
+        "fields": {
+            "target": 20, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "course.course", 
+        "fields": {
+            "target": 20, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "course.course", 
+        "fields": {
+            "target": 23, 
+            "name": "Pre-AB/IP English"
+        }
+    }
+]

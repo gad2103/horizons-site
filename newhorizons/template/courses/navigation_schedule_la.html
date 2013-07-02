@@ -1,0 +1,12 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+{% for target in target_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setActive(this); setContent('{% url 'schedule_list' target.pk %}'); setHeader('<a href=&quot;{{ back_link }}&quot;>{{ target.category }} {% trans "schedules" %}</a><div class=&quot;divider&quot;></div>{{ target.name }}'); return false;">{{ target.name }}</a>
+        </h3>
+    </li>
+{% endfor %}
+</ul>

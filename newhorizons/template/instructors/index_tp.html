@@ -1,0 +1,21 @@
+{% extends "instructors/index.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            setNav('{% url 'tp_nav_instructors' %}');
+            setContent('{% url 'tp_instructor_home_page' %}');
+            setAdvert('{% url 'advert_tp' %}');
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}instructor_page tp_area{% endblock %}
+
+{% block page_content_header %}
+    <a href="{% url 'tp_home_instructors' %}">
+        {% trans "test preparation instructors" %}
+    </a>
+{% endblock %}

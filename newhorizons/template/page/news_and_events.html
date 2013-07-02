@@ -1,0 +1,30 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_class %}newsandevents_page neutral_area{% endblock %}
+
+{% block extra_scripts %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            setNav('{% url 'news_navigation' %}');
+            setContent('{{ content_url }}');
+        });
+    </script>
+{% endblock %}
+
+{% block tab4_class %}active content{% endblock %}
+
+{% block page_content_header %}
+    <a href="{% url 'newsandevents' %}">{% trans "News & Events" %}</a>
+{% endblock %}
+
+{% block left_bar %}
+    <div class="content" id="secondary_navigation"></div>
+{% endblock %}
+
+{% block main_pane %}
+    <div id="content"></div>
+{% endblock %}
+
+{% block right_bar %}{% endblock %}

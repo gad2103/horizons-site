@@ -1,0 +1,23 @@
+[
+   {
+      "pk": 1, 
+      "model": "course.TargetCategory", 
+      "fields": {
+         "name": "Test Preparation"
+         }
+   }, 
+   {
+      "pk": 2, 
+      "model": "course.TargetCategory", 
+      "fields": {
+         "name": "Language Arts"
+         }
+   }, 
+   {
+      "pk": 3, 
+      "model": "course.TargetCategory", 
+      "fields": {
+         "name": "Curriculum Consulting"
+         }
+   }
+]

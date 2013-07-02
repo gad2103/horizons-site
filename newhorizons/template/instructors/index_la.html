@@ -1,0 +1,21 @@
+{% extends "instructors/index.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            setNav('{% url 'la_nav_instructors' %}');
+            setContent('{% url 'la_instructor_home_page' %}');
+            setAdvert('{% url 'advert_la' %}');
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}instructor_page la_area{% endblock %}
+
+{% block page_content_header %}
+    <a href="{% url 'la_home_instructors' %}">
+        {% trans "language arts instructors" %}
+    </a>
+{% endblock %}

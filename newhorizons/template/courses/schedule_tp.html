@@ -1,0 +1,15 @@
+{% extends "courses/schedule.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            setNav('{% url 'testprep_schedule_nav' %}');
+            setHeader('{% trans "test preparation schedules" %}');
+            setContent('{% url 'tp_schedule_home_page' %}');
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}schedule_page tp_area{% endblock %}

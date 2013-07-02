@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-27 20:22+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: settings.py:133
+msgid "English"
+msgstr "英文"
+
+#: settings.py:134
+msgid "Chinese"
+msgstr "中文"
+
+#: settings.py:135
+msgid "Korean"
+msgstr "韩国语"
+
+#: template/base.html:65
+msgid "Better Grades, Better Scores, Brighter Futures"
+msgstr "成绩进步，分数提高，前途亮丽"
+
+#: template/base.html:77
+msgid "home"
+msgstr "首页"
+
+#: template/base.html:85
+msgid "instructors"
+msgstr "老师"
+
+#: template/base.html:93 template/instructors/index.html:28
+msgid "courses"
+msgstr "课程"
+
+#: template/base.html:101
+msgid "news & events"
+msgstr ""
+
+#: template/base.html:109
+msgid "find us"
+msgstr "联系我们"
+
+#: template/base.html:117
+msgid "about us"
+msgstr "关于我们"
+
+#: template/home.html:13 template/instructors/index.html:15
+msgid "language arts"
+msgstr "英语加强课程"
+
+#: template/home.html:14 template/instructors/index.html:16
+msgid "test preparations"
+msgstr "考试辅导课程"
+
+#: template/home.html:15 template/instructors/index.html:17
+msgid "curriculum consulting"
+msgstr "课程咨询"
+
+#: template/courses/index.html:36 template/courses/index_cc.html:34
+#: template/courses/index_la.html:34 template/courses/index_tp.html:34
+msgid "tests"
+msgstr "考试"
+
+#: template/locations/index.html:20
+msgid "our locations"
+msgstr "公司位置"
+
+#: template/page/aboutus.html:19
+msgid "our company"
+msgstr ""

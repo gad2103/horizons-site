@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            $( '#upcominglaclasses_panel' ).load( '{% url 'upcoming_la_classes_schedule_preview' %}' );
+            $( '#upcomingtpclasses_panel' ).load( '{% url 'upcoming_tp_classes_schedule_preview' %}' );
+            
+            $( '#testimonial_panel' ).load( '{% url 'testimonial_sample' %}' );
+            
+            $( '#news_panel' ).load( '{% url 'news_preview' %}' );
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}home_page{% endblock %}
+
+{% block tab1_class %}active content{% endblock %}
+
+{% block page_content %}
+    <div class="portals">
+        {% for portal in portals %}
+            <a href="{{ portal.link }}">
+                <div class="portal_panel" id="{{ portal.style }}">
+                    <div class="header">{{ portal.meta.name }}</div>
+                    <div class="content">
+                        <div class="text">
+                            {{ portal.intro }}
+                        </div>
+                        {% if portal.meta.picture %}
+                            <img src="{{ MEDIA_URL }}{{ portal.meta.picture }}" alt="{{ portal.meta.name }}">
+                        {% endif %}
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    <div class="footer">{% comment %}{% trans "learn more" %}{% endcomment %}</div>
+                    
+                </div>
+            </a>
+        {% endfor %}
+        <div class="clearfix"></div>
+    </div>
+    
+    <div class="bottom">
+        <div class="panel" id="upcoming_class_schedules">
+            <h2>{% trans "upcoming class schedules" %}</h2>
+            <div class="content">
+                <div class="schedule" id="upcominglaclasses_panel"></div>
+                <div class="schedule" id="upcomingtpclasses_panel"></div>
+            </div>
+        </div>
+        <div class="testimonial panel" id="testimonial_panel"></div>
+        <div class="news panel" id="news_panel"></div>
+    </div>
+{% endblock %}

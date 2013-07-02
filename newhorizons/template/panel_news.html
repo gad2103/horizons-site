@@ -1,0 +1,16 @@
+{% load url from future %}
+{% load i18n %}
+
+<div id="news_panel" class="panel">
+    <h2>{% trans "news feed" %}</h2>
+    <div class="content">
+        {% for item in news_list %}
+            <div class="item"><a href="{% url "newsandevents_page" item.pk %}">
+                <div class="title">{{ item.title }}</div>
+            </a></div>
+        {% empty %}
+            <div class="item">{% trans "No news for now." %}</div>
+        {% endfor %}
+    </div>
+    <div class="footer"><a href="{% url 'newsandevents' %}">{% trans "more news" %}</a></div>
+</div>

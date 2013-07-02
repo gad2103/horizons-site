@@ -1,0 +1,22 @@
+{% load url from future %}
+{% load i18n %}
+
+
+<div class="page_nav">
+    <div class="back_link">
+        <a href="#" onclick="setContent( '{{ url }}?page={{ page_no }}{% if year %}&year={{ year }}{% endif %}{% if trimester %}&trimester={{ trimester }}{% endif %}' ); return false;">{% trans "back to list"%}</a>
+    </div>
+</div>
+<h2>{{ item.title }}</h2>
+{% if item.subtitle %}<h3>{{ item.subtitle }}</h3>{% endif %}
+<div class="publication_date">{{ item.modified|date:"M d, Y" }}</div>
+{% comment %}
+{% if item.meta.picture %}
+    <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />
+{% endif %}
+{% endcomment %}
+<div class="description">
+    {% autoescape off %}
+        {{ item.description }}
+    {% endautoescape%}
+</div>

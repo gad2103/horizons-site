@@ -1,0 +1,44 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            setContent("{% url 'location_home_page' %}");
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}location_page neutral_area{% endblock %}
+
+{% block tab5_class %}active content{% endblock %}
+
+{% block page_content_header %}
+    <a href="{% url 'location_home' %}">{% trans "our locations" %}</a>
+{% endblock %}
+
+{% block left_bar %}
+    <div class="content">
+    <ul>
+    {% for location in object_list %}
+        <li>
+            <h3>
+                <a href="#" onclick="setActive(this); setContent('{% url 'location_details' location.pk %}'); setHeader('<a href=&quot;{% url 'location_home' %}&quot;>{% trans "our locations" %}</a><div class=&quot;divider&quot;></div>{{ location.name }}'); return false;">{{ location.name }}</a>
+            </h3>
+        </li>
+    {% endfor %}
+    </ul>
+    </div>  
+    <div class="image">
+        {% if left_nav_image %}
+            <img src="{{ MEDIA_URL }}{{ left_nav_image.picture }}" alt="{{ left_nav_image.name }}">
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block main_pane %}
+    <div id="content">
+    
+    </div>
+{% endblock %}

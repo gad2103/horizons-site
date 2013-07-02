@@ -1,0 +1,21 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+    {% for target in target_list %}
+    <li>
+        <h2>
+            <span>{{ target.name }}</span>
+        </h2>
+        <ul>
+        {% for course in target.courses %}
+            <li>
+                <h3>
+                    <a href="#" onclick="setActive(this); setContent('{% url 'schedule_list' target.pk course.pk %}'); setHeader('<a href=&quot;{{ back_link }}&quot;>{% trans "test preparation schedules" %}</a><div class=&quot;divider&quot;></div>{{ course.name }}'); $( '#currentclasses_panel' ).load( '{% url 'current_tp_classes' course.pk %}?target={{ target.pk }}' ); $( '#upcomingclasses_panel' ).load( '{% url 'upcoming_tp_classes' course.pk %}?target={{ target.pk }}' ); $( '#relatedlinks_panel' ).load( '{% url 'course_link_list' course.pk %}' ); return false;">{{ course.name }}</a>
+                </h3>
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>

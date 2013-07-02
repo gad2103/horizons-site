@@ -1,0 +1,11 @@
+{% load url from future %}
+{% load i18n %}
+
+<h2>{% trans "useful links" %}</h2>
+<div class="content">
+    {% for item in link_list %}
+        <div class="item"><a target="_blank" href="{{ item.url }}" >
+            <div class="title">{{ item.name }}</div>
+        </a></div>
+    {% endfor %}
+</div>

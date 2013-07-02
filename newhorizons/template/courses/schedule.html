@@ -1,0 +1,19 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_class %}schedule_page{% endblock %}
+
+{% block tab7_class %}active content{% endblock %}
+
+{% block page_content_header %}
+    {% trans "Schedules" %}
+{% endblock %}
+
+{% block right_bar %}
+    
+    {% include "panel_news.html" %}
+    
+    {% include "panel_blog.html" %}
+
+{% endblock %}

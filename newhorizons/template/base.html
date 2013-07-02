@@ -1,0 +1,320 @@
+{% load url from future %}
+{% load i18n %}
+{% get_language_info_list for LANGUAGES as languages %}
+{% get_current_language as current_language %}
+
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{% block title %}New Horizons{% endblock %}</title>
+        
+        {% block meta %}
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="copyright" content="" />
+        {% endblock %}
+        
+        <link rel="shortcut icon" type="image/png" href="{{ MEDIA_URL }}{{ favicon }}" />
+            
+        {% block css %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/normalize.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/clearfix.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/styles.css">
+        
+        <!--[if IE 6]>
+        <style media="screen" type="text/css">
+            .window {
+                height: 100%;
+            }
+        </style>
+        <![endif]-->
+        {% endblock %}
+        
+        {% block extra_css %}
+        {% endblock %}
+        
+        {% block scripts %}
+        <script type="text/javascript" src="{{ STATIC_URL }}scripts/jquery.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}scripts/scripts.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}scripts/dropdown.js"></script>
+        {% if analytics %}
+            <script type="text/javascript">
+                {{ analytics|safe }}
+            </script>
+        {% endif %}
+        {% endblock %}
+        
+        {% block nivo_head %}
+            <link rel="stylesheet" href="{{ STATIC_URL }}scripts/nivo-slider/nivo-slider.css">
+            <script type="text/javascript" src="{{ STATIC_URL }}scripts/nivo-slider/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+                $(window).load(function() {
+                    $('#slider').nivoSlider({
+                        effect: 'fade',
+                        animSpeed: 500,
+                        pauseTime: 14000,
+                        directionNav: false,
+                        controlNav: false
+                    });
+                });
+            </script>
+        {% endblock %}
+        
+        {% block extra_scripts %}
+        {% endblock %}
+        
+    </head>
+    
+    <body class="{% block page_class %}neutral_area{% endblock %}" id="{% block page_id %}{% endblock %}">
+    <div class="window">
+        <!-- Outer wrapper of the web site -->
+        <div class="site_outer" id="header_outer_wrapper">
+            
+            <!-- Inner wrapper of the web site. It separates the used portion of the browser window from the unused one. -->
+            <div class="site_inner" id="header_inner_wrapper">
+                    
+                <!-- Page header -->
+                <div class="page_header">
+                {% block page_header %}
+                    
+                    <div class="banner">
+                        
+                        <a href="{% url 'home' %}">
+                            <img src="{{ STATIC_URL }}img/newhorizons_logo.png" />
+                        </a>
+                        <h1 id="moto">{{ moto }}</h1>
+                        <div class="clearfix"></div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="site_outer" id="mainnav_outer_wrapper">
+            
+            <div class="site_inner" id="mainnav_inner_wrapper">
+                
+                <div class="navigation" id="main_navigation">
+                    
+                    <ul>
+                        <div class="lang_links">
+                        {% for language in languages %}
+                            <form action="/i18n/setlang/" method="post" name="{{ language.code }}">
+                            {% csrf_token %}
+                                <a href="#" onclick="document.forms['{{ language.code }}'].submit()"><img class="flag{% ifequal language.code current_language %} current{% endifequal %}" src="{{ STATIC_URL }}img/flag-{{ language.name }}.png" alt="{{ language.name_local }}" /></a>
+                                <input type="hidden" name="language" value="{{ language.code }}" />
+                            </form>
+                        {% endfor %}
+                        </div>
+                        
+                        {% block main_navigation %}
+                        <li class="tab" id="tab1">
+                            <a href="{% url 'home' %}">
+                                <div class="{% block tab1_class %}content{% endblock %}">
+                                    <h2>{% trans "home" %}</h2>
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="tab" id="tab2">
+                            <div class="{% block tab2_class %}content{% endblock %}">
+                                <h2>{% trans "instructors" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><h3><a href="{% url 'la_home_instructors' %}">{% trans "language arts" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'tp_home_instructors' %}">{% trans "test preparation" %}</a></h3></li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="tab" id="tab3">
+                            <div class="{% block tab3_class %}content{% endblock %}">
+                                <h2>{% trans "courses" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><h3><a href="{% url 'languagearts_home' %}">{% trans "language arts" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'testpreparations_home' %}">{% trans "test preparation" %}</a></h3></li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="tab" id="tab7">
+                            <div class="{% block tab7_class %}content{% endblock %}">
+                                <h2>{% trans "schedules" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><h3><a href="{% url 'languagearts_schedule' %}">{% trans "language arts" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'testprep_schedule' %}">{% trans "test preparation" %}</a></h3></li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="tab" id="tab4">
+                            <div class="{% block tab4_class %}content{% endblock %}">
+                                <h2>{% trans "news & blog" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><h3><a href="{% url 'blog' %}">{% trans "blog" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'newsandevents' %}">{% trans "news & events" %}</a></h3></li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="tab" id="tab5">
+                            <div class="{% block tab5_class %}content{% endblock %}">
+                                <h2>{% trans "contact us" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><h3><a href="{% url 'contactus' %}">{% trans "contact us" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'register' %}">{% trans "register" %}</a></h3></li>
+                                    <li><h3><a href="{% url 'location_home' %}">{% trans "our locations" %}</a></h3></li>
+                                {% for item in menu.0 %}
+                                    <li><h3><a href="{% url 'contact_page' item.meta.pk %}">{{ item.title }}</a></h3></li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="tab" id="tab6">
+                            <div class="{% block tab6_class %}content{% endblock %}">
+                                <h2>{% trans "about us" %}</h2>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                {% for item in menu.1 %}
+                                    <li><h3><a href="{% url 'aboutus_page' item.meta.pk %}">{{ item.title }}</a></h3></li>
+                                {% endfor %}
+                                    <li><h3><a href="{% url 'aboutus_page' 'testimonials' %}">{% trans 'testimonials' %}</a></h3></li>
+                                    <li><h3><a href="{% url 'aboutus_page' 'inthenews' %}">{% trans 'new horizons in the news' %}</a></h3></li>
+                                </ul>
+                            </div>
+                        </li>
+                        {% endblock %}
+                    
+                    </ul>
+                    
+                {% endblock %}
+                </div> <!-- end main_navigation -->
+            </div>  <!-- end mainnav_inner_wrapper -->
+        </div>  <!-- end mainnav_outer_wrapper -->
+               
+        <!-- Outer wrapper of the web site -->
+        <div class="site_outer" id="slider_outer_wrapper">
+            
+            <!-- Inner wrapper of the web site. It separates the used portion of the browser window from the unused one. -->
+            <div class="site_inner" id="slider_inner_wrapper">
+                
+                <!-- Banner -->
+                <div class="slider-wrapper">
+                    <div id="slider" class="nivoSlider">
+                        {% block slider %}
+                            {% for banner in banners %}
+                                {% if banner.meta %}
+                                    <img src="{{ MEDIA_URL }}{{ banner.meta.picture }}" alt="" title="{{ banner.description }}">
+                                {% else %}
+                                    <img src="{{ MEDIA_URL }}{{ banner.picture }}" alt="" title="">
+                                {% endif %}
+                            {% endfor %}
+                        {% endblock %}
+                    </div>
+                </div> <!-- end slider-wrapper -->
+                
+            </div>
+        </div>
+                
+        <!-- Outer wrapper of the web site -->
+        <div class="site_outer" id="page_outer_wrapper">
+            
+            <!-- Inner wrapper of the web site. It separates the used portion of the browser window from the unused one. -->
+            <div class="site_inner" id="page_inner_wrapper">
+                
+                <!-- Page content -->
+                <div class="page_content">
+                {% block page_content %}
+                
+                {% endblock %}
+                </div> <!-- end page_content -->
+    
+                <div class="clearfix"></div>
+                
+            </div>
+            
+        </div>
+                
+        <div class="site_outer" id="footer_gradient_outer_wrapper">
+            <div class="site_inner" id="footer_gradient_inner_wrapper">
+            </div>
+        </div>
+                
+                
+        <!-- Outer wrapper of the web site -->
+        <div class="site_outer" id="footer_outer_wrapper">
+            
+            <!-- Inner wrapper of the web site. It separates the used portion of the browser window from the unused one. -->
+            <div class="site_inner" id="footer_inner_wrapper">
+                
+                <!-- Page footer -->
+                <div class="page_footer">
+                {% block page_footer %}
+                    <div class="contact_info">
+                        <img src="{{ STATIC_URL }}img/newhorizons_logo_bw.png" />
+                        {{ contactus|safe }}
+                    </div>
+                    <div class="divider"></div>
+                    <div class="section">
+                        <h3>{% trans "home" %}</h3>
+                        <ul>
+                            <li><a href="{% url 'aboutus' %}">{% trans "about" %}</a></li>
+                            <li><a href="{% url 'register' %}">{% trans "register" %}</a></li>
+                            <li><a href="{% url 'contactus' %}">{% trans "contact" %}</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>{% trans "language arts" %}</h3>
+                        <ul>
+                            <li><a href="{% url 'languagearts_home' %}">{% trans "courses" %}</a></li>
+                            <li><a href="{% url 'la_home_instructors' %}">{% trans "instructors" %}</a></li>
+                            <li><a href="{% url 'languagearts_schedule' %}">{% trans "schedules" %}</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>{% trans "test preparation" %}</h3>
+                        <ul>
+                            <li><a href="{% url 'testpreparations_home' %}">{% trans "courses" %}</a></li>
+                            <li><a href="{% url 'tp_home_instructors' %}">{% trans "instructors" %}</a></li>
+                            <li><a href="{% url 'testprep_schedule' %}">{% trans "schedules" %}</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>{% trans "news & blog" %}</h3>
+                        <ul>
+                            <li><a href="{% url 'newsandevents' %}">{% trans "news & events" %}</a></li>
+                            <li><a href="{% url 'blog' %}">{% trans "blog posts" %}</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyrights">
+                        {{ copyrights }}
+                    </div>
+                {% endblock %}
+                
+                </div> <!-- end page_footer -->
+                    
+            </div> <!-- end site_inner -->
+            
+        </div> <!-- end site_outer -->
+        
+    </div>
+    </body>
+    
+</html>

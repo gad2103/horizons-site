@@ -1,0 +1,24 @@
+{% extends "courses/index.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            setHeader('{{ initializer.header_text }}');
+            setContent('{{ initializer.content_url }}');
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}course_page cc_area{% endblock %}
+{% block page_id %}cc_courses{% endblock %}
+
+{% block left_bar %}
+    
+    <div class="image">
+        {% if left_nav_image %}
+            <img src="{{ MEDIA_URL }}{{ left_nav_image.picture }}" alt="{{ left_nav_image.name }}">
+        {% endif %}
+    </div>
+{% endblock %}

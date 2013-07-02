@@ -1,0 +1,40 @@
+{% load url from future %}
+{% load i18n %}
+
+
+<h2>{{ title }}</h2>
+<div class="page_category_list">
+    {% for item in sub_nav %}
+        {% ifequal item.pk|stringformat:"s" target|stringformat:"s" %}
+            <span class="current">{{ item.shortname }}</span>
+        {% else %}   
+            <a href="#" onclick="$(' {{ panel }} ').load( '{{ url }}?target={{ item.pk }}' ); return false;" >{{ item.shortname }}</a>
+        {% endifequal %}
+    {% endfor %}
+</div>
+
+<div class="content">
+    {% for item in class_list %}
+        <div class="item">
+            <div class="title">{{ item.course.name|truncatechars:16 }}</div>
+            <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
+            <div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">PDF</a>{% endif %}</div>
+            <div class="location">{{ item.location }}</div>
+        </div>
+    {% empty %}
+        <div class="message">{{ none_message|safe }}</div>
+    {% endfor %}
+</div>
+
+{% if class_list.paginator.num_pages > 1 %}
+    <div class="footer page_number_list">
+        {% trans "page" %}
+        {% for page_no in class_list.paginator.page_range %}
+            {% ifequal page_no class_list.number %}
+                <span class="current" > {{ page_no }}</span>
+            {% else %}
+                <a href="#" onclick="$(' {{ panel }} ').load( '{{ url }}?page={{ page_no }}{% if target %}&target={{ target }}{% endif %}' ); return false;"> {{ page_no }}</a>
+            {% endifequal %}
+        {% endfor%}
+    </div>
+{% endif %}

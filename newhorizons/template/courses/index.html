@@ -1,0 +1,39 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            setHeader('{{ initializer.header_text }}');
+            setNav('{{ initializer.nav_url }}');
+            setContent('{{ initializer.content_url }}');
+            $( '#currentclasses_panel' ).load( '{{ initializer.current_classes_url }}' );
+            $( '#upcomingclasses_panel' ).load( '{{ initializer.upcoming_classes_url }}' );
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}course_page{% endblock %}
+
+{% block tab3_class %}active content{% endblock %}
+
+{% block left_bar %}
+    <div class="content" id="secondary_navigation"></div>
+    
+    <div class="image">
+        {% if left_nav_image %}
+            <img src="{{ MEDIA_URL }}{{ left_nav_image.picture }}" alt="{{ left_nav_image.name }}">
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block right_bar %}
+    
+    <div id="currentclasses_panel" class="current schedule panel"></div>
+    
+    <div id="upcomingclasses_panel" class="upcoming schedule panel"></div>
+    
+    <div id="relatedlinks_panel" class="related links panel"></div>
+    
+{% endblock %}

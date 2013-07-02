@@ -1,0 +1,1435 @@
+@font-face {
+	font-family: Handwriting-Dakota;
+	src: url('Handwriting - Dakota');
+}
+
+/**********************************************************************************************/
+/***  Variables                                                                             ***/
+/**********************************************************************************************/
+
+/* Colour Names and Codes */
+$white: white;
+$gold: #d27d34;
+$light-gold: #fedac1;
+$gray: #d5d5d5;
+$dark-gray: #3c3c37;
+$light-blue: #508DCA;
+$medium-blue: #375DAB;
+$dark-blue: #202f5f;
+
+/* Part names and Colours */
+$background: $white;
+$nav: $gold;
+$text: $dark-blue;
+$la-color: #1a92cf;
+$la-color-dark: #4486aa;
+$la-color-light: #daedfe;
+$tp-color: #48834c;
+$tp-color-dark: #59885c;
+$tp-color-light: #ecfee5;
+$cc-color: #b66685;
+$cc-color-dark: #905e6f;
+$cc-color-light: #e8d9de;
+$header: $medium-blue;
+$footer: $dark-blue;
+
+/* Measurements */
+$home-page-panels: 306px;
+$leftbar: 200px;
+$main: 508px;
+$main-padding: 0 26px;
+$main-full: 960px;
+$rightbar: 200px;
+$no-rightbar-main: 708px;
+
+/* Effects */
+$radius: 200px 75px;
+$menu-radius: 0 0 10px 10px;
+@mixin radius($opt) {
+    -moz-border-radius: $opt;
+    -webkit-border-radius: $opt;
+    bordert-radius: $opt;
+}
+$shadow: 2px 2px 5px #444;
+@mixin shadow($opt) {
+    -moz-box-shadow: $opt;
+    -webkit-box-shadow: $opt;
+    box-shadow: $opt;
+}
+$transition: all linear 900ms;
+@mixin transition($opt) {
+    transition: $opt;
+    -o-transition: $opt;
+    -moz-transition: $opt;
+    -webkit-transition: $opt;
+}
+@mixin opacity($opt) {
+    opacity: $opt;
+    -moz-opacity: $opt;
+    filter: alpha(opacity=$opt)
+}
+@mixin gradient($color1, $rate1, $color2, $rate2) {
+    background-image: linear-gradient(bottom, $color1 $rate1, $color2 $rate2);
+    background-image: -o-linear-gradient(bottom, $color1 $rate1, $color2 $rate2);
+    background-image: -moz-linear-gradient(bottom, $color1 $rate1, $color2 $rate2);
+    background-image: -webkit-linear-gradient(bottom, $color1, $rate1, $color2, $rate2);
+    background-image: -ms-linear-gradient(bottom, $color1 $rate1, $color2 $rate2);
+    
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop($rate1, $color1),
+	    color-stop($rate2, $color2)
+    );
+}
+
+/**********************************************************************************************/
+/***  Styling for basic HTML tags                                                           ***/
+/**********************************************************************************************/
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Myriad Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 0;
+    a {        
+	    font-weight: normal;
+	    text-transform: capitalize;
+	    margin: 0;
+    }
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.window {
+    min-height: 100%;
+    position: relative;
+}
+.site_outer {
+    background-color: inherit;
+    width: 100%;
+}
+.site_inner {
+    width: 960px;
+    margin: 0 auto;
+    background-color: inherit;
+}
+a {
+    cursor: pointer;
+    cursor: hand;
+    &:link { text-decoration: none; }
+    &:visited { text-decoration: none; }
+    &:hover { text-decoration: underline; }
+} 
+button {
+    cursor: pointer;
+    cursor: hand;
+    @include shadow($shadow)
+}
+table, td {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+p {
+    margin: 0;
+}
+  
+
+/**********************************************************************************************/
+/***  Styling for basic repeating elements                                                  ***/
+/**********************************************************************************************/
+
+.image {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.tab {
+    float: left;
+}
+img.icon {
+    max-height: 16px;
+    max-width: 16px;
+}
+.star {
+    margin-left: 0;
+    margin-right: 0;
+    color: red;
+    &:before {
+	content: '*';
+    }
+}
+.errorlist {
+    color: red;
+}
+
+/**********************************************************************************************/
+/***  Header                                                                                ***/
+/**********************************************************************************************/
+
+.page_header {
+    width: 100%;
+    .banner {
+	width: 100%;
+	height: 60px;
+	background-color: $white;
+	position: relative;
+	padding-top: 10px;
+	#moto {
+	    font-style: italic;
+	    font-size: 1.0em;
+	    position: absolute;
+	    bottom: 0;
+	    left: 20px;
+	    color: $dark-blue;
+	}
+	img {
+	    float: right;
+	}
+    }
+}
+#mainnav_outer_wrapper {
+    background-color: $nav;
+}
+#main_navigation .lang_links {
+    float: right;
+    form {
+	float: left;
+	padding: 3px 0 3px 20px;
+    }
+    img {
+	@include shadow($shadow);
+	height: 16px;
+    }
+    .current {
+	border: 1px solid $white;
+    }
+}
+#main_navigation {
+    background-color: inherit;
+}
+#main_navigation > ul {
+    margin: 10px 0 16px;
+    padding: 0 10px;
+    height: 25px;
+    color: $background;
+    a {
+	@include radius(4px);
+	color: $background;
+	background-color: $nav;
+	&:hover {
+	    text-decoration: none;
+	}
+    }
+    h2 {
+	font-size: 0.8em;
+	padding: 0 25px;
+	display: inline;
+    }
+    h3 {
+	color: $white;
+	font-size: 0.8em;
+    }
+    .tab {
+	margin: 0;
+	padding: 3px 0;
+	.active {  
+	    h2 {
+	    }
+	} 
+    }
+    > li {
+	float:left;
+	position:relative;
+	z-index: 9;
+	border-left: 1px solid $white;
+	.dropdown {
+	    padding-top: 4px;
+	}
+    }
+    > li:last-child {
+	border-right: 1px solid $white;
+    }
+    ul {
+	@include radius($menu-radius);
+	@include shadow($shadow);
+	min-width: 100%;
+	border: 1px solid $gold;
+	border-top: none;
+	padding: 8px 4px;
+	background: $background; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	list-style:none;
+	position:absolute;
+	left:-999em; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	li {
+	    float:none;
+	    padding: 0 5px;
+	    min-width: 110px;
+	}
+	a {
+	    display: block;
+	    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	    padding: 5px;
+	    color: $gold;
+	    background-color: $white;
+	}
+	a:hover {
+	    color: $white;
+	    background-color: $gold;
+	    text-decoration: none;
+	}
+    }
+    li:hover ul { /* Display the dropdown on hover */
+	left:auto; /* Bring back on-screen when needed */
+    }
+}                         
+
+
+
+/**********************************************************************************************/
+/***  Banner                                                                                ***/
+/**********************************************************************************************/
+
+#slider {
+    #controls {
+	a {
+	    text-decoration: none;
+	    background: #E3F1FA;
+	    border: 1px solid #C6E4F2;
+	    padding: 4px 6px;
+	    color: #222;
+	}
+	a:hover {
+	    background: #C6E4F2;
+	}
+    }
+    .nivo-caption {
+	@include radius(0 10px 10px 0);
+	@include opacity(0.9);
+	font-size: 0.85em;
+	font-weight: 600;
+	font-style: oblique;
+	color: $dark-blue;
+	background: $white;
+	width: 380px;
+	margin-bottom: 20px;
+	padding: 20px;
+    }
+}
+
+
+/**********************************************************************************************/
+/***  Content                                                                               ***/
+/**********************************************************************************************/
+
+.page_content {
+    position: relative;
+    color: $dark-gray;
+    width: 100%;
+    padding: 16px 0;
+    .message {
+	font-size: 0.8em;
+	margin-left: 15px;
+	a, strong {
+	    color: $gold;
+	}
+	em {
+	    font-weight: 600;
+	}
+	p {
+	    display: block;
+	}
+    }
+}
+
+/* Content Header */
+
+.page_content_header {
+    height: 30px;
+    width: 940px;
+    padding: 14px 0 0 20px;
+    margin-bottom: 20px;
+    @include radius(5px);
+    text-transform: capitalize;
+    color: $background;
+    background-color: $gold;
+    a:link, a:visited {
+	color: $background;
+	display: block;
+	float: left;
+    }
+    .divider {
+	padding: 0 15px;
+	float: left;
+	&:before {
+	    content: ">";
+	}
+    }
+}
+
+/* Mini Panels */
+
+.panel {
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+    div, div a {
+	color: $dark-blue;
+    }
+    h2 {
+	@include radius(3px);
+	padding: 5px 0 3px 10px;
+	font-size: 0.8em;
+	color: $background;
+	background-color: $dark-blue;
+	a {
+	    color: $background;
+	}
+    }
+    table {
+	width: 100%;
+    }
+    .item {
+	position: relative;
+	font-size: 0.8em;
+	color: $dark-blue;
+    }
+    .footer {
+	font-size: 0.8em;
+	text-align: right;
+	text-transform: capitalize;
+    }
+    >.footer, >.footer a {
+	font-weight: bold;
+    }
+}
+.schedule {
+    .item {
+	height: 14px;
+	padding: 4px 10px;
+	>div {
+	    float: left;
+	}
+    }
+    .item:nth-child(odd) {
+	background-color: $gray;
+    }
+}
+#relatedlinks_panel {
+    .item {
+	padding: 12px 0 8px 12px;
+    }
+    .item:nth-child(even) {
+	background-color: $gray;
+    }
+}
+
+/* Content Pagination */
+
+.page_nav {
+    position: relative;
+}
+.page_number_list, .page_number_list a, .previous_page, .previous_page a, .next_page, .next_page a, .back_link, .back_link a {
+    color: $gold;
+    text-transform: capitalize;
+    padding: 0.7em 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    .current {
+	text-decoration: underline;
+    }
+}
+.page_number_list span:before, .page_number_list a:before {
+    content: "- ";
+}
+.page_number_list span:first-child:before, .page_number_list a:first-child:before {
+    content: "";
+}
+.page_category_list {
+    padding: 6px;
+    font-size: 0.8em;
+    font-weight: 600;
+    span.current {
+	text-decoration: underline;
+    }
+    a, span {
+	padding: 0 6px;
+    }
+}
+.previous_page, .next_page {
+    position: absolute;
+    font-size: 0.8em;
+}
+.previous_page {
+    right: 120px;
+}
+.next_page {
+    right: 20px;
+}
+.previous_page:before, .back_link:before {
+    content: "< ";
+}
+.next_page:after {
+    content: " >";
+}
+
+/**********************************************************************************************/
+/***  Area-Specific Styles                                                                  ***/
+/**********************************************************************************************/
+
+@mixin area-theme($color, $light-color, $dark-color) {
+    .page_content_header {
+	background-color: $color;
+    }
+    #main_pane h2 {
+	color: $color;
+    }
+    #main_pane .schedule h2 {
+	background-color: $color;
+    }
+    #left_bar {
+	h2, h2 a, h3, h3 a {
+	    color: $color;
+	}
+    }
+    table {
+	hr {
+	    color: $color;
+	    background-color: $color;
+	}
+	.file a{
+	    color: $color;
+	}
+    }
+    #left_bar {
+	.content {
+	    border: 1px solid $color;
+	    background-color: $light-color;
+	}
+	li {
+	    border-top: 1px solid $color;
+	    a:hover, a.active {
+		color: $white;
+		background-color: $color;
+	    }
+	}
+	li:first-child {
+	    border-top: none;
+	}
+	ul ul li {
+	    border: none;
+	}
+    }
+    #right_bar .schedule .file a {
+	color: $color;
+    }
+    button.contact, button.register {
+	background-color: $color;
+    }
+    h2.schedule {
+	background-color: $color;
+    }
+}
+.la_area { @include area-theme($la-color, $la-color-light, $la-color-dark); }
+.tp_area { @include area-theme($tp-color, $tp-color-light, $tp-color-dark); }
+.cc_area { @include area-theme($cc-color, $cc-color-light, $cc-color-dark); }
+.neutral_area {
+    @include area-theme($gold, $light-gold, $gold);
+    #main_pane {
+	h2, h3, .description {
+	    color: $text;
+	}
+    }
+}
+
+/* Main Pane */
+
+
+#main_pane {
+    width: $main;
+    margin: $main-padding;
+    float: left;
+    h2, h2 a {
+        text-transform: capitalize;
+	font-size: 1em;
+	padding-top: 0.6em;
+	margin-bottom: 0.8em;
+    }
+    h3, h3 a {
+        text-transform: none;
+	width: 100%;
+	font-size: 1.0em;
+	border-bottom: 1px solid $gray;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+    }
+    button.contact, button.register {
+	@include radius(4px);
+	margin-top: 30px;
+	width: 140px;
+	height: 20px;
+	border: none;
+	font-size: 0.8em;
+	color: $white;
+	text-transform: capitalize;
+    }
+    button.contact {
+	margin-left: 10px;
+    }
+    button.register {
+	margin-left: 50px;
+    }
+    .item {
+	margin-bottom: 30px;
+    }
+}
+#content {
+    >ul>li {
+	margin-bottom: 30px;
+    }
+    td.left {
+	width: 130px;
+	img {
+	    margin: 0;
+	    max-width: 110px;
+	}
+    }
+    .description, .wide-desc, .directions {
+	padding-top: 8px;
+	a:link, a:visited {
+	    color: $gold;
+	}
+	p {
+	    font-size: 0.8em;
+	    line-height: 18px;
+	}
+	ul {
+	    list-style-position:outside;
+	    margin-left: 20px;
+	    list-style-type: disc;
+	}
+	li {
+	    font-size: 0.8em;
+	    text-align: left;
+	    line-height: 20px;
+	}
+    }
+    .exerpt, .weblinks {
+	font-size: 0.8em;
+    }
+}
+.portals {
+    width: 970px;
+    img {
+	width: 100px;
+	margin: 0 0 0 10px;
+    }
+    padding-bottom: 16px;
+    .portal_panel {
+	float: left;
+	width: $home-page-panels;
+	.header {
+	    @include shadow($shadow);
+	    height: 22px;
+	    color: $white;
+	    padding: 8px 0 0 10px;
+	    margin-bottom: 14px;
+	    text-transform: capitalize;
+	}
+	.content {
+	    @include shadow($shadow);
+	    min-height: 112px;
+	    font-size: 0.9em;
+	    #font-style: italic;
+	    padding: 30px 10px;
+	    .text {
+		float: left;
+		width: 166px;
+	    }
+	}
+	.footer {
+	    text-align: right;
+	    padding-top: 8px;
+	    padding-right: 10px;
+	    text-transform: capitalize;
+	}
+    }
+    a:first-child .portal_panel {
+	.header {
+	    $radius: 10px 0 0 0;
+	    @include radius($radius);
+	}
+	.content {
+	    $radius: 0 0 0 10px;
+	    @include radius($radius);
+	}
+    }
+    a:nth-child(2) .portal_panel {
+	margin: 0 20px;
+    }
+    a:nth-child(3) .portal_panel {
+	.header {
+	    $radius: 0 10px 0 0;
+	    @include radius($radius);
+	}
+	.content {
+	    $radius: 0 0 10px 0;
+	    @include radius($radius);
+	}
+    }
+    #la {
+	.header {
+	    background-color: $la-color;
+	    border: 1px solid $la-color;
+	}
+	.content, .footer {
+	    color: $la-color;
+	}
+	.content {
+	    border: 1px solid $la-color;
+	}
+    }
+    #tp {
+	.header {
+	    background-color: $tp-color;
+	    border: 1px solid $tp-color;
+	}
+	.content, .footer {
+	    color: $tp-color;
+	}
+	.content {
+	    border: 1px solid $tp-color;
+	}
+    }
+    #cc {
+	.header {
+	    background-color: $cc-color;
+	    border: 1px solid $cc-color;
+	}
+	.content, .footer {
+	    color: $cc-color;
+	}
+	.content {
+	    border: 1px solid $cc-color;
+	}
+    }
+    a:hover {
+	text-decoration: none;
+	#la .content { background-color: $la-color-light; }
+	#tp .content { background-color: $tp-color-light; }
+	#cc .content { background-color: $cc-color-light; }
+    }
+}
+
+/* Left Sidebar */
+
+#left_bar {
+    width: $leftbar;
+    float: left;
+    h2, h3 {
+	padding: 6px 0;
+	a, span {
+	    padding: 6px 2px 4px 8px;
+	    font-size: 0.9em;
+	    font-weight: 600;
+	    display: block;
+	}
+    }
+    h2 {
+	font-size: 1.1em;
+	font-weight: 700;
+    }
+    h3 {
+	font-size: 0.9em;
+	font-weight: 600;
+    }
+    >.content {
+	margin-bottom: 20px;
+	@include radius(10px);
+    }
+    ul {
+	margin: 0 10px;
+	ul {
+	    margin: 0 0 0 10px;
+	}
+    }
+    li {
+	a:hover, a.active {
+	    @include radius(4px);
+	    text-decoration: none;
+	}
+	li {
+	    padding: 0;
+	}
+    }
+    #advert_space {
+	margin-bottom: 20px;
+	img { width: $leftbar; }
+    }
+    .image {
+	text-align: center;
+	img {
+	    max-width: $leftbar;
+	}
+    }
+}
+
+/* Right Sidebar */
+
+#right_bar {
+    width: 200px;
+    float:left;
+    .panel {
+	width: $rightbar;
+	font-size: 0.85em;
+	h2 { font-size: 0.9em; }
+    }
+    .schedule {
+	$padding: 4px;
+	.item {
+	    height: 28px;
+	}
+	.title {
+	    position: absolute;
+	    top: $padding;
+	    left: $padding * 3;
+	}
+	.time {
+	    position: absolute;
+	    top: $padding;
+	    right: $padding * 3;
+	}
+	.file {
+	    position: absolute;
+	    bottom: $padding;
+	    left: $padding * 3;
+	}
+	.location {
+	    position: absolute;
+	    bottom: $padding;
+	    right: $padding * 3;
+	}
+    }
+    #advert_space {
+	padding-top: 10px;
+	img { width: $rightbar; }
+    }
+}
+
+/**********************************************************************************************/
+/***  Footer                                                                                ***/
+/**********************************************************************************************/
+
+#page_outer_wrapper {
+    padding-bottom: 300px; // This must be equal (or greater than) .page_footer.height + #footer_gradient_inner_wrapper
+}
+#footer_gradient_outer_wrapper, #footer_gradient_outer_wrapper {
+    @include gradient($dark-blue, 0%, #222, 100%);
+}
+#footer_gradient_outer_wrapper {
+    position: absolute;
+    bottom: 200px;	// This must be equal to .page_footer's height.
+}
+#footer_gradient_inner_wrapper {
+    height: 20px;
+}
+#footer_outer_wrapper {
+    position: absolute;
+    bottom: 0;
+    background-color: $footer;
+}
+.page_footer {
+    position: relative;
+    height: 150px;
+    width: 88%;
+    padding: 20px 3% 30px;
+    background-color: $footer;
+    color: $background;
+    font-size: 0.8em;
+    a:link, a:visited {
+	color: $background;
+    }
+    .contact_info {
+	float: left;
+	width: 150px;
+	.phone, .e-address {
+	    margin-top: 10px;
+	}
+    }
+    .section {
+	float: left;
+	margin: 20px 0 0 65px;
+    }
+    .divider {
+	float: left;
+	height: 130px;
+	border-right: 1px solid white;
+	width: 30px;
+	margin-right: 0px;
+    }
+    h3 {
+	font-size: 1em;
+	font-weight: bold;
+    }
+    ul {
+	margin-left: 20px;
+    }
+    li {
+	padding-top: 8px;
+	text-transform: capitalize;
+    }
+    .copyrights {
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+    }
+}
+
+/**********************************************************************************************/
+/***  Page-Specific Styles                                                                  ***/
+/**********************************************************************************************/
+
+
+.newsandevents_page, .blog_page, .instructor_page {
+    #main_pane {
+	width: $no-rightbar-main;
+    }
+    #right_bar {
+	display:none;
+    }
+}
+.home_page {
+    .panel {
+	width: $home-page-panels;
+	.footer {
+	    position: absolute;
+	    bottom: 0;
+	    right: 10px;
+	}
+    }
+    .testimonial {
+	ul {
+	    height: 223px;
+	    display: table;
+	    overflow: hidden;
+	    padding: 0 10px;
+	}
+	li {
+	    display: table-cell;
+	    vertical-align: middle
+	}
+	.footer {
+	    position: relative;
+	    text-align: right;
+	    font-size: 0.8em;
+	    font-weight: bold;
+	}
+	.description {
+	    line-height: 1.6em;
+	    font-size: 1.1em
+	}
+	.item .footer {
+	    font-size: 0.9em;
+	}
+    }
+    .news {
+	img {
+	    @include radius(4px);
+	    width: 90px;
+	    float: left;
+	    margin-right: 10px;
+	}
+	ul {
+	    height: 250px;
+	}
+	li {
+	    position: relative;
+	    margin: 10px 5px;
+	    height: 96px;
+	    h2 {
+		color: $dark-blue;
+		background-color: $white;
+		font-weight: 600;
+		a {
+		    padding: 0;
+		    color: $dark-blue;
+		    background-color: $white;
+		    font-size: 1em;
+		    font-weight: 600;
+		}
+	    }
+	    .description {
+		font-size: 0.8em;
+		line-height: 1.3em;
+	    }
+	}
+    }
+    .bottom {
+	>div:first-child, >div:nth-child(2) { margin-right: 20px; }
+    }
+    .schedule {
+	position: relative;
+	padding: 10px;
+	height: 110px;
+	h2 {
+	    padding: 5px 0 3px 0;
+	    color: $dark-blue;
+	    background-color: inherit;
+	    font-weight: bold;
+	    a {
+		padding: 0;
+		color: $dark-blue;
+		background-color: inherit;
+		font-size: 1em;
+		font-weight: bold;
+	    }
+	}
+	.content {
+	    .title {
+		width: 96px;
+	    }
+	    .time {
+		width: 100px;
+	    }
+	    .location {
+		width: 60px;
+	    }
+	}
+	.footer {
+	    font-weight: bold;
+	}
+    }
+}
+.schedule_page #content {
+    font-size: 1.0em;
+    .panel {
+	width: 100%;
+	padding-bottom: 20px;
+    }
+    .content {
+	padding-bottom: 10px;
+	padding-top: 6px;
+	width: 100%;
+	.header {
+	    height: 24px;
+	    position: relative;
+	}
+	hr {
+	    float: left;
+	    width: 100%;
+	    height: 1px;
+	    border: 0;
+	}
+	span {
+	    position: absolute;
+	    left: 50px;
+	    background-color: $background;
+	    padding: 0 10px;
+	    text-transform: capitalize;
+	}
+	.content {
+	    div { float: left; }
+	    .title {
+		width: 240px;
+	    }
+	    .time {
+		width: 150px;
+	    }
+	    .location {
+		width: 110px;
+	    }
+	}
+    }
+    .panel h2 {
+	@include radius(4px);
+	padding: 5px 8px 3px;
+	color: $background;
+	font-size: 0.9em;
+	margin-top: 0;
+    }
+    h3 {
+	color: $dark-blue;
+    }
+}
+.instructor_page {
+    #main_pane {
+	li h2 {
+	    padding-top: 0;
+	}
+	width: $no-rightbar-main; 
+	.person_name span:first-child {
+	    text-transform: uppercase;
+	}
+	.message {
+	    padding-top: 1em;
+	}
+    }
+    ul.courses {
+	padding-top: 20px;
+	padding-left: 20px;
+	list-style: disc;
+	color: $gold;
+	a { color: $gold; }
+	li {
+	    float: left;
+	    height: 32px;
+	    width: 170px;
+	    padding: 0 20px 6px 0;
+	    font-size: 0.8em;
+	}
+    }
+}
+.course_page {
+    .skills {
+	font-family: Handwriting-Dakota;
+	color: $dark-blue;
+	float: right;
+	width: 132px;
+	text-transform: capitalize;
+	.top {
+	    height: 20px;
+	    background: url('../img/nh_illnotepad_top.png') no-repeat 0 0;
+	    text-align: center;
+	    font-size: 28px;
+	    padding: 22px 0 13px;
+	}
+	.center {
+	    padding: 3px 0 0 28px;
+	    background: url('../img/nh_illnotepad_cntr.png') repeat-y 0 0;
+	}
+	.bottom {
+	    padding-top: 20px;
+	    height: 30px;
+	    background: url('../img/nh_illnotepad_btm.png') no-repeat 0 0;
+	}
+	ul {
+	    list-style: disc;
+	    list-style-position:outside;
+	    font-size: 0.75em;
+	    line-height: 12px;
+	    li {
+		padding-top: 5px;
+		width: 90px;
+	    }
+	}
+    }
+    #main_pane {
+	#content {
+	    .description {
+		padding-top: 4px;
+	    }
+	    li.course {
+		margin-bottom: 70px;
+		.description {
+		    width: 350px;
+		}
+		.wide {
+		    width: 530;
+		}
+	    }
+	    .message {
+		padding-top: 30px;
+	    }
+	}
+    }
+    .weblinks {
+	padding-top: 15px;
+	li {
+	    margin: 0;
+	}
+    }
+}
+.newsandevents_page, .blog_page , .aboutus_page {
+    .source {
+	float: left;
+	padding-right: 30px;
+    }
+    .source, .publication_date, .footer a {
+	color: $gold;
+    }
+    .source, .publication_date {
+	font-size: 0.8em;
+    }
+    .description {
+	p { font-size: 1.2em; }
+	padding-top: 4px;
+    }
+    .message {
+	padding-top: 1em;
+    }
+    .pub_date {
+	color: $gold;
+	font-size: 0.8em;
+    }
+    #content .bubble .description p{
+	font-size: 1em;
+    }
+}
+.newsandevents_page, .blog_page {
+    #content h2 {
+	margin: 0;
+	padding: 0.6em 0 0.2em;
+    }
+}
+.location_page {
+    #content .link {
+    font-size: 0.9em;
+	a {
+	    color: $gold;
+	}
+    }
+    #main_pane #content {
+	img { float: left; max-width: 100%; }
+    }
+}
+.aboutus_page {
+    #main_pane {
+	width: $main;
+	#content {
+	    img { float: left; width: 200px; }
+	    .testimonial {
+		li {
+		    position: relative;
+		}
+		.bubble{
+		    @include radius(10px);
+		    @include shadow($shadow);
+		    border: 2px solid $gold;
+		    padding: 20px;
+		    margin-bottom: 60px;
+		    margin-right: 20px;
+		    font-size: 0.9em;
+		}
+		.corner-border {
+		    /*border-color: $gold transparent transparent $gold;
+		    border-style: solid;
+		    border-width: 20px;
+		    height: 0;
+		    width: 0;
+		    position: absolute;
+		    bottom: -20px;
+		    left: 100px;
+		    background-color: $white;*/
+		}
+		.corner {
+		    background-color: transparent;
+		    background-image: url("../img/bubble_point.png");
+		    background-repeat: no-repeat;
+		    width: 60px;
+		    height: 38px;
+		    position: absolute;
+		    left: 50px;
+		    bottom: -38px;
+    
+		    /*border-color: white transparent transparent white;
+		    border-style: solid;
+		    border-width: 20px;
+		    height: 0;
+		    width: 0;
+		    position: absolute;
+		    bottom: -15px;
+		    left: 102px;*/
+		}
+		.link {
+		    display: none;
+		}
+		.footer {
+		    color: $gold;
+		    max-width: 300px;
+		    float: right;
+		    font-size: 1em;
+		}
+	    }
+	}
+    }
+    .message {
+	font-style: oblique;
+	font-size: 0.8em;
+	a {
+	    color: $gold;
+	}
+    }
+}
+.contactus_page, .registration_page {
+    #left_bar {
+	display: none;
+    }
+    #main_pane {
+	width: $no-rightbar-main;
+	.divider {
+	    height: 1px;
+	    background-color: $gold;
+	    margin: 10px 0 30px;
+	}
+    }
+    form {
+	p {
+	    display: inline;
+	}
+    }
+    .fieldWrapper {
+	font-size: 0.8em;
+	width: $no-rightbar-main / 2;
+	
+    }
+    label {
+	display: block;
+	float: left;
+	padding-top: 7px;
+	text-transform: capitalize;
+    }
+    label:after {
+	content: ":";
+    }
+    label:before {
+    }
+    label.nolabel {
+	color: $background;
+    }
+    label.required {
+	&:before {
+	    content: '* ';
+	    color: red;
+	}
+    }
+    input {
+	width: 220px;
+	margin-right: 10px;
+	height: 20px;
+	@include radius(5px);
+    }
+    select {
+	width: 220px;
+	font-size: 16px;
+    }
+    .legend {
+	font-size: 0.8em;
+	font-style: oblique;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding-top: 16px;
+	&:before {
+	    content: '* ';
+	    color: red;
+	}
+    }
+    .notice {
+	padding-top: 30px;
+	font-size: 0.8em;
+	font-style: oblique;
+	font-weight: bold;
+    }
+    button {
+	@include radius(4px);
+	float: right;
+	margin-top: 10px;
+	width: 140px;
+	height: 20px;
+	border: none;
+	font-size: 0.8em;
+	color: $white;
+	background-color: $gold;
+	text-transform: capitalize;
+    }
+}
+.contactus_page {
+    .legend {
+	margin-bottom: 20px;
+    }
+    #contact_message {
+	width: $no-rightbar-main;
+	textarea {
+	    @include radius(4px);
+	    height: 200px;
+	    width: 594px;
+	}
+    }
+    //img.map {
+	//float: right;
+	//width: 360px;
+	//height: 230px;
+    //}
+    .form_block {
+	float: left;
+    }
+    .fieldWrapper {
+	margin-bottom: 20px;
+    }
+    label {
+	width: 120px;
+    }
+    #contact_info {
+	padding-top: 30px;
+    }
+}
+.registration_page {
+    .legend {
+	padding-top: 50px;
+    }
+    .fieldWrapper {
+	display: inline;
+	float: left;
+	margin-bottom: 30px;
+    }
+    .fieldWrapper:nth-child(6) {
+	display: block;
+	float: none;
+    }
+    .fieldWrapper:nth-child(12) {
+	display: block;
+	float: none;
+    }
+    .fieldWrapper:nth-child(13) {
+	display: block;
+	float: none;
+    }
+    label {
+	width: 100px;
+    }
+    button {
+	margin-top: 30px;
+    }
+}
+
+/**********************************************************************************************/
+/***  Panel-Specific Styles                                                                 ***/
+/**********************************************************************************************/
+
+#news_panel, #blog_panel {
+    .item {
+        padding: 15px;
+    }
+    .item:nth-child(even) {
+	background-color: $gray;
+    }
+}
+.testimonial {
+    .description {
+	div > p:before, div > p:after {
+	    content: '"';
+	}
+	font-style: oblique;
+	p { font-size: 1em; }
+    }
+    .footer {
+	text-align: right;
+	padding-top: 20px;
+	.link {
+	    padding-top: 70px;
+	}
+    }
+}
+#policy_panel {
+    font-size: 0.8em;
+}

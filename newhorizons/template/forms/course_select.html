@@ -1,0 +1,10 @@
+{% load url from future %}
+{% load i18n %}
+
+{{ form.courses.errors }}
+<label for="id_courses" class="required">{% trans "course" %}</label>
+<select name="{{ form.courses.name }}" id="id_courses" onchange="course_changed();">
+    {% for value, field in form.courses.field.choices %}
+        <option value="{% if value %}{{ value }}{% else %}0{% endif %}" {% ifequal form.initial.courses value|slugify %}selected="selected"{% endifequal %}>{{ field }}</option>
+    {% endfor %}
+</select>

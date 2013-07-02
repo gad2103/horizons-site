@@ -1,0 +1,30 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_class %}blog_page neutral_area{% endblock %}
+
+{% block extra_scripts %}
+    <script>
+        $( document ).ready(function() {
+            setNav('{% url 'blog_navigation' %}');
+            setContent('{{ content_url }}');
+        });
+    </script>
+{% endblock %}
+
+{% block tab4_class %}active content{% endblock %}
+
+{% block page_content_header %}
+    <a href="{% url 'blog' %}">{% trans "blog" %}</a>
+{% endblock %}
+
+{% block left_bar %}
+    <div class="content" id="secondary_navigation"></div>
+{% endblock %}
+
+{% block main_pane %}
+    <div id="content"></div>
+{% endblock %}
+
+{% block right_bar %}{% endblock %}

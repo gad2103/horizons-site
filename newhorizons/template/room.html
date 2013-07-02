@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_content %}
+        
+    <div class="page_content_header" id="page_content_header">
+    {% block page_content_header %}{% endblock %}
+    </div>
+    
+    <table><tr>
+    <td valign="top">
+        <div id="left_bar">
+        {% block left_bar %}
+            <div class="content" id="secondary_navigation"></div>
+            
+            {% block ad_panel %}
+            <div id="add_panel">
+            
+            </div>
+            {% endblock %}
+              
+            <div class="image">
+                {% if left_nav_image %}
+                    <img src="{{ MEDIA_URL }}{{ left_nav_image.picture }}" alt="{{ left_nav_image.name }}">
+                {% endif %}
+            </div>
+        {% endblock %}
+        </div>
+    </td>
+    
+    <td valign="top">
+        <div id="main_pane">
+        {% block main_pane %}
+            <div id="content"></div>
+        {% endblock %}
+        </div>
+    </td>
+    
+    <td valign="top">
+        <div id="right_bar">
+        {% block right_bar %}
+            
+            {% block blog_panel %}
+            <div id="blog_panel" class="panel">
+                <h2>{% trans "blog" %}</h2>
+                <div class="content">
+                    {% for item in blog_list %}
+                        <div class="item"><a href="{% url "blog" %}" >
+                            <div class="title">{{ item.title }}</div>
+                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                        </a></div>
+                    {% endfor %}
+                </div>
+                <div class="footer"><a href="{% url 'newsandevents' %}">{% trans "more news..." %}</a></div>
+            </div>
+            {% endblock %}
+            
+            {% block news_panel %}
+            <div id="news_panel" class="panel">
+                <h2>{% trans "news feed" %}</h2>
+                <div class="content">
+                    {% for item in news_list %}
+                        <div class="item"><a href="{% url "newsandevents" %}">
+                            <div class="title">{{ item.title }}</div>
+                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                        </a></div>
+                    {% endfor %}
+                </div>
+                <div class="footer"><a href="{% url 'blog' %}">{% trans "more blog posts..." %}</a></div>
+            </div>
+            {% endblock %}
+        
+            {% block relatedlinks_panel %}
+            {% endblock %}
+        
+            {% block registrationpolicy_panel %}
+            {% endblock %}
+        
+        {% endblock %}
+        </div>
+    </td>
+    </tr></table>
+
+{% endblock %}

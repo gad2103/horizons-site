@@ -1,0 +1,6 @@
+{% load url from future %}
+{% load i18n %}
+
+{{ form.classes.errors }}
+<label for="id_classes" class="required">{% trans "class" %}</label>
+{{ form.classes }}

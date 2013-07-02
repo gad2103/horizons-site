@@ -1,0 +1,15 @@
+
+{% load i18n %}
+
+<div class="description">{{ location.description|safe }}</div>
+{% if location.meta.picture %}
+    <div class="image"><img src="{{ MEDIA_URL }}{{ location.meta.picture }}" /></div>
+{% elif location.picture %}
+    <div class="image"><img src="{{ MEDIA_URL }}{{ location.picture }}" /></div>
+{% endif %}
+{% if location.meta.file %}
+    <div class="link">{% trans 'For a printable version of our map and bilingual driving directions' %}, <a target="_blank" href="{{ location.meta.file.url }}">{% trans 'click here' %}</a>.</div>
+{% elif location.file %}
+    <div class="link">{% trans 'For a printable version of our map and bilingual driving directions' %}, <a target="_blank" href="{{ location.file.url }}">{% trans 'click here' %}</a>.</div>
+{% endif %}
+<div class="directions">{{ location.directions|safe }}</div>

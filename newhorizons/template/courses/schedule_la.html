@@ -1,0 +1,15 @@
+{% extends "courses/schedule.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block extra_scripts %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            setNav('{% url 'languagearts_schedule_nav' %}');
+            setHeader('{% trans "language arts schedules" %}');
+            setContent('{% url 'la_schedule_home_page' %}');
+        });
+    </script>
+{% endblock %}
+
+{% block page_class %}schedule_page la_area{% endblock %}

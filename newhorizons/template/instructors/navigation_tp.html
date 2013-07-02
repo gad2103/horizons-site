@@ -1,0 +1,28 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+    <li>
+        <h3>
+            <a href="#" onclick="setActive(this); setContent('{% url 'tp_instructor_list' %}'); setHeader('<a href=&quot;{{ back_link }}&quot;>{% trans 'test preparation instructors' %}</a><div class=&quot;divider&quot;></div>{% trans "all instructors" %}'); return false;">
+                {% trans "all instructors" %}
+            </a>
+        </h3>
+    </li>
+{% for target in target_list %}
+    <li>
+        <h2>
+            <a href="#" onclick="setActive(this); setContent('{% url 'instructor_details' target.pk %}'); setHeader('<a href=&quot;{% url 'tp_home_instructors' %}&quot;>{% trans "test preparation instructors" %}</a><div class=&quot;divider&quot;></div>{{ target.name }}'); return false;">{{ target.name }}</a>
+        </h2>
+        <ul>
+        {% for course in target.courses %}
+            <li>
+                <h3>
+                    <a href="#" onclick="setActive(this); setContent('{% url 'instructor_details' target.pk course.pk %}'); setHeader('<a href=&quot;{% url 'tp_home_instructors' %}&quot;>{% trans "test preparation instructors" %}</a><div class=&quot;divider&quot;></div>{{ course.name }}'); return false;">{{ course.name }}</a>
+                </h3>
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>

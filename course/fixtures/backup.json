@@ -1,0 +1,730 @@
+[
+    {
+        "pk": 1, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/testprep.png", 
+            "name": "Test Preparation"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/Screen_shot_2013-01-09_at_8.46.24_PM.png", 
+            "name": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/curriculum.png", 
+            "name": "Curriculum Consulting"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 3, 
+            "intro": "Discover how international schools throughout China benefit from our expertise in language arts curriculum development and teacher training.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 2, 
+            "intro": "Explore our unique 4-stage program that inspires in students a passion for literature, composition, critical thinking, research, and public speaking.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 1, 
+            "intro": "Learn why thousands of international students have chosen us to prepare for the SSAT, SAT, ACT, AP and IB exams, GRE, GMAT, and LSAT.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 2, 
+            "intro": "Offering courses geared to exploring english literature and creative writing to help ur child explore their creative potential.  Offering courses geared to exploring english literature and creative writing to help ur child explore their creative potential", 
+            "language": 39
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT Fnd", 
+            "name": "SAT Foundations"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT Fnd", 
+            "name": "SAT"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT-Sbj", 
+            "name": "SAT Subject Tests"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "ACT", 
+            "name": "ACT"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "AP/IB", 
+            "name": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "YS", 
+            "name": "Young Starters (G3)"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "EY", 
+            "name": "Early Years (G4-5)"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "MY", 
+            "name": "Middle Years (G6-7)"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "UY", 
+            "name": "Upper Years (G8-9)"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "Pre-AP", 
+            "name": "Pre-AP/IB (G9-10)"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SSAT/ISEE", 
+            "name": "SSAT/ISEE"
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "Tut.", 
+            "name": "G3-12 Private Tutoring"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "2400", 
+            "name": "SAT 2400"
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "GRE", 
+            "name": "GRE"
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "GMAT", 
+            "name": "GMAT"
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "LSAT", 
+            "name": "LSAT"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Sec", 
+            "name": "Secondary Admissions"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Uni", 
+            "name": "University Admissions"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Grad", 
+            "name": "Graduate Admissions"
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "TBD", 
+            "name": "SAT for CTY"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 50, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>268</o:Words>\r\n  <o:Characters>1529</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>12</o:Lines>\r\n  <o:Paragraphs>3</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1877</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">Whether your child is preparing to go to an American boarding school or a top American school in Shanghai, New Horizons instructors know how to balance hard work with educational games to create a dynamic, interactive, and fun SSAT or ISEE preparation experience.&nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 2, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 77, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 79, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 81, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 83, 
+            "description": "<p>GMAT</p>"
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 85, 
+            "description": "<p>LSAT</p>"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 87, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 89, 
+            "description": "<p>Uni. yay!</p>"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 91, 
+            "description": "<p>ggd</p>"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 19, 
+            "description": "<p>Helping your young child develop a strong foundation in both reading and writing from the beginning is the best way to ensure a successful academic career. In our primary program, student practice transforming simple sentences into balanced paragraphs. In the process, students embark on a literary journey as they read short chapter books, developing their vocabularies and language fluency.</p>\r\n<p>&nbsp;</p>\r\n<p>There's no better way to give your young learner a head start than with Horizon's primary program.</p>"
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 20, 
+            "description": "<p>Our Early Years writing program doesn't just teach reading and writing skills-- Horizons instructors also work to find and nurture students' natural passion for language and personal expression. We engage students on personal level in order to develop their reading, comprehension, and reporting skills. Along the way, we also heavily emphasize composition writing that is grammatically and logically sound.</p>"
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 21, 
+            "description": "<p>Bridging the gap between elementary and middle school language programs can be challenging for Middle Years students. In sixth and seventh grade, students are getting their first direct experience with longer non-fiction writing. Horizons instructors work to develop true competency in the skills necessary to transition from writing simple compositions to writing complete, articulate, and well-reasoned reports.</p>"
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 22, 
+            "description": "<p>In the Upper Years program, students begin the crucial transition from literal thinking to symbolic thinking. This is a path of development which will serve them well as they begin to read classic works of English-language literature. At the same time, research skills are introduced and students are expected to be able to build sustained arguments with well-supported factual evidence. Essay proofreading skills are honed at this level, and teachers emphasize the importance of the revision process.</p>"
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 23, 
+            "description": "<p>The Horizons Pre-AP/IB Literature program is designed to prepare students for the challenges of both AP/IB classroom assignments and the timed testing environment. Students will read classic and contemporary works of literature that were written for a collegiate audience. In class, discussions of plot and theme are supplemented with analysis of writing style and literary devices, so that students become both better readers and writers. Literary analysis and required essays conform to AP and IB standards for length, development of ideas, and mechanics.</p>"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "course.course", 
+        "fields": {
+            "target": 2, 
+            "name": "SAT Foundations"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "course.course", 
+        "fields": {
+            "target": 79, 
+            "name": "SAT 2400"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "course.course", 
+        "fields": {
+            "target": 94, 
+            "name": "SAT for CTY"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "course.course", 
+        "fields": {
+            "target": 4, 
+            "name": "SAT Subject Tests"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "course.course", 
+        "fields": {
+            "target": 5, 
+            "name": "ACT Workshop"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "course.course", 
+        "fields": {
+            "target": 6, 
+            "name": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "course.course", 
+        "fields": {
+            "target": 19, 
+            "name": "Young Starters Writing and Reading"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "course.course", 
+        "fields": {
+            "target": 20, 
+            "name": "Composition and Literature"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Comic Writing"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "course.course", 
+        "fields": {
+            "target": 23, 
+            "name": "Pre-AB/IP English"
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "course.course", 
+        "fields": {
+            "target": 50, 
+            "name": "SSAT/ISEE"
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "course.course", 
+        "fields": {
+            "target": 3, 
+            "name": "SAT"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 30, 
+            "description": "<p>In our Global Awareness courses, students analyze contemporary non-fiction to learn about the challenges facing countries in the twenty-first century. Students then engage these issues through research, argument construction, and speech delivery. This course is a must for any parent who wants their children to have a better understanding of the world around them.</p>"
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": null, 
+            "meta": 8, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Created>2012-11-23T05:57:00Z</o:Created>\r\n  <o:LastSaved>2012-11-23T05:57:00Z</o:LastSaved>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>250</o:Words>\r\n  <o:Characters>1427</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>11</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1752</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"Default\">With an emphasis on timed reading and writing skills, Sat Foundations is a course designed especially for 9<sup>th</sup> and 10<sup>th</sup> graders who want to get &ndash; and stay &ndash; ahead of the crowd.</p>\r\n<p class=\"MsoNormal\"><strong>&nbsp;</strong></p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li>20 hours of classroom instruction (max class size = 12)</li>\r\n<li>2 PSAT diagnostic exams + timed essay with computerized score assessment</li>\r\n<li>100 word roots from Greek and Latin with 500 frequently tested derivative words</li>\r\n<li>Some math skills, but particular emphasis on grammar and timed reading and writing skills</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is SAT Foundations Right for My Child?</strong></p>\r\n<ul>\r\n<li>The SAT Foundations group course is suitable for native and non-native English speakers</li>\r\n<li>Students should take this course between the summer <em>after</em> 8<sup>th</sup> grade and the spring semester of 10<sup>th</sup> grade.</li>\r\n<li>Because this class teaches both academic and test-prep skills, it&rsquo;s ideal for any student who needs to work harder to gain confidence in the international school English classroom.</li>\r\n<li>This course is NOT intended for students planning to take the CTY exam. We have a program just for these students; call or email us to inquire about our SAT for CTY course.</li>\r\n<li>Students should not plan to take the SAT directly after completing this course. For maximum score improvement, SAT Foundations should be followed by our SAT course.</li>\r\n</ul>\r\n<p class=\"Default\">&nbsp;</p>\r\n<p class=\"Default\">We&rsquo;re flattered that other companies imitate our Foundations program, but your child deserves to learn from the pioneers of early high-school SAT preparation. Since 2006, this highly successful program has been training Shanghai&rsquo;s ninth and tenth graders to build the vocabulary, grammar, and reading comprehension skills they need for future success. Find out how we can help your child become a better student and better test taker.</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 72, 
+            "description": "<p><strong>Course Details:</strong></p>\r\n<ul>\r\n<li>30 hours of classroom instruction (max class size = 12)</li>\r\n<li>3 SSAT (ISEE upon request) diagnostic exams with computerized score assessment</li>\r\n<li>250 core vocabulary words, with an additional 250 words for advanced study</li>\r\n<li>Balanced course content features lessons in vocabulary, critical reading, writing, and math</li>\r\n<li>Interview coaching and mock interviews</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Is the SSAT/ISEE Group Course Right for My Child?</strong></p>\r\n<p>Our SSAT/ISEE group course is designed for native and near-native English speakers. For students who need both general English and SSAT instruction, we offer customized private and small-group tutoring options.</p>\r\n<p>&nbsp;</p>\r\n<p>The pace and learning materials are designed for Upper Level SSAT and ISEE students (those testing to enter a high school program).</p>\r\n<p>&nbsp;</p>\r\n<p>Most Middle Level students (those currently in grades 5-7) are comfortable in our group course and are able to achieve excellent score improvements. For these students, we offer free additional lessons in the basic math skills they have not yet learned in school.</p>\r\n<p>&nbsp;</p>\r\n<p>Elementary Level test takers should consult a New Horizons counselor about private tutoring options; we have the experience and materials to help students as young as grade 3 prepare for these exams.</p>\r\n<p>&nbsp;</p>\r\n<p>Call or email us today to schedule a free secondary school admissions consultation for your child. A New Horizons counselor will give your child a complete SSAT or ISEE diagnostic exam and help you decide how to best prepare your child for this exam &ndash; and for the competitive secondary schools admissions process.</p>"
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "Basic Reading, Sentence Structure, Paragraph Writing", 
+            "meta": 24, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>82</o:Words>\r\n  <o:Characters>472</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>579</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Our youngest students are introduced to the fundamentals of writing in our Young Starters Composition and Literature course. Students will approach the basics of grammar and composition on a class-by-class basis and employ a variety of writing modes, thus providing the foundation for elementary development in academic English writing. Our Young Starters will practice reading comprehension and response, creative story and personal narrative writing, and presentation through read aloud activities that will give them a leg up heading into their later elementary years.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "critical reading, vocabulary, essay writing", 
+            "meta": 25, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>79</o:Words>\r\n  <o:Characters>452</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>555</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Elementary school is where students first learn and practice academic writing principles. Students in our spring Early Years Composition and Literature course&nbsp;will get a head start on this process with an intensive introduction to research, persuasion, and creative writing. For each assignment, students will work through the steps of the writing process to produce a polished composition. Assignments will cover a variety of writing modes and include a mock scientific logbook, a research report, a picture book, a poem, and a persuasive speech.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 27, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>71</o:Words>\r\n  <o:Characters>409</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>502</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Does your student like drawing as much as writing? In Comic Class, students create their very own short graphic novel. Young artists will be led through the process of conceptualizing, drafting, and writing a script for an original story featuring original characters. Scripts will then be storyboarded, penciled, and inked in a guided environment. Serious students only&mdash;an impressive product requires impressive effort! Grades 6-8. (Grade 5 students will be considered on an individual basis.)</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading, writing, essay composition", 
+            "meta": 28, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>100</o:Words>\r\n  <o:Characters>570</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>4</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>700</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--><span style=\"font-size: 13.5pt; font-family: Cambria; color: #222222; background-position: initial initial; background-repeat: initial initial;\">In &ldquo;All the World&rsquo;s a Stage,&rdquo; students will be introduced to the characteristics of drama &ndash; and will learn the craft of playwriting both from famous works and from their own efforts to write for the stage. Students will create a scripted play while learning to use clear, descriptive, and detailed writing that shows and directs rather than tells. This course will culminate with a small classroom performance.</span><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #222222; mso-ansi-language: EN-US; mso-fareast-language: EN-US;\"><br /> <br /> <span style=\"background-position: initial initial; background-repeat: initial initial;\">This course teaches academic English skills through creative writing. Each week, students will be challenged to write dialogue using proper tone, mood, and sentence structure. In addition, weekly vocabulary lessons will improve students&rsquo; ability to express themselves maturely. </span><br /> <!--[if !supportLineBreakNewLine]--><br /> <!--[endif]--></span><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "grammar, sentence structure, vocabulary building", 
+            "meta": 29, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>91</o:Words>\r\n  <o:Characters>520</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>4</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>638</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\" style=\"background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; color: #222222;\">This workshop is designed to rapidly improve the grammar, vocabulary, and comfort level of non-native English speakers at the middle school level. Horizons instructors will use a variety of critical reading techniques to help students develop a strong vocabulary and feel more comfortable with English texts. Students will also complete multiple writing tasks designed to make them write more clearly and coherently. This is a great class for English-language learners at the middle school level who need extra help before they can join the native-level writing classes at Horizons Learning Center.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading comprehension, essay writing, vocabulary building", 
+            "meta": 31, 
+            "description": "<p>With a focus on critical reading, vocabulary, and academic essay writing, our native track Composition and Literature courses deliver measurable improvements in students&rsquo; language arts abilities. New Horizons instructors lead small-group classes through a series of timed writing activities and structured essays, giving students the skills they need to excel in school and on standardized tests.</p>"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "grammar, sentence structure, vocabulary building", 
+            "meta": 32, 
+            "description": "<p>Our non-native level Composition and Literature courses parallel that of our native-level program, but with a special emphasis on grammar conventions, sentence structure, and vocabulary building. This program is ideal for students new to the international school environment; our instructors teach the skills needed to produce clear and high-quality academic writing in English.</p>"
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 33, 
+            "description": "<p>In our Global Awareness courses, students analyze contemporary non-fiction to learn about the challenges facing countries in the twenty-first century. Students then engage these issues through research, argument construction, and speech delivery. This course is a must for any parent who wants their children to have a better understanding of the world around them.</p>"
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 163, 
+            "description": "<p class=\"MsoNormal\">With our proven techniques and expert guidance, New Horizons students know what to expect on the SAT &ndash; and they have the skills to tackle even the most difficult math, grammar, and reading questions quickly and confidently.</p>\r\n<p>&nbsp;</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Course Details:</strong></p>\r\n<ul>\r\n<li>36 hours of classroom instruction (max class size = 12)</li>\r\n<li>5 real SAT diagnostic exams with computerized score assessment</li>\r\n<li>250 core vocabulary words, with an additional 500 words for comprehensive study</li>\r\n<li>Balanced course content features lessons in writing, grammar, critical reading, and math</li>\r\n<li>Guided study hall with extra problem sets, timed drills, and one-on-one assistance &nbsp;</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n<li>200-point score improvement guarantee</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is My Child Right for This Course?</strong></p>\r\n<ul>\r\n<li>The SAT group course is suitable for most international school students</li>\r\n<li>Students should take this course between the summer&nbsp;<em>after</em>&nbsp;10<sup>th</sup>&nbsp;grade and the fall semester of 12<sup>th</sup>&nbsp;grade.</li>\r\n<li>For teens who take our course more than 2 months before their SAT, we offer a free refresher SAT mini-course just before the real test.</li>\r\n<li>Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.&nbsp;</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">Not sure if the New Horizons SAT group course is right for your teen? Find out! Call to schedule a free, full-length diagnostic exam, and let one of our counselors assess your child&rsquo;s individual strengths and weaknesses. Together, you can decide on a course of study that will open the doors to your child&rsquo;s first-choice university.</p>"
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 13, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>331</o:Words>\r\n  <o:Characters>1891</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>15</o:Lines>\r\n  <o:Paragraphs>3</o:Paragraphs>\r\n  <o:CharactersWithSpaces>2322</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\u5b8b\u4f53;\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">For students who have already mastered the skills and techniques needed to conquer the SAT, this course is an efficient way to prepare for the ACT. In our ACT course, instructors focus on the mathematical and scientific reasoning skills that dominate this test, while also thoroughly reviewing grammar and timed reading skills &ndash; giving New Horizons students everything it takes to earn an exceptional ACT score.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li><span style=\"font-size: 10px;\">33 hours of classroom instruction (max class size = 12)</span></li>\r\n<li><span style=\"font-size: 10px;\">3 real ACT diagnostic exams with computerized score assessment</span></li>\r\n<li><span style=\"font-size: 10px;\">Lectures, drills, and homework emphasize skills in scientific reasoning and more advanced math, topics which are not found on the SAT.&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Thorough review of reading and grammar skills common to the ACT and SAT</span></li>\r\n<li><span style=\"font-size: 10px;\">Guided study hall with extra problem sets, timed drills, and one-on-one assistance&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Free, unlimited extra help from instructor</span></li>\r\n<li><span style=\"font-size: 10px;\">Score improvement satisfaction guarantee</span></li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is the ACT Group Course Right for My Child?</strong></p>\r\n<p class=\"MsoNormal\">The ACT group course is suitable for most international-school students. For non-native students who struggle with academic English, we offer customized private and small-group tutoring options.</p>\r\n<p class=\"MsoNormal\">This is <em>not</em> a stand-alone course to prepare for the ACT. Instead, this course is designed to compliment our SAT course by specifically teaching the skills and content areas that are tested only on the ACT. Thus, students are strongly encouraged to take this course <em>after</em> they have completed our SAT training program.</p>\r\n<p class=\"MsoNormal\">Because the ACT group course reviews skills needed on the SAT, it is also ideal for students who have already taken the SAT once but plan to retest in upcoming months.</p>\r\n<p class=\"MsoNormal\">Students should take this course between the summer between the fall of 11<sup>th</sup> grade and the fall semester of 12<sup>th</sup> grade.</p>\r\n<p class=\"MsoNormal\">Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">With its emphasis on mathematical and scientific reasoning, the ACT is an excellent test to take in addition to the verbal-heavy SAT. Now that this test is increasingly offered at Shanghai&rsquo;s international schools, it is well worth your teen&rsquo;s time to prepare for this test and build his or her strongest possible college admissions profile. &nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 10, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>249</o:Words>\r\n  <o:Characters>1420</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>11</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1743</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\u5b8b\u4f53;\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">The hardest questions, the most experienced teachers, and the most ambitious students&hellip; it&rsquo;s a combination that makes our SAT 2400 <em>the</em> program to turn your teen&rsquo;s high SAT score into an exceptional SAT score.</p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li><span style=\"font-size: 10px;\">33 hours of classroom instruction (max class size = 12)</span></li>\r\n<li><span style=\"font-size: 10px;\">5 real SAT diagnostic exams with computerized score assessment</span></li>\r\n<li><span style=\"font-size: 10px;\">250 advanced core vocabulary words, with an additional 250 words for comprehensive study</span></li>\r\n<li><span style=\"font-size: 10px;\">Balanced course content features lessons in writing, grammar, critical reading, and math</span></li>\r\n<li><span style=\"font-size: 10px;\">Unique course materials that focus only on the hardest questions and most advanced techniques.</span></li>\r\n<li><span style=\"font-size: 10px;\">Guided study hall with extra problem sets, timed drills, and one-on-one assistance</span><span style=\"font-size: 10px;\">&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Free, unlimited extra help from instructor</span></li>\r\n<li><span style=\"font-size: 10px;\">Score improvement satisfaction guarantee</span></li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is the SAT 2400 Group Course Right for My Child?</strong></p>\r\n<p class=\"MsoNormal\">This course is designed for students with a native-level grasp of English and a starting reading score not below 500.</p>\r\n<p class=\"MsoNormal\">To enter this course, students must have a minimum combined SAT score (from real or diagnostic exam) of 1800.</p>\r\n<p class=\"MsoNormal\">Many 2400 students previously took our regular SAT group course. This course is an excellent way to continue improving technique and mastering vocabulary after completing our traditional course and raising their scores above 1800.&nbsp;</p>\r\n<p class=\"MsoNormal\">Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">There is a New Horizons student at every Ivy Leauge university &ndash; and each of them started in this course. If your child has dreams of studying in one of America&rsquo;s most elite universities, we have the resources and expertise to make this a reality.&nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4012A", 
+            "schedule": "schedules/2013/01/Young_Starters_Spring_Course_4012A.pdf", 
+            "start_time": "2013-01-18", 
+            "course": 24, 
+            "location": 17, 
+            "end_time": "2013-05-18"
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "course.class", 
+        "fields": {
+            "code": "1012T", 
+            "schedule": "schedules/2013/01/Middle_Years_Global_Awareness_Spring_Course_1012T.pdf", 
+            "start_time": "2013-01-20", 
+            "course": 30, 
+            "location": 15, 
+            "end_time": "2013-05-19"
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "course.class", 
+        "fields": {
+            "code": "2011F", 
+            "schedule": "schedules/2013/01/Upper_Years_Non-Native_Composition_Spring_Course_2011F.pdf", 
+            "start_time": "2013-01-19", 
+            "course": 32, 
+            "location": 16, 
+            "end_time": "2013-05-18"
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4012C", 
+            "schedule": "schedules/2013/01/Pre_AP-IB_Composition_Spring_Course_4012C.pdf", 
+            "start_time": "2013-01-20", 
+            "course": 34, 
+            "location": 15, 
+            "end_time": "2013-05-29"
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4032B", 
+            "schedule": "", 
+            "start_time": "2013-01-11", 
+            "course": 8, 
+            "location": 15, 
+            "end_time": "2013-05-10"
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "course.class", 
+        "fields": {
+            "code": "345522", 
+            "schedule": "", 
+            "start_time": "2013-01-10", 
+            "course": 33, 
+            "location": 17, 
+            "end_time": "2013-01-10"
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "course.class", 
+        "fields": {
+            "code": "1022J", 
+            "schedule": "schedules/2013/01/SAT_2400_Early_Spring_Course_1022J_1.pdf", 
+            "start_time": "2013-02-23", 
+            "course": 10, 
+            "location": 17, 
+            "end_time": "2013-04-27"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.weblink", 
+        "fields": {
+            "url": "http://sat.collegeboard.org/", 
+            "courses": [
+                8, 
+                10, 
+                11, 
+                12
+            ], 
+            "name": "Official SAT Site"
+        }
+    }
+]

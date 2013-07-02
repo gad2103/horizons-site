@@ -1,0 +1,12 @@
+{% load url from future %}
+{% load i18n %}
+
+<ul>
+    {% for target in target_list %}
+    <li>
+        <h3>
+            <a href="#" onclick="setActive(this); setContent('{% url 'target_details' target.pk %}'); setHeader('<a href=&quot;{{ back_link }}&quot;>{{ target.category }}</a><div class=&quot;divider&quot;></div>{{ target.name }}'); $( '#currentclasses_panel' ).load( '{% url 'current_la_classes' %}?target={{ target.pk }}' ); $( '#upcomingclasses_panel' ).load( '{% url 'upcoming_la_classes' %}?target={{ target.pk }}' ); $( '#relatedlinks_panel' ).load( '{% url 'target_link_list' target.pk %}' ); return false;">{{ target.name }}</a>
+        </h3>
+    </li>
+    {% endfor %}
+</ul>

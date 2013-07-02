@@ -1,0 +1,14 @@
+{% load url from future %}
+{% load i18n %}
+
+{% if list.paginator.num_pages > 1 %}
+    <div class="page_number_list">
+    {% for page_no in list.paginator.page_range %}
+        {% if page_no == list.number %}
+            <span class="current">{{ page_no }}</span>
+        {% else %}
+            <a href="#" onclick="setContent( '{{ url }}?page={{ page_no }}' ); return false;"> {{ page_no }}</a>
+        {% endif %}
+    {% endfor%}
+    </div>
+{% endif %}

@@ -1,0 +1,100 @@
+[
+   {
+      "pk": 1, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Home Page"
+         }
+   }, 
+   {
+      "pk": 2, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Language Arts Courses"
+         }
+   }, 
+   {
+      "pk": 3, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Test Prep Courses"
+         }
+   }, 
+   {
+      "pk": 4, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Curriculum Consulting Page"
+         }
+   }, 
+   {
+      "pk": 5, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Language Arts Instructors"
+         }
+   }, 
+   {
+      "pk": 6, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Test Prep Instructors"
+         }
+   }, 
+   {
+      "pk": 7, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "News & Events"
+         }
+   }, 
+   {
+      "pk": 8, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Locations"
+         }
+   }, 
+   {
+      "pk": 9, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "About Us"
+         }
+   }, 
+   {
+      "pk": 10, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Blog"
+         }
+   }, 
+   {
+      "pk": 11, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Language Arts Schedules"
+         }
+   }, 
+   {
+      "pk": 12, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Test Prep Schedules"
+         }
+   }, 
+   {
+      "pk": 13, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Contact Form"
+         }
+   }, 
+   {
+      "pk": 14, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Registration Form"
+         }
+   }
+]

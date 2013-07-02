@@ -1,0 +1,10 @@
+{% load url from future %}
+{% load i18n %}
+
+{{ form.targets.errors }}
+<label for="id_targets">{% trans "program" %}</label>
+<select name="{{ form.targets.name }}" id="id_targets" onchange="target_changed();">
+    {% for value, field in form.targets.field.choices %}
+        <option value="{% if value %}{{ value }}{% else %}0{% endif %}" {% ifequal form.initial.targets value %}selected="selected"{% endifequal %}>{{ field }}</option>
+    {% endfor %}
+</select>

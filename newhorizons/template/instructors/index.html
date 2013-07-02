@@ -1,0 +1,25 @@
+{% extends "room.html" %}
+{% load url from future %}
+{% load i18n %}
+
+{% block page_class %}instructor_page{% endblock %}
+
+{% block tab2_class %}active content{% endblock %}
+
+{% block left_bar %}
+    <div id="secondary_navigation" class="content"></div>
+    <div id="advert_space" class="advert panel"></div> 
+    <div class="image">
+        {% if left_nav_image %}
+            <img src="{{ MEDIA_URL }}{{ left_nav_image.picture }}" alt="{{ left_nav_image.name }}">
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block main_pane %}
+    <div id="content">
+    
+    </div>
+{% endblock %}
+
+{% block right_bar %}{% endblock %}

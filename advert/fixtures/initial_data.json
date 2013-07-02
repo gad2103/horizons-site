@@ -1,0 +1,23 @@
+[
+   {
+      "pk": 1, 
+      "model": "advert.AdvertCategory", 
+      "fields": {
+         "name": "General"
+         }
+   }, 
+   {
+      "pk": 2, 
+      "model": "advert.AdvertCategory", 
+      "fields": {
+         "name": "Language Arts"
+         }
+   }, 
+   {
+      "pk": 3, 
+      "model": "advert.AdvertCategory", 
+      "fields": {
+         "name": "Test Prep"
+         }
+   }
+]

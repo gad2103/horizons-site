@@ -1,0 +1,3169 @@
+[
+    {
+        "pk": 1, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/testprep.png", 
+            "name": "Test Preparation"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/Screen_shot_2013-01-09_at_8.46.24_PM.png", 
+            "name": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.targetcategory", 
+        "fields": {
+            "picture": "portals/curriculum.png", 
+            "name": "Curriculum Consulting"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 3, 
+            "intro": "Discover how international schools throughout China benefit from our expertise in language arts curriculum development and teacher training.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 2, 
+            "intro": "Explore our unique 4-stage program that inspires in students a passion for literature, composition, critical thinking, research, and public speaking.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 1, 
+            "intro": "Learn why thousands of international students have chosen us to prepare for the SSAT, SAT, ACT, AP and IB exams, GRE, GMAT, and LSAT.", 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.localizedtargetcategory", 
+        "fields": {
+            "meta": 2, 
+            "intro": "Offering courses geared to exploring english literature and creative writing to help ur child explore their creative potential.  Offering courses geared to exploring english literature and creative writing to help ur child explore their creative potential", 
+            "language": 39
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT Fnd", 
+            "name": "SAT Foundations"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT Fnd", 
+            "name": "SAT"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SAT-Sbj", 
+            "name": "SAT Subject Tests"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "ACT", 
+            "name": "ACT"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "AP/IB", 
+            "name": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "YS", 
+            "name": "Young Starters (G3)"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "EY", 
+            "name": "Early Years (G4-5)"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "MY", 
+            "name": "Middle Years (G6-7)"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "UY", 
+            "name": "Upper Years (G8-9)"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "Pre-AP", 
+            "name": "Pre-AP/IB (G9-10)"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "SSAT/ISEE", 
+            "name": "SSAT/ISEE"
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "course.target", 
+        "fields": {
+            "category": 2, 
+            "shortname": "Tut.", 
+            "name": "G3-12 Private Tutoring"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "2400", 
+            "name": "SAT 2400"
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "GRE", 
+            "name": "GRE"
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "GMAT", 
+            "name": "GMAT"
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "LSAT", 
+            "name": "LSAT"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Sec", 
+            "name": "Secondary Admissions"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Uni", 
+            "name": "University Admissions"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "Grad", 
+            "name": "Graduate Admissions"
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "course.target", 
+        "fields": {
+            "category": 1, 
+            "shortname": "TBD", 
+            "name": "SAT for CTY"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 50, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>268</o:Words>\r\n  <o:Characters>1529</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>12</o:Lines>\r\n  <o:Paragraphs>3</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1877</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">Whether your child is preparing to go to an American boarding school or a top American school in Shanghai, New Horizons instructors know how to balance hard work with educational games to create a dynamic, interactive, and fun SSAT or ISEE preparation experience.&nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 2, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 77, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 79, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 81, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 83, 
+            "description": "<p>GMAT</p>"
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 85, 
+            "description": "<p>LSAT</p>"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 87, 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 89, 
+            "description": "<p>Uni. yay!</p>"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 91, 
+            "description": "<p>ggd</p>"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 19, 
+            "description": "<p>Helping your young child develop a strong foundation in both reading and writing from the beginning is the best way to ensure a successful academic career. In our primary program, student practice transforming simple sentences into balanced paragraphs. In the process, students embark on a literary journey as they read short chapter books, developing their vocabularies and language fluency.</p>\r\n<p>&nbsp;</p>\r\n<p>There's no better way to give your young learner a head start than with Horizon's primary program.</p>"
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 20, 
+            "description": "<p>Our Early Years writing program doesn't just teach reading and writing skills-- Horizons instructors also work to find and nurture students' natural passion for language and personal expression. We engage students on personal level in order to develop their reading, comprehension, and reporting skills. Along the way, we also heavily emphasize composition writing that is grammatically and logically sound.</p>"
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 21, 
+            "description": "<p>Bridging the gap between elementary and middle school language programs can be challenging for Middle Years students. In sixth and seventh grade, students are getting their first direct experience with longer non-fiction writing. Horizons instructors work to develop true competency in the skills necessary to transition from writing simple compositions to writing complete, articulate, and well-reasoned reports.</p>"
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 22, 
+            "description": "<p>In the Upper Years program, students begin the crucial transition from literal thinking to symbolic thinking. This is a path of development which will serve them well as they begin to read classic works of English-language literature. At the same time, research skills are introduced and students are expected to be able to build sustained arguments with well-supported factual evidence. Essay proofreading skills are honed at this level, and teachers emphasize the importance of the revision process.</p>"
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "course.localizedtarget", 
+        "fields": {
+            "meta": 23, 
+            "description": "<p>The Horizons Pre-AP/IB Literature program is designed to prepare students for the challenges of both AP/IB classroom assignments and the timed testing environment. Students will read classic and contemporary works of literature that were written for a collegiate audience. In class, discussions of plot and theme are supplemented with analysis of writing style and literary devices, so that students become both better readers and writers. Literary analysis and required essays conform to AP and IB standards for length, development of ideas, and mechanics.</p>"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "course.course", 
+        "fields": {
+            "target": 2, 
+            "name": "SAT Foundations"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "course.course", 
+        "fields": {
+            "target": 79, 
+            "name": "SAT 2400"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "course.course", 
+        "fields": {
+            "target": 94, 
+            "name": "SAT for CTY"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "course.course", 
+        "fields": {
+            "target": 4, 
+            "name": "SAT Subject Tests"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "course.course", 
+        "fields": {
+            "target": 5, 
+            "name": "ACT Workshop"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "course.course", 
+        "fields": {
+            "target": 6, 
+            "name": "AP/IB"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "course.course", 
+        "fields": {
+            "target": 19, 
+            "name": "Young Starters Writing and Reading"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "course.course", 
+        "fields": {
+            "target": 20, 
+            "name": "Composition and Literature"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Comic Writing"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "course.course", 
+        "fields": {
+            "target": 21, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Native Track)"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Composition and Literature (Non-Native Track)"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "course.course", 
+        "fields": {
+            "target": 22, 
+            "name": "Global Awareness and Presentation"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "course.course", 
+        "fields": {
+            "target": 23, 
+            "name": "Pre-AB/IP English"
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "course.course", 
+        "fields": {
+            "target": 50, 
+            "name": "SSAT/ISEE"
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "course.course", 
+        "fields": {
+            "target": 3, 
+            "name": "SAT"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 30, 
+            "description": "<p>In our Global Awareness courses, students analyze contemporary non-fiction to learn about the challenges facing countries in the twenty-first century. Students then engage these issues through research, argument construction, and speech delivery. This course is a must for any parent who wants their children to have a better understanding of the world around them.</p>"
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": null, 
+            "meta": 8, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Created>2012-11-23T05:57:00Z</o:Created>\r\n  <o:LastSaved>2012-11-23T05:57:00Z</o:LastSaved>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>250</o:Words>\r\n  <o:Characters>1427</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>11</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1752</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"Default\">With an emphasis on timed reading and writing skills, Sat Foundations is a course designed especially for 9<sup>th</sup> and 10<sup>th</sup> graders who want to get &ndash; and stay &ndash; ahead of the crowd.</p>\r\n<p class=\"MsoNormal\"><strong>&nbsp;</strong></p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li>20 hours of classroom instruction (max class size = 12)</li>\r\n<li>2 PSAT diagnostic exams + timed essay with computerized score assessment</li>\r\n<li>100 word roots from Greek and Latin with 500 frequently tested derivative words</li>\r\n<li>Some math skills, but particular emphasis on grammar and timed reading and writing skills</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is SAT Foundations Right for My Child?</strong></p>\r\n<ul>\r\n<li>The SAT Foundations group course is suitable for native and non-native English speakers</li>\r\n<li>Students should take this course between the summer <em>after</em> 8<sup>th</sup> grade and the spring semester of 10<sup>th</sup> grade.</li>\r\n<li>Because this class teaches both academic and test-prep skills, it&rsquo;s ideal for any student who needs to work harder to gain confidence in the international school English classroom.</li>\r\n<li>This course is NOT intended for students planning to take the CTY exam. We have a program just for these students; call or email us to inquire about our SAT for CTY course.</li>\r\n<li>Students should not plan to take the SAT directly after completing this course. For maximum score improvement, SAT Foundations should be followed by our SAT course.</li>\r\n</ul>\r\n<p class=\"Default\">&nbsp;</p>\r\n<p class=\"Default\">We&rsquo;re flattered that other companies imitate our Foundations program, but your child deserves to learn from the pioneers of early high-school SAT preparation. Since 2006, this highly successful program has been training Shanghai&rsquo;s ninth and tenth graders to build the vocabulary, grammar, and reading comprehension skills they need for future success. Find out how we can help your child become a better student and better test taker.</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 72, 
+            "description": "<p><strong>Course Details:</strong></p>\r\n<ul>\r\n<li>30 hours of classroom instruction (max class size = 12)</li>\r\n<li>3 SSAT (ISEE upon request) diagnostic exams with computerized score assessment</li>\r\n<li>250 core vocabulary words, with an additional 250 words for advanced study</li>\r\n<li>Balanced course content features lessons in vocabulary, critical reading, writing, and math</li>\r\n<li>Interview coaching and mock interviews</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Is the SSAT/ISEE Group Course Right for My Child?</strong></p>\r\n<p>Our SSAT/ISEE group course is designed for native and near-native English speakers. For students who need both general English and SSAT instruction, we offer customized private and small-group tutoring options.</p>\r\n<p>&nbsp;</p>\r\n<p>The pace and learning materials are designed for Upper Level SSAT and ISEE students (those testing to enter a high school program).</p>\r\n<p>&nbsp;</p>\r\n<p>Most Middle Level students (those currently in grades 5-7) are comfortable in our group course and are able to achieve excellent score improvements. For these students, we offer free additional lessons in the basic math skills they have not yet learned in school.</p>\r\n<p>&nbsp;</p>\r\n<p>Elementary Level test takers should consult a New Horizons counselor about private tutoring options; we have the experience and materials to help students as young as grade 3 prepare for these exams.</p>\r\n<p>&nbsp;</p>\r\n<p>Call or email us today to schedule a free secondary school admissions consultation for your child. A New Horizons counselor will give your child a complete SSAT or ISEE diagnostic exam and help you decide how to best prepare your child for this exam &ndash; and for the competitive secondary schools admissions process.</p>"
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "Basic Reading, Sentence Structure, Paragraph Writing", 
+            "meta": 24, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>82</o:Words>\r\n  <o:Characters>472</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>579</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Our youngest students are introduced to the fundamentals of writing in our Young Starters Composition and Literature course. Students will approach the basics of grammar and composition on a class-by-class basis and employ a variety of writing modes, thus providing the foundation for elementary development in academic English writing. Our Young Starters will practice reading comprehension and response, creative story and personal narrative writing, and presentation through read aloud activities that will give them a leg up heading into their later elementary years.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "critical reading, vocabulary, essay writing", 
+            "meta": 25, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>79</o:Words>\r\n  <o:Characters>452</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>555</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Elementary school is where students first learn and practice academic writing principles. Students in our spring Early Years Composition and Literature course&nbsp;will get a head start on this process with an intensive introduction to research, persuasion, and creative writing. For each assignment, students will work through the steps of the writing process to produce a polished composition. Assignments will cover a variety of writing modes and include a mock scientific logbook, a research report, a picture book, a poem, and a persuasive speech.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 27, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>71</o:Words>\r\n  <o:Characters>409</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>3</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>502</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin: 0.1pt 0in; background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; color: #222222;\">Does your student like drawing as much as writing? In Comic Class, students create their very own short graphic novel. Young artists will be led through the process of conceptualizing, drafting, and writing a script for an original story featuring original characters. Scripts will then be storyboarded, penciled, and inked in a guided environment. Serious students only&mdash;an impressive product requires impressive effort! Grades 6-8. (Grade 5 students will be considered on an individual basis.)</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading, writing, essay composition", 
+            "meta": 28, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>100</o:Words>\r\n  <o:Characters>570</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>4</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>700</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--><span style=\"font-size: 13.5pt; font-family: Cambria; color: #222222; background-position: initial initial; background-repeat: initial initial;\">In &ldquo;All the World&rsquo;s a Stage,&rdquo; students will be introduced to the characteristics of drama &ndash; and will learn the craft of playwriting both from famous works and from their own efforts to write for the stage. Students will create a scripted play while learning to use clear, descriptive, and detailed writing that shows and directs rather than tells. This course will culminate with a small classroom performance.</span><span style=\"font-size: 13.5pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #222222; mso-ansi-language: EN-US; mso-fareast-language: EN-US;\"><br /> <br /> <span style=\"background-position: initial initial; background-repeat: initial initial;\">This course teaches academic English skills through creative writing. Each week, students will be challenged to write dialogue using proper tone, mood, and sentence structure. In addition, weekly vocabulary lessons will improve students&rsquo; ability to express themselves maturely. </span><br /> <!--[if !supportLineBreakNewLine]--><br /> <!--[endif]--></span><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "grammar, sentence structure, vocabulary building", 
+            "meta": 29, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>91</o:Words>\r\n  <o:Characters>520</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>4</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>638</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\" style=\"background-position: initial initial; background-repeat: initial initial;\"><span style=\"font-size: 13.5pt; color: #222222;\">This workshop is designed to rapidly improve the grammar, vocabulary, and comfort level of non-native English speakers at the middle school level. Horizons instructors will use a variety of critical reading techniques to help students develop a strong vocabulary and feel more comfortable with English texts. Students will also complete multiple writing tasks designed to make them write more clearly and coherently. This is a great class for English-language learners at the middle school level who need extra help before they can join the native-level writing classes at Horizons Learning Center.</span></p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading comprehension, essay writing, vocabulary building", 
+            "meta": 31, 
+            "description": "<p>With a focus on critical reading, vocabulary, and academic essay writing, our native track Composition and Literature courses deliver measurable improvements in students&rsquo; language arts abilities. New Horizons instructors lead small-group classes through a series of timed writing activities and structured essays, giving students the skills they need to excel in school and on standardized tests.</p>"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "grammar, sentence structure, vocabulary building", 
+            "meta": 32, 
+            "description": "<p>Our non-native level Composition and Literature courses parallel that of our native-level program, but with a special emphasis on grammar conventions, sentence structure, and vocabulary building. This program is ideal for students new to the international school environment; our instructors teach the skills needed to produce clear and high-quality academic writing in English.</p>"
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "reading analysis, research, persuasive writing, speech delivery", 
+            "meta": 33, 
+            "description": "<p>In our Global Awareness courses, students analyze contemporary non-fiction to learn about the challenges facing countries in the twenty-first century. Students then engage these issues through research, argument construction, and speech delivery. This course is a must for any parent who wants their children to have a better understanding of the world around them.</p>"
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 163, 
+            "description": "<p class=\"MsoNormal\">With our proven techniques and expert guidance, New Horizons students know what to expect on the SAT &ndash; and they have the skills to tackle even the most difficult math, grammar, and reading questions quickly and confidently.</p>\r\n<p>&nbsp;</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Course Details:</strong></p>\r\n<ul>\r\n<li>36 hours of classroom instruction (max class size = 12)</li>\r\n<li>5 real SAT diagnostic exams with computerized score assessment</li>\r\n<li>250 core vocabulary words, with an additional 500 words for comprehensive study</li>\r\n<li>Balanced course content features lessons in writing, grammar, critical reading, and math</li>\r\n<li>Guided study hall with extra problem sets, timed drills, and one-on-one assistance &nbsp;</li>\r\n<li>Free, unlimited extra help from instructor</li>\r\n<li>200-point score improvement guarantee</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is My Child Right for This Course?</strong></p>\r\n<ul>\r\n<li>The SAT group course is suitable for most international school students</li>\r\n<li>Students should take this course between the summer&nbsp;<em>after</em>&nbsp;10<sup>th</sup>&nbsp;grade and the fall semester of 12<sup>th</sup>&nbsp;grade.</li>\r\n<li>For teens who take our course more than 2 months before their SAT, we offer a free refresher SAT mini-course just before the real test.</li>\r\n<li>Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.&nbsp;</li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">Not sure if the New Horizons SAT group course is right for your teen? Find out! Call to schedule a free, full-length diagnostic exam, and let one of our counselors assess your child&rsquo;s individual strengths and weaknesses. Together, you can decide on a course of study that will open the doors to your child&rsquo;s first-choice university.</p>"
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 13, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>331</o:Words>\r\n  <o:Characters>1891</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>15</o:Lines>\r\n  <o:Paragraphs>3</o:Paragraphs>\r\n  <o:CharactersWithSpaces>2322</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\u5b8b\u4f53;\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">For students who have already mastered the skills and techniques needed to conquer the SAT, this course is an efficient way to prepare for the ACT. In our ACT course, instructors focus on the mathematical and scientific reasoning skills that dominate this test, while also thoroughly reviewing grammar and timed reading skills &ndash; giving New Horizons students everything it takes to earn an exceptional ACT score.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li><span style=\"font-size: 10px;\">33 hours of classroom instruction (max class size = 12)</span></li>\r\n<li><span style=\"font-size: 10px;\">3 real ACT diagnostic exams with computerized score assessment</span></li>\r\n<li><span style=\"font-size: 10px;\">Lectures, drills, and homework emphasize skills in scientific reasoning and more advanced math, topics which are not found on the SAT.&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Thorough review of reading and grammar skills common to the ACT and SAT</span></li>\r\n<li><span style=\"font-size: 10px;\">Guided study hall with extra problem sets, timed drills, and one-on-one assistance&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Free, unlimited extra help from instructor</span></li>\r\n<li><span style=\"font-size: 10px;\">Score improvement satisfaction guarantee</span></li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is the ACT Group Course Right for My Child?</strong></p>\r\n<p class=\"MsoNormal\">The ACT group course is suitable for most international-school students. For non-native students who struggle with academic English, we offer customized private and small-group tutoring options.</p>\r\n<p class=\"MsoNormal\">This is <em>not</em> a stand-alone course to prepare for the ACT. Instead, this course is designed to compliment our SAT course by specifically teaching the skills and content areas that are tested only on the ACT. Thus, students are strongly encouraged to take this course <em>after</em> they have completed our SAT training program.</p>\r\n<p class=\"MsoNormal\">Because the ACT group course reviews skills needed on the SAT, it is also ideal for students who have already taken the SAT once but plan to retest in upcoming months.</p>\r\n<p class=\"MsoNormal\">Students should take this course between the summer between the fall of 11<sup>th</sup> grade and the fall semester of 12<sup>th</sup> grade.</p>\r\n<p class=\"MsoNormal\">Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">With its emphasis on mathematical and scientific reasoning, the ACT is an excellent test to take in addition to the verbal-heavy SAT. Now that this test is increasingly offered at Shanghai&rsquo;s international schools, it is well worth your teen&rsquo;s time to prepare for this test and build his or her strongest possible college admissions profile. &nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "course.localizedcourse", 
+        "fields": {
+            "skills": "", 
+            "meta": 10, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>249</o:Words>\r\n  <o:Characters>1420</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>11</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1743</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\u5b8b\u4f53;\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">The hardest questions, the most experienced teachers, and the most ambitious students&hellip; it&rsquo;s a combination that makes our SAT 2400 <em>the</em> program to turn your teen&rsquo;s high SAT score into an exceptional SAT score.</p>\r\n<p class=\"MsoNormal\"><strong>Course Details: </strong></p>\r\n<ul>\r\n<li><span style=\"font-size: 10px;\">33 hours of classroom instruction (max class size = 12)</span></li>\r\n<li><span style=\"font-size: 10px;\">5 real SAT diagnostic exams with computerized score assessment</span></li>\r\n<li><span style=\"font-size: 10px;\">250 advanced core vocabulary words, with an additional 250 words for comprehensive study</span></li>\r\n<li><span style=\"font-size: 10px;\">Balanced course content features lessons in writing, grammar, critical reading, and math</span></li>\r\n<li><span style=\"font-size: 10px;\">Unique course materials that focus only on the hardest questions and most advanced techniques.</span></li>\r\n<li><span style=\"font-size: 10px;\">Guided study hall with extra problem sets, timed drills, and one-on-one assistance</span><span style=\"font-size: 10px;\">&nbsp;</span></li>\r\n<li><span style=\"font-size: 10px;\">Free, unlimited extra help from instructor</span></li>\r\n<li><span style=\"font-size: 10px;\">Score improvement satisfaction guarantee</span></li>\r\n</ul>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\"><strong>Is the SAT 2400 Group Course Right for My Child?</strong></p>\r\n<p class=\"MsoNormal\">This course is designed for students with a native-level grasp of English and a starting reading score not below 500.</p>\r\n<p class=\"MsoNormal\">To enter this course, students must have a minimum combined SAT score (from real or diagnostic exam) of 1800.</p>\r\n<p class=\"MsoNormal\">Many 2400 students previously took our regular SAT group course. This course is an excellent way to continue improving technique and mastering vocabulary after completing our traditional course and raising their scores above 1800.&nbsp;</p>\r\n<p class=\"MsoNormal\">Those who have taken other test-prep courses find our methods unique and effective; we welcome students who have done other courses but still need to improve their scores.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">There is a New Horizons student at every Ivy Leauge university &ndash; and each of them started in this course. If your child has dreams of studying in one of America&rsquo;s most elite universities, we have the resources and expertise to make this a reality.&nbsp;</p>\r\n<p><!--EndFragment--></p>"
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4012A", 
+            "schedule": "schedules/2013/01/Young_Starters_Spring_Course_4012A.pdf", 
+            "start_time": "2013-01-18", 
+            "course": 24, 
+            "location": 17, 
+            "end_time": "2013-05-18"
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "course.class", 
+        "fields": {
+            "code": "1012T", 
+            "schedule": "schedules/2013/01/Middle_Years_Global_Awareness_Spring_Course_1012T.pdf", 
+            "start_time": "2013-01-20", 
+            "course": 30, 
+            "location": 15, 
+            "end_time": "2013-05-19"
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "course.class", 
+        "fields": {
+            "code": "2011F", 
+            "schedule": "schedules/2013/01/Upper_Years_Non-Native_Composition_Spring_Course_2011F.pdf", 
+            "start_time": "2013-01-19", 
+            "course": 32, 
+            "location": 16, 
+            "end_time": "2013-05-18"
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4012C", 
+            "schedule": "schedules/2013/01/Pre_AP-IB_Composition_Spring_Course_4012C.pdf", 
+            "start_time": "2013-01-20", 
+            "course": 34, 
+            "location": 15, 
+            "end_time": "2013-05-29"
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "course.class", 
+        "fields": {
+            "code": "4032B", 
+            "schedule": "", 
+            "start_time": "2013-01-11", 
+            "course": 8, 
+            "location": 15, 
+            "end_time": "2013-05-10"
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "course.class", 
+        "fields": {
+            "code": "345522", 
+            "schedule": "", 
+            "start_time": "2013-01-10", 
+            "course": 33, 
+            "location": 17, 
+            "end_time": "2013-01-10"
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "course.class", 
+        "fields": {
+            "code": "1022J", 
+            "schedule": "schedules/2013/01/SAT_2400_Early_Spring_Course_1022J_1.pdf", 
+            "start_time": "2013-02-23", 
+            "course": 10, 
+            "location": 17, 
+            "end_time": "2013-04-27"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.weblink", 
+        "fields": {
+            "url": "http://sat.collegeboard.org/", 
+            "courses": [
+                8, 
+                10, 
+                11, 
+                12
+            ], 
+            "name": "Official SAT Site"
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "blog.blog", 
+        "fields": {}
+    }, 
+    {
+        "pk": 121, 
+        "model": "blog.localizedblog", 
+        "fields": {
+            "meta": 120, 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--> <!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:View>Normal</w:View>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves/>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:DoNotPromoteQF/>\r\n  <w:LidThemeOther>EN-US</w:LidThemeOther>\r\n  <w:LidThemeAsian>JA</w:LidThemeAsian>\r\n  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:SnapToGridInCell/>\r\n   <w:WrapTextWithPunct/>\r\n   <w:UseAsianBreakRules/>\r\n   <w:DontGrowAutofit/>\r\n   <w:SplitPgBreakAndParaMark/>\r\n   <w:EnableOpenTypeKerning/>\r\n   <w:DontFlipMirrorIndents/>\r\n   <w:OverrideTableStyleHps/>\r\n  </w:Compatibility>\r\n  <m:mathPr>\r\n   <m:mathFont m:val=\"Cambria Math\"/>\r\n   <m:brkBin m:val=\"before\"/>\r\n   <m:brkBinSub m:val=\"&#45;-\"/>\r\n   <m:smallFrac m:val=\"off\"/>\r\n   <m:dispDef/>\r\n   <m:lMargin m:val=\"0\"/>\r\n   <m:rMargin m:val=\"0\"/>\r\n   <m:defJc m:val=\"centerGroup\"/>\r\n   <m:wrapIndent m:val=\"1440\"/>\r\n   <m:intLim m:val=\"subSup\"/>\r\n   <m:naryLim m:val=\"undOvr\"/>\r\n  </m:mathPr></w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"276\">\r\n  <w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/>\r\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/>\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:Cambria;\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\">Yes, the SSAT is changing, ut don&rsquo;t worry.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">While all parents rely on word-of-mouth information about test preparation, I find that this is especially true of the parents of SSAT test takers. Add this to the burgeoning availability of word-of-mouth information spread by SSAT chat and bulletin boards (word-of-text?) and it becomes startling how fast rumors and misinformation can spread.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">More and more, concerned parents are scheduling appointments to ask about the so-called &lsquo;new SSAT.&rsquo; Is my child at a disadvantage? How has the test content changed? Are the New Horizons textbooks going to be obsolete during this round of testing???</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">Ok, time for a deep breath. For students currently in grades 5-10 (ie, the vast majority of students who need to take the SSAT) there&rsquo;s no change to the content of the test. The SSAT, for better or worse, will still test vocabulary, timed reading comprehension, and math skills the same way it always has. There is still a writing section, and it is still unscored. The only new thing that Middle and Upper Level students will encounter is an experimental section of 16 questions. The results on this section &ndash; much like in the experimental section of the SAT &ndash; have no effect on your child&rsquo;s score.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">So what&rsquo;s really new? Well, for the first time ever, the SSAT will offer a standardized entrance exam for students in grades 3-4. This is the new Elementary Level test. Much like the Middle and Upper Level tests, it measures a student&rsquo;s skill set in &lsquo;verbal reasoning&rsquo; (essentially, vocabulary and word relationships), timed reading comprehension, and math. It also contains an ungraded sample of narrative writing based on a picture-story.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">If you&rsquo;re the parent of a third or fourth grader, you are probably asking yourself: what gives? Why are they creating a standardized test to measure the abilities of my (very young) child. Well, this isn&rsquo;t the best forum to debate the merits of standardized testing on such young students &ndash; although I highly question the wisdom of making 7 year olds do analogies on a timed, multiple-choice style exam (I&rsquo;m pretty sure I was still eating paste at 7 years old).</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">The one thing that might put your mind at ease is that this decision by the SSAT-B (the group that writes the SSAT) is likely motivated by their competitor, the ISEE, which has been testing younger students for years. So, there is a precedent for this &ndash; and the elementary schools that require these exams know full well that the results are just way to assess your child&rsquo;s academic abilities. For such young students, interviews and teacher recommendations are especially important in giving these schools a more complete understanding of your child.</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>\r\n<p class=\"MsoNormal\">If you are a parent of a very young student who will take the new Elementary Level SSAT, call or email me to schedule a consultation about this new test. We can assess your child&rsquo;s starting abilities and help you decide what course of study is right for him/her. Although this is a new test, we&rsquo;ve been teaching the Lower Level ISEE for years &ndash; and despite what the SSAT-B might want you to think, there isn&rsquo;t much on their test that hasn&rsquo;t already been time-tested on the ISEE.</p>\r\n<p><!--EndFragment--></p>", 
+            "title": "SSAT Evolution"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sitemessage.sitemessage", 
+        "fields": {
+            "name": "about us"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "sitemessage.sitemessage", 
+        "fields": {
+            "name": "no current schedules (long)"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sitemessage.sitemessage", 
+        "fields": {
+            "name": "no upcoming schedules (long)"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "sitemessage.sitemessage", 
+        "fields": {
+            "name": "no current schedules (short)"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "sitemessage.sitemessage", 
+        "fields": {
+            "name": "no upcoming schedules (short)"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sitemessage.localizedsitemessage", 
+        "fields": {
+            "text": "We are interested to hear about your experience with New Horizons.<br /><br />Please send us your thoughts via the <a href=\"/contact_us\">Contact Us</a> page.", 
+            "meta": 1, 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "sitemessage.localizedsitemessage", 
+        "fields": {
+            "text": "There are no current classes.", 
+            "meta": 2, 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sitemessage.localizedsitemessage", 
+        "fields": {
+            "text": "There are no upcoming classes.", 
+            "meta": 3, 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "sitemessage.localizedsitemessage", 
+        "fields": {
+            "text": "no classes", 
+            "meta": 4, 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "sitemessage.localizedsitemessage", 
+        "fields": {
+            "text": "no classes", 
+            "meta": 5, 
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "About Us"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "News"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "Locations"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "Test Preparations"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "Curriculum Consulting"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "LA Instructors"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "TP Instructors"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "Blog"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "LA Schedules"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "page.pagecategory", 
+        "fields": {
+            "name": "TP Schedules"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "page.page", 
+        "fields": {
+            "category": 1, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "page.page", 
+        "fields": {
+            "category": 2, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "page.page", 
+        "fields": {
+            "category": 4, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "page.page", 
+        "fields": {
+            "category": 5, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "page.page", 
+        "fields": {
+            "category": 6, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "page.page", 
+        "fields": {
+            "category": 8, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "page.page", 
+        "fields": {
+            "category": 7, 
+            "title": "Index"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "page.page", 
+        "fields": {
+            "category": 7, 
+            "title": "LA_instructors"
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "page.page", 
+        "fields": {
+            "category": 1, 
+            "title": "Company History"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 35, 
+            "subtitle": "", 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>215</o:Words>\r\n  <o:Characters>1229</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>10</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1509</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><strong><span style=\"font-size: 8.5pt; font-family: Verdana;\">When we were young, we were a lot like your kids</span></strong><span class=\"apple-converted-space\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">:</span></span><span style=\"font-size: 8.5pt; font-family: Verdana;\"> smart, ambitious, and eager to learn. Above all, we were eager to take on new challenges and prove ourselves.</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">We are older and wiser, now &ndash; we&rsquo;ve gone to university (some of us have even gone to fancy Ivy League universities), and we&rsquo;ve studied and worked around the world. Our love of learning and sharing knowledge with students has motivated us to make a career of doing what we love:<strong><span class=\"apple-converted-space\">&nbsp;</span>inspiring young people to be stronger writers, clearer thinkers, and more confident test takers.</strong></span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">We don&rsquo;t sell parents some pie-in-the-sky dreams based on some student who once got a perfect test score with us. In fact, we don&rsquo;t &lsquo;sell&rsquo; our students at all because<span class=\"apple-converted-space\">&nbsp;</span><strong>children aren&rsquo;t a commodity. They&rsquo;re people.</strong><span class=\"apple-converted-space\">&nbsp;</span>Sometimes this simple fact gets lost among all of the claims that other companies make about themselves.</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">We develop our courses and tutorial programs based to meet<span class=\"apple-converted-space\">&nbsp;</span><strong>unique needs of our students</strong>, and we treat each as having a unique and unlimited source of potential for intellectual growth. We demand exceptional performance of ourselves because we remember how good it feels to be young and inspired by an excellent teacher.</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in;\"><strong><span style=\"font-size: 8.5pt; font-family: Verdana;\">We are New Horizons.</span></strong><span class=\"apple-converted-space\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></span><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;Call and schedule a visit to one of our four locations. Get to know us. Take the time to find out how we&rsquo;ve helped thousands of international students succeed in school and on standardized exams &ndash; and ask us how we can challenge your child to reach his or her fullest academic potential.</span></p>\r\n<p><!--EndFragment--></p>", 
+            "title": "About Us"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 41, 
+            "subtitle": "", 
+            "description": "<p>It takes a patient, passionate&hellip; ok, let&rsquo;s just say it&hellip; amazing teacher to get a child excited about a Saturday morning English class. Luckily for us (and for your child), we have a team of expert teachers who are nothing short of amazing.</p>\r\n<p>&nbsp;</p>\r\n<p>Each of our language arts instructors has several years&rsquo; experience teaching in US public schools, private tutoring companies, and/or American schools in Africa, the Middle East, or Asia. But while the skills and professional experience are vital, what makes our teachers stand out is the way they are able to make learning fun.</p>\r\n<p>&nbsp;</p>\r\n<p>Many of our unique language courses &ndash; from graphic novel design to travel writing and courses with a journalistic focus &ndash; have come at the suggestion of our instructors. And judging by the number of students who recommend these courses friends, we&rsquo;re confident that we have found a way to get students excited about developing their skills in reading, writing, and critical thinking. After all, it&rsquo;s one thing for one parent to refer us to another parent. But when a sixth-grader refers us to her best friend? Well, when this happens, we know that we are doing something right. We also know, in this case, that we are going to have a class full of eager learners, ready to meet the challenges their teachers provide and gain academic skills that will serve them for years to come.&nbsp;</p>", 
+            "title": "Meet the Language Arts Team"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 61, 
+            "subtitle": "", 
+            "description": "", 
+            "title": "Meet the Language Arts Team"
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 101, 
+            "subtitle": "", 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>287</o:Words>\r\n  <o:Characters>1641</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>13</o:Lines>\r\n  <o:Paragraphs>3</o:Paragraphs>\r\n  <o:CharactersWithSpaces>2015</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\"><!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>256</o:Words>\r\n  <o:Characters>1463</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>12</o:Lines>\r\n  <o:Paragraphs>2</o:Paragraphs>\r\n  <o:CharactersWithSpaces>1796</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Times New Roman\";\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment--></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">New Horizons co-founders Jordan Neufeld and Lauren Hansen have</span><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;<strong>over twenty years of combined experience in standardized test preparation</strong></span><span style=\"font-size: 8.5pt; font-family: Verdana;\">. When they first began working together in 2005, they were dismayed by the lack of quality test-prep options for China&rsquo;s international students, who generally either had to suffer through Chinese cram-school courses or settle for materials designed for students in the US school system.</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">Having taught in China and Taiwan for years, they knew that international students have unique learning needs and abilities that made those other programs inadequate for real score improvement. In 2006, they founded New Horizons with original textbooks, customized score-analysis software, and</span><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;<strong>a revolutionary program specifically designed to teach the SSAT, SAT, ACT, and AP/IB</strong>&nbsp;</span><span style=\"font-size: 8.5pt; font-family: Verdana;\">exams to Shanghai&rsquo;s diverse range of international-school students.</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">In 2009, we launched our language arts division with a team of educators who have taught at elite international schools throughout Asia. Together, these experts developed <strong>a comprehensive program that guides both native and non-native English speakers</strong> from writing skills-building in third grade through elementary and middle school, and even prepares 9th and 10th graders to meet the challenges of the IB program.</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-top: .1pt; margin-right: 0in; margin-bottom: .1pt; margin-left: 0in; mso-para-margin-top: .01gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0in;\"><strong><span style=\"font-size: 8.5pt; font-family: Verdana;\">Since 2006, New Horizons has helped more international students succeed in school and on standardized tests than any other learning center in Shanghai.</span></strong><span style=\"font-size: 8.5pt; font-family: Verdana;\">&nbsp;</span><span style=\"font-size: 8.5pt; font-family: Verdana;\">As we continue to grow &ndash; and offer hundreds of classes to thousands of students each year in Hongqiao, Jinqiao, Huacao, and downtown Shanghai &ndash; our teachers and staff remained focused on one thing: providing each student the individual attention and personalized expert guidance that are the hallmark of every New Horizons course.</span></p>\r\n<p class=\"MsoNormal\"><!--EndFragment--></p>\r\n<!--EndFragment-->\r\n<p><!--EndFragment--></p>", 
+            "title": "Company History"
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 40, 
+            "subtitle": "", 
+            "description": "<p>New Horizons is proud to have the most consistent, most experienced, and most knowledgeable group of test prep veterans in China. Unlike other test preparation companies, we don&rsquo;t stake our reputation on one superstar instructor who may or may not be available to teach your child&rsquo;s course. We know that dramatic score improvements come when engaged students are trained by expert teachers &ndash; this is why we have spent years building a team of superstar instructors.</p>\r\n<p>&nbsp;</p>\r\n<p>Every New Horizons test preparation instructor has a minimum of five years&rsquo; experience teaching the SSAT, SAT, and ACT. Each has taught test preparation in the United States, Korea, and China &ndash; and many have actually spent years training new test prep instructors throughout North America and Asia. &nbsp;These experts understand the unique needs and learning styles of international school students and know exactly what it takes to prepare your child for the hyper-competitive world of boarding school and university admissions.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Graduate test takers will not find a more elite or more qualified American team anywhere in China. We are proud to have a small number of extremely qualified GRE, GMAT, and LSAT instructors, all of whom have years of experience teaching these exams in the US. You won&rsquo;t need to sacrifice instructor quality, deal with broken English or a non-native grasp of the test, or turn to online programs just because you live overseas.&nbsp;</p>", 
+            "title": "Test Prep Instructors"
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 37, 
+            "subtitle": "", 
+            "description": "<p>At each stage of academic development, students must develop certain language skills in order to succeed in the international school environment. Unfortunately, when it comes to English reading and writing, so many students don't fully master the skills they need at a young age, leaving them at a disadvantage in later English, Social Studies and even Science classes.</p>\r\n<p>&nbsp;</p>\r\n<p>At Horizons Learning Center, we work closely with students to strengthen their skills in vocabulary, critical thinking, and composition. Our small classes (max 12 students) allow for personal attention and constant feedback. This enables our students to become clearer thinkers, better writers, and more confident students.</p>", 
+            "title": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "page.localizedpage", 
+        "fields": {
+            "meta": 38, 
+            "subtitle": "", 
+            "description": "<p><!--[if gte mso 9]><xml>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--> <!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:View>Normal</w:View>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves/>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:DoNotPromoteQF/>\r\n  <w:LidThemeOther>EN-US</w:LidThemeOther>\r\n  <w:LidThemeAsian>JA</w:LidThemeAsian>\r\n  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:SnapToGridInCell/>\r\n   <w:WrapTextWithPunct/>\r\n   <w:UseAsianBreakRules/>\r\n   <w:DontGrowAutofit/>\r\n   <w:SplitPgBreakAndParaMark/>\r\n   <w:EnableOpenTypeKerning/>\r\n   <w:DontFlipMirrorIndents/>\r\n   <w:OverrideTableStyleHps/>\r\n  </w:Compatibility>\r\n  <m:mathPr>\r\n   <m:mathFont m:val=\"Cambria Math\"/>\r\n   <m:brkBin m:val=\"before\"/>\r\n   <m:brkBinSub m:val=\"&#45;-\"/>\r\n   <m:smallFrac m:val=\"off\"/>\r\n   <m:dispDef/>\r\n   <m:lMargin m:val=\"0\"/>\r\n   <m:rMargin m:val=\"0\"/>\r\n   <m:defJc m:val=\"centerGroup\"/>\r\n   <m:wrapIndent m:val=\"1440\"/>\r\n   <m:intLim m:val=\"subSup\"/>\r\n   <m:naryLim m:val=\"undOvr\"/>\r\n  </m:mathPr></w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"276\">\r\n  <w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/>\r\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/>\r\n  <w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/>\r\n </w:LatentStyles>\r\n</xml><![endif]--> <!--[if gte mso 10]>\r\n<style>\r\n /* Style Definitions */\r\ntable.MsoNormalTable\r\n\t{mso-style-name:\"Table Normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:12.0pt;\r\n\tfont-family:Cambria;\r\n\tmso-ascii-font-family:Cambria;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-hansi-font-family:Cambria;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n</style>\r\n<![endif]--> <!--StartFragment-->Learn why thousands of international students have chosen us to prepare for the SSAT, SAT, ACT, AP and IB exams, GRE, GMAT, and LSAT.</p>", 
+            "title": "Test Preparation"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "", 
+            "name": "Downtown"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "locations/map-jinqiao.jpg", 
+            "name": "Jinqiao"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "locations/map-hongqiao.jpg", 
+            "name": "Hongqiao"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "location.location", 
+        "fields": {
+            "picture": "locations/map-zhudi.jpg", 
+            "name": "Huacao"
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "location.localizedlocation", 
+        "fields": {
+            "directions": "", 
+            "description": "Address: 2/F 372 Xingle Road\r\n\r\nHours of Operation: Monday - Friday 3pm - 6pm; mornings by appointment\r\n                                Saturday and Sunday 9am - 6pm", 
+            "meta": 18, 
+            "name": "Huacao (near SAS Puxi)", 
+            "address": ""
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "location.localizedlocation", 
+        "fields": {
+            "directions": "", 
+            "description": "Address: 2/F 372 Xingle Road\r\n\r\nHours of Operation: Monday - Friday 3pm - 6pm; mornings by appointment\r\n                                Saturday and Sunday 9am - 6pm", 
+            "meta": 18, 
+            "name": "Huacao (near SAS Puxi)", 
+            "address": ""
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "location.localizedlocation", 
+        "fields": {
+            "directions": "TAXI:\r\n\r\nIt is least confusing for the driver if you give him or her the address of the Highton Hotel.  Once you arrive at 1000 Hongsong Dong Rd (near Gubei Lu), proceed down the driveway to the left of the hotel. Our office is marked by a bright blue \"New Horizons\" sign on the right.\r\n\r\nDRIVING DIRECTIONS\r\n\r\nFrom Wuzhong Lu:\r\n\r\nTurn North on Hongxu Road (towards Yan'an Elevated Road)\r\nTurn right on Hongsong Dong Road\r\nTurn left into the driveway before the Highton Hotel (1000 Hongsong Dong Rd)\r\nLook for the Blue New Horizons sign on the right (~100 meters from road)\r\n \r\nFrom Yan'an Elevated Road (from Hongqiao):\r\n\r\nExit Hongxu Road\r\nTurn right (South) on Gubei Road\r\nTurn right on Hongsong Dong Road\r\nTurn right into the driveway after the Highton Hotel (1000 Hongsong Dong Rd)\r\nLook for the Blue New Horizons sign on the right (~100 meters from road)", 
+            "description": "Address: 480 Hongxu Lu, 1st Floor (near Hongsong Dong Lu - you must enter our building from Hongsong Dong Lu; we are behind the Highton Hotel).\r\n\r\n\r\nHours of Operation: Monday-Friday: 10am - 7pm and Saturday-Sunday: 9am - 6pm\r\n", 
+            "meta": 17, 
+            "name": "Hongqiao", 
+            "address": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "node.datastate", 
+        "fields": {
+            "name": "Submitted"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "node.datastate", 
+        "fields": {
+            "name": "Published"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "node.datastate", 
+        "fields": {
+            "name": "Flagged"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "node.datastate", 
+        "fields": {
+            "name": "Closed"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "node.datastate", 
+        "fields": {
+            "name": "Deleted"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:03:36.225Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:03:58.233Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:04:22.293Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:04:51.671Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:05:30.844Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-19T12:43:43.885Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:00:08.207Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:00:36.323Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-09-15T00:00:00Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:59:27.931Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-09-15T00:00:00Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:06:25.128Z", 
+            "content_type": 19, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:06:01.414Z", 
+            "content_type": 19, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:44:53.810Z", 
+            "content_type": 19, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:35:42.119Z", 
+            "content_type": 19, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:20:02.418Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:19:52.397Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:20:17.242Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:20:35.264Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T21:21:27.190Z", 
+            "content_type": 14, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:03:05.886Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:04:12.808Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:05:09.538Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:10:29.402Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:15:15.103Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:31:56.743Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:34:52.358Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:33:57.266Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:35:38.587Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-09-15T00:00:00Z", 
+            "content_type": 16, 
+            "created": "2012-09-15T00:00:00Z"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:15:42.230Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:45:03.783Z"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:02:45.781Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:45:14.584Z"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:02:27.791Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:45:29.208Z"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-11T03:16:09.540Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:45:42.601Z"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:01:33.389Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:46:19.999Z"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:01:16.729Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:46:32.545Z"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:00:57.722Z", 
+            "content_type": 24, 
+            "created": "2012-09-28T04:46:50.916Z"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T04:43:56.935Z", 
+            "content_type": 14, 
+            "created": "2012-10-04T15:01:50.553Z"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T04:43:56.947Z", 
+            "content_type": 15, 
+            "created": "2012-10-04T15:01:50.604Z"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:55:01.209Z", 
+            "content_type": 28, 
+            "created": "2012-10-29T07:42:01.973Z"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:54:44.430Z", 
+            "content_type": 28, 
+            "created": "2012-10-29T07:42:24.684Z"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:54:32.886Z", 
+            "content_type": 28, 
+            "created": "2012-10-29T07:45:02.964Z"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:54:19.243Z", 
+            "content_type": 28, 
+            "created": "2012-10-29T07:45:32.217Z"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:15:42.268Z", 
+            "content_type": 25, 
+            "created": "2012-11-25T10:40:59.579Z"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:00:57.735Z", 
+            "content_type": 25, 
+            "created": "2012-11-25T11:14:09.270Z"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:00:33.299Z", 
+            "content_type": 24, 
+            "created": "2012-11-25T11:15:33.132Z"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:00:33.312Z", 
+            "content_type": 25, 
+            "created": "2012-11-25T11:15:33.163Z"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:31:56.785Z", 
+            "content_type": 17, 
+            "created": "2012-11-28T08:03:29.223Z"
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-15T10:39:41.079Z", 
+            "content_type": 19, 
+            "created": "2012-11-28T08:11:09.841Z"
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-02T09:34:25.900Z", 
+            "content_type": 17, 
+            "created": "2012-12-02T09:34:25.901Z"
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T08:49:11.843Z", 
+            "content_type": 16, 
+            "created": "2012-12-02T09:35:33.742Z"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T08:49:11.854Z", 
+            "content_type": 17, 
+            "created": "2012-12-02T09:35:33.747Z"
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:33:12.524Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:33:12.525Z"
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:06:40.715Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:44:42.541Z"
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:44:42.546Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:44:42.546Z"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:07:11.474Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:46:41.005Z"
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:46:41.012Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:46:41.013Z"
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:07:36.124Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:47:08.703Z"
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:47:08.708Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:47:08.709Z"
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:08:00.841Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:47:27.187Z"
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:08:00.914Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:47:27.192Z"
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:08:41.853Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:47:47.625Z"
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:08:41.864Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:47:47.631Z"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-04T16:28:52.874Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:48:28.888Z"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:48:28.892Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:48:28.893Z"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:09:36.153Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:49:30.972Z"
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:09:36.164Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:49:30.977Z"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:10:07.250Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:49:50.049Z"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-03T14:10:07.293Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:49:50.054Z"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T11:59:02.123Z", 
+            "content_type": 15, 
+            "created": "2012-12-18T06:50:14.933Z"
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 4, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2012-12-18T06:59:11.290Z", 
+            "content_type": 14, 
+            "created": "2012-12-18T06:59:11.291Z"
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:11:38.346Z", 
+            "content_type": 24, 
+            "created": "2012-12-30T17:24:39.628Z"
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:09:40.389Z", 
+            "content_type": 25, 
+            "created": "2012-12-30T17:24:39.633Z"
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-09T02:45:29.956Z", 
+            "content_type": 31, 
+            "created": "2012-12-30T17:40:48.964Z"
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:04:39.343Z", 
+            "content_type": 32, 
+            "created": "2012-12-30T17:40:49.008Z"
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:04:07.686Z", 
+            "content_type": 31, 
+            "created": "2012-12-30T17:42:06.329Z"
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:04:07.710Z", 
+            "content_type": 32, 
+            "created": "2012-12-30T17:42:06.335Z"
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:03:47.105Z", 
+            "content_type": 31, 
+            "created": "2012-12-30T17:43:31.062Z"
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:03:47.118Z", 
+            "content_type": 32, 
+            "created": "2012-12-30T17:43:31.076Z"
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:52:33.032Z", 
+            "content_type": 35, 
+            "created": "2013-01-04T07:33:22.966Z"
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:55:01.243Z", 
+            "content_type": 29, 
+            "created": "2013-01-07T03:04:21.072Z"
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:53:38.485Z", 
+            "content_type": 28, 
+            "created": "2013-01-07T05:29:22.462Z"
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T03:53:38.499Z", 
+            "content_type": 29, 
+            "created": "2013-01-07T05:29:22.526Z"
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:01:16.742Z", 
+            "content_type": 25, 
+            "created": "2013-01-07T07:31:25.515Z"
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T07:38:47.638Z", 
+            "content_type": 19, 
+            "created": "2013-01-07T07:36:52.691Z"
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T07:36:52.701Z", 
+            "content_type": 20, 
+            "created": "2013-01-07T07:36:52.702Z"
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T20:40:01.930Z", 
+            "content_type": 22, 
+            "created": "2013-01-07T07:45:15.084Z"
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-15T01:31:33.070Z", 
+            "modified": "2013-01-15T01:31:33.067Z", 
+            "content_type": 33, 
+            "created": "2013-01-07T09:02:40.455Z"
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-15T01:31:33.081Z", 
+            "modified": "2013-01-15T01:31:33.078Z", 
+            "content_type": 34, 
+            "created": "2013-01-07T09:02:40.461Z"
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-08T04:02:27.804Z", 
+            "content_type": 25, 
+            "created": "2013-01-07T09:33:45.845Z"
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-11T03:16:09.595Z", 
+            "content_type": 25, 
+            "created": "2013-01-07T09:37:13.160Z"
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:03:05.952Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T10:30:17.909Z"
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T11:58:10.687Z", 
+            "content_type": 15, 
+            "created": "2013-01-07T11:58:10.688Z"
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:02:02.311Z", 
+            "content_type": 15, 
+            "created": "2013-01-07T11:59:49.866Z"
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:03:01.263Z", 
+            "content_type": 15, 
+            "created": "2013-01-07T12:03:01.264Z"
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:06:17.300Z", 
+            "content_type": 15, 
+            "created": "2013-01-07T12:05:39.954Z"
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:04:12.871Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:21:30.043Z"
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:05:09.603Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:29:05.738Z"
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:10:29.465Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:30:06.388Z"
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-14T22:15:15.212Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:30:31.997Z"
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:34:52.371Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:33:28.909Z"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:33:57.276Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:33:57.277Z"
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:35:38.597Z", 
+            "content_type": 17, 
+            "created": "2013-01-07T12:35:38.599Z"
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:43:16.699Z", 
+            "content_type": 18, 
+            "created": "2013-01-07T12:42:56.121Z"
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:50:07.587Z", 
+            "content_type": 18, 
+            "created": "2013-01-07T12:50:07.589Z"
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:52:08.460Z", 
+            "content_type": 18, 
+            "created": "2013-01-07T12:52:08.461Z"
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:53:30.690Z", 
+            "content_type": 18, 
+            "created": "2013-01-07T12:53:30.691Z"
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-01T06:00:00Z", 
+            "modified": "2013-01-07T12:57:42.619Z", 
+            "content_type": 18, 
+            "created": "2013-01-07T12:57:42.620Z"
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-11T01:31:00Z", 
+            "modified": "2013-01-15T01:33:50.383Z", 
+            "content_type": 36, 
+            "created": "2013-01-07T13:01:37.488Z"
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-15T01:32:39.238Z", 
+            "modified": "2013-01-15T01:32:39.236Z", 
+            "content_type": 37, 
+            "created": "2013-01-07T13:01:37.566Z"
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-10T06:37:16.542Z", 
+            "modified": "2013-01-10T06:37:16.540Z", 
+            "content_type": 18, 
+            "created": "2013-01-10T06:37:16.542Z"
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T20:23:56Z", 
+            "modified": "2013-01-14T20:25:26.797Z", 
+            "content_type": 31, 
+            "created": "2013-01-14T20:23:56.706Z"
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T20:23:56Z", 
+            "modified": "2013-01-14T20:25:26.852Z", 
+            "content_type": 32, 
+            "created": "2013-01-14T20:23:56.713Z"
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": null, 
+            "modified": "2013-01-14T20:33:06.706Z", 
+            "content_type": 22, 
+            "created": "2013-01-14T20:33:06.707Z"
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": null, 
+            "modified": "2013-01-14T20:34:50.213Z", 
+            "content_type": 22, 
+            "created": "2013-01-14T20:34:50.214Z"
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T21:37:25Z", 
+            "modified": "2013-01-14T21:39:01.180Z", 
+            "content_type": 18, 
+            "created": "2013-01-14T21:37:25.599Z"
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 1, 
+            "published": "2013-01-14T08:51:26Z", 
+            "modified": "2013-01-14T21:51:35.388Z", 
+            "content_type": 16, 
+            "created": "2013-01-14T21:51:35.398Z"
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T21:51:35.434Z", 
+            "modified": "2013-01-14T21:51:35.420Z", 
+            "content_type": 17, 
+            "created": "2013-01-14T21:51:35.434Z"
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T21:58:58Z", 
+            "modified": "2013-01-14T21:59:27.945Z", 
+            "content_type": 17, 
+            "created": "2013-01-14T21:58:58.037Z"
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-14T22:00:08.278Z", 
+            "modified": "2013-01-14T22:00:08.271Z", 
+            "content_type": 17, 
+            "created": "2013-01-14T22:00:08.278Z"
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "node.node", 
+        "fields": {
+            "data_state": 2, 
+            "published": "2013-01-15T10:39:41.098Z", 
+            "modified": "2013-01-15T10:39:41.097Z", 
+            "content_type": 20, 
+            "created": "2013-01-15T10:39:41.098Z"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "node.language", 
+        "fields": {
+            "code": "en", 
+            "name": "English"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "node.language", 
+        "fields": {
+            "code": "ko", 
+            "name": "Korean"
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "node.language", 
+        "fields": {
+            "code": "zh-cn", 
+            "name": "Simplified Chinese"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "node.localizednode", 
+        "fields": {
+            "language": 12
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "instructor.instructor", 
+        "fields": {
+            "picture": "instructors/Jordan_1.jpeg", 
+            "topics": [
+                10
+            ]
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "instructor.instructor", 
+        "fields": {
+            "picture": "instructors/05.jpeg", 
+            "topics": [
+                24, 
+                25, 
+                27, 
+                72
+            ]
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "instructor.localizedinstructor", 
+        "fields": {
+            "last_name": "Annas", 
+            "first_name": "Chelsea", 
+            "meta": 117, 
+            "description": "<p><span style=\"font-family: 'Trebuchet MS', 'Helvetica Neue', helvetica, Arial, sans-serif; font-size: 13px; line-height: 19.5px;\">Chelsea Annas holds a Bachelor's degree in International Relations from James Madison College at Michigan State University. She has also completed significant coursework in Southeast Asian Studies and Political Economics. In 2006, she received the Freeman Asia Award to study abroad where she interned as a research assistant for Thailand's National Economic and Social Development Board. In 2007, Chelsea moved to Shanghai and began teaching middle and elementary aged students at a major international school. She has since developed expertise in teaching reading and writing to international school students. Chelsea's teaching methodologies and energetic style allow her students to easily conceptualize new ideas and develop both creative and academic writing skills.</span></p>"
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "instructor.localizedinstructor", 
+        "fields": {
+            "last_name": "Jordan", 
+            "first_name": "Neufeld", 
+            "meta": 68, 
+            "description": "<p style=\"margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;\">Jordan Neufeld holds two Bachelors degrees from the University of California at Riverside: one in political science, and the other in education. In 2003, he began teaching SAT preparation courses for a respected company in La Jolla, California. Because his students saw such dramatic score improvements, he earned the rank of 'premier tutor', and taught both undergraduate and graduate preparation programs. He taught in California for three years, transferring to Shanghai in 2005. Not only did he teach in Shanghai, but he earned the rank of 'master trainer', enabling him to train new teachers. He has received a perfect score on the SAT.</p>"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "testimonial.testimonialcategory", 
+        "fields": {
+            "name": "General"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "testimonial.testimonialcategory", 
+        "fields": {
+            "name": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "testimonial.testimonialcategory", 
+        "fields": {
+            "name": "Test Preparations"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "testimonial.testimonialcategory", 
+        "fields": {
+            "name": "Curriculum Consulting"
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "testimonial.testimonial", 
+        "fields": {
+            "category": 2
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "testimonial.testimonial", 
+        "fields": {
+            "category": 3
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "testimonial.testimonial", 
+        "fields": {
+            "category": 3
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "testimonial.testimonial", 
+        "fields": {
+            "category": 3
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "testimonial.localizedtestimonial", 
+        "fields": {
+            "exerpt": null, 
+            "meta": 103, 
+            "description": "My writing class at New Horizons was a great experience! I learned a lot and at the same time I had lots of fun. The teachers here are lots of fun to learn from, and they make class so interesting sometimes you might not want to it end. Long story short, I learned many new things and at the sometime had the best time of my life!", 
+            "author": "E. Zhang, Shanghai American School, Class of 2018"
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "testimonial.localizedtestimonial", 
+        "fields": {
+            "exerpt": null, 
+            "meta": 105, 
+            "description": "Though I come from a small town where it is rare to see any foreigners, I really enjoyed classes with an American teacher. New Horizons teachers have their own techniques to improve our English and SAT abilities, and it is really interesting to have classes with them! I also benefit from working with my American teacher in both speaking and listening. All in all, I loved my summer SAT class with my American teacher!", 
+            "author": "Chen Wang, National University of Singapore, Class of 2016 "
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "testimonial.localizedtestimonial", 
+        "fields": {
+            "exerpt": null, 
+            "meta": 107, 
+            "description": "<p>With the help of the experienced consultants from New Horizons, our daughter was able to implement test taking strategies that allowed her to reach her full potential when taking the SAT Reasoning and Subject tests. We always be grateful to New Horizons for their help in supporting our daughter's matriculation to her \"dream\" university.</p>", 
+            "author": "M. Weaser, father of N. Weaser, Stanford University, Class of 2"
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "testimonial.localizedtestimonial", 
+        "fields": {
+            "exerpt": "", 
+            "meta": 158, 
+            "description": "<!--[if gte mso 9]><xml>\r\n <o:DocumentProperties>\r\n  <o:Template>Normal.dotm</o:Template>\r\n  <o:Revision>0</o:Revision>\r\n  <o:TotalTime>0</o:TotalTime>\r\n  <o:Pages>1</o:Pages>\r\n  <o:Words>50</o:Words>\r\n  <o:Characters>288</o:Characters>\r\n  <o:Company>Cornell</o:Company>\r\n  <o:Lines>2</o:Lines>\r\n  <o:Paragraphs>1</o:Paragraphs>\r\n  <o:CharactersWithSpaces>353</o:CharactersWithSpaces>\r\n  <o:Version>12.0</o:Version>\r\n </o:DocumentProperties>\r\n <o:OfficeDocumentSettings>\r\n  <o:AllowPNG/>\r\n </o:OfficeDocumentSettings>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:WordDocument>\r\n  <w:Zoom>0</w:Zoom>\r\n  <w:TrackMoves>false</w:TrackMoves>\r\n  <w:TrackFormatting/>\r\n  <w:PunctuationKerning/>\r\n  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>\r\n  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>\r\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\r\n  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>\r\n  <w:ValidateAgainstSchemas/>\r\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\r\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\r\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\r\n  <w:Compatibility>\r\n   <w:BreakWrappedTables/>\r\n   <w:DontGrowAutofit/>\r\n   <w:DontAutofitConstrainedTables/>\r\n   <w:DontVertAlignInTxbx/>\r\n  </w:Compatibility>\r\n </w:WordDocument>\r\n</xml><![endif]--><!--[if gte mso 9]><xml>\r\n <w:LatentStyles DefLockedState=\"false\" LatentStyleCount=\"276\">\r\n </w:LatentStyles>\r\n</xml><![endif]-->\r\n<p>New Horizons really gave me the motivation to study and do well on the SATs! The compact yet extensive workbook and vocabulary drills were a lot more helpful than what a continuous 14 hours of practice would have been. I would definitely recommend New Horizons to anyone who wants to have fun and is looking to improve their score at the same time.</p>\r\n<!--EndFragment-->", 
+            "author": "Jonathan Chen, SAS Class of 2013, Brown University Class of 2017"
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "inthenews.inthenews", 
+        "fields": {
+            "exerpt": "<p><span style=\"color: #2e2e2e; font-family: Arial, Helvetica, Verdana, 'Bitstream Vera Sans', sans-serif; font-size: 12px; line-height: 18px;\">Like it or not, the trend in the American education system is to rely on the standardised test as an indicator of a student&rsquo;s progress. Whether to gain admission to a university or to make sure no child is being left behind, the standardised test is given early and given often. This no longer leaves Shanghai&rsquo;s parents with the question, &ldquo;Should I get my child help to prepare for the SAT?&rdquo; The question now is, &ldquo;Where do I get my child help and how much do they need?&rdquo;&nbsp;</span></p>", 
+            "picture": "inthenews_picture/2013/01/test_prep_picture.jpg", 
+            "title": "A Parent\u2019s Guide to Test Prep in Shanghai", 
+            "url": "http://shanghai.talkmagazines.cn/issue/2011-09/parent%E2%80%99s", 
+            "source": "Shanghai Talk", 
+            "file": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "advert.advertcategory", 
+        "fields": {
+            "name": "General"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "advert.advertcategory", 
+        "fields": {
+            "name": "Language Arts"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "advert.advertcategory", 
+        "fields": {
+            "name": "Test Prep"
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "news.news", 
+        "fields": {
+            "picture": "news/2013/01/test_prep.jpg"
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "news.localizednews", 
+        "fields": {
+            "meta": 145, 
+            "description": "<p><span style=\"color: #2e2e2e; font-family: Arial, Helvetica, Verdana, 'Bitstream Vera Sans', sans-serif; font-size: 12px; line-height: 18px;\">Like it or not, the trend in the American education system is to rely on the standardised test as an indicator of a student&rsquo;s progress. Whether to gain admission to a university or to make sure no child is being left behind, the standardised test is given early and given often. This no longer leaves Shanghai&rsquo;s parents with the question, &ldquo;Should I get my child help to prepare for the SAT?&rdquo;&nbsp;</span></p>\r\n<p><span style=\"color: #2e2e2e; font-family: Arial, Helvetica, Verdana, 'Bitstream Vera Sans', sans-serif; font-size: 12px; line-height: 18px;\">Read more at:&nbsp;</span><span style=\"color: #2e2e2e; font-family: Arial, Helvetica, Verdana, 'Bitstream Vera Sans', sans-serif;\"><span style=\"font-size: 12px; line-height: 18px;\">http://shanghai.talkmagazines.cn/issue/2011-09/parent%E2%80%99s-guide-test-prep-shanghai</span></span></p>\r\n<p>&nbsp;</p>", 
+            "title": "A Parent's Guide to Test Preparation"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Home Page"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Language Arts Courses"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Test Prep Courses"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Curriculum Consulting Page"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Language Arts Instructors"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Test Prep Instructors"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "News & Events"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Locations"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "About Us"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Blog"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Language Arts Schedules"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "banner.bannercategory", 
+        "fields": {
+            "name": "Test Prep Schedules"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "banner.banner", 
+        "fields": {
+            "category": 2, 
+            "picture": "banners/languagearts_1.png"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "banner.banner", 
+        "fields": {
+            "category": 3, 
+            "picture": "banners/testprep_1.png"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "banner.banner", 
+        "fields": {
+            "category": 5, 
+            "picture": "banners/teacher_3.png"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "banner.banner", 
+        "fields": {
+            "category": 6, 
+            "picture": "banners/teacher_4.png"
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "banner.banner", 
+        "fields": {
+            "category": 1, 
+            "picture": "banners/2013/01/nh_tp_1.png"
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "banner.localizedbanner", 
+        "fields": {
+            "meta": 55, 
+            "description": "Explore our unique 4-stage program that inspires in students a passion for literature, composition, critical thinking, research"
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "banner.localizedbanner", 
+        "fields": {
+            "meta": 114, 
+            "description": "Call and schedule a visit to one of our four locations in Shanghai today! "
+        }
+    }
+]
