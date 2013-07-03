@@ -1,2 +1,5 @@
 *.pyc
 *.pyo
+newhorizons/media
+newhorizons/newhorizons.db
+*logfile*

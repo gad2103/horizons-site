@@ -24,7 +24,7 @@ urlpatterns = patterns('course.views',
     url(r'^la_navigation$', 'navigation', {'type' : TargetCategory.LANGUAGEARTS}, name='languagearts_nav'),
     url(r'^tp_navigation$', 'navigation', {'type' : TargetCategory.TESTPREPARATIONS}, name='testprep_nav'),
     url(r'^cc_navigation$', 'navigation', {'type' : TargetCategory.CURRICULUMCONSULTING}, name='curriculumconsulting_nav'),
-    url(r'^ac_navigation$', 'navigation', {'type' : TargetCategory.TESTPREPARATIONS}, name='languagearts_nav'),
+    url(r'^ac_navigation$', 'navigation', {'type' : TargetCategory.ADMISSIONSCONSULTING}, name='testprep_nav'),
 
     # The URLs for the the current and upcoming classes mini panels
     url(r'^current_classes$', 'current_classes', name='current_classes'),

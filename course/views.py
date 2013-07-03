@@ -70,7 +70,7 @@ def index(request, type=None, identifier=None):
         template = 'courses/index_cc.html'
         banners = getBanners(request, BannerCategory.CC_COURSE)
         try:
-            left_nav_image = SiteImage.objects.get(category=SiteImageCategory.AC_COURSE)
+            left_nav_image = SiteImage.objects.get(category=SiteImageCategory.CC_COURSE)
         except Exception:
             left_nav_image = None
         initializer['header_text'] = _('curriculum consulting')
@@ -234,10 +234,14 @@ def navigation(request, type=None, area='course'):
     
     # Get the client language from the session
     language = Language.get_language(request)
+    category_type = type
+    if category_type == 7:
+        admissions_nav = True
+        category_type = 1
     
     #course_queryset = Course.objects.filter(category=type, data_state=DataState.PUBLISHED)
-    if type:
-        targets = Target.objects.filter(category=type, data_state=DataState.PUBLISHED)
+    if category_type:
+        targets = Target.objects.filter(category=category_type, data_state=DataState.PUBLISHED)
     else:
         targets = Target.objects.filter(data_state=DataState.PUBLISHED)
     
@@ -249,7 +253,16 @@ def navigation(request, type=None, area='course'):
             back_link = reverse('testpreparations_home')
             template = 'courses/navigation_tp.html'
             for target in targets:
-                target.courses = Course.objects.filter(target=target, data_state=DataState.PUBLISHED)
+                target.courses = Course.objects.filter(target=target, data_state=DataState.PUBLISHED).exclude(name__iexact="Admissions Counseling")
+        elif admissions_nav:
+            back_link = reverse('admissionsconsulting_home')
+            template = 'courses/navigation_tp.html'
+            for target in targets:
+                if target == "Graduate Admissions":
+                    target.courses = None
+                    print hello
+                    continue
+                target.courses = Course.objects.filter(target=target, name__iexact="Admissions Counseling")
         elif type == TargetCategory.CURRICULUMCONSULTING:
             back_link = reverse('curriculumconsulting_home')
             template = 'courses/navigation.html'

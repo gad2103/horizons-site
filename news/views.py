@@ -135,6 +135,7 @@ def sample(request):
 
 def date_helper(trimester=None, year=None):
     if not year or not trimester:
+        #NOTE this could cause some issues when in production due to time differences
         this_date = datetime.datetime.utcnow().replace(tzinfo=utc)
         year = this_date.year
         if  not trimester:
