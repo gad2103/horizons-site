@@ -8,8 +8,12 @@
             setHeader('{{ initializer.header_text }}');
             setNav('{{ initializer.nav_url }}');
             setContent('{{ initializer.content_url }}');
-            $( '#currentclasses_panel' ).load( '{{ initializer.current_classes_url }}' );
-            $( '#upcomingclasses_panel' ).load( '{{ initializer.upcoming_classes_url }}' );
+            {% if initializer.current_classes_url %}
+                $( '#currentclasses_panel' ).load( '{{ initializer.current_classes_url }}' );
+            {% endif %}
+            {% if initializer.upcoming_classes_url %}
+                $( '#upcomingclasses_panel' ).load( '{{ initializer.upcoming_classes_url }}' );
+            {% endif %}
         });
     </script>
 {% endblock %}

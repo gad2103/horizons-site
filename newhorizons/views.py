@@ -39,7 +39,7 @@ def home(request):
             item.link = reverse('languagearts_home')
         elif id == 7:
             item.style = 'ac'
-            item.link = reverse('admissionsconsulting_home')
+            item.link = reverse('admissionscounseling_home')
         elif id == 3:
             item.style = 'cc'
             item.link = reverse('curriculumconsulting_home')

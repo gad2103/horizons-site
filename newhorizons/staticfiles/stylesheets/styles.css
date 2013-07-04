@@ -459,6 +459,38 @@ img.icon {
 .cc_area h2.schedule {
   background-color: #b66685; }
 
+.ac_area .page_content_header {
+  background-color: #1a92cf; }
+.ac_area #main_pane h2 {
+  color: #1a92cf; }
+.ac_area #main_pane .schedule h2 {
+  background-color: #1a92cf; }
+.ac_area #left_bar h2, .ac_area #left_bar h2 a, .ac_area #left_bar h3, .ac_area #left_bar h3 a {
+  color: #1a92cf; }
+.ac_area table hr {
+  color: #1a92cf;
+  background-color: #1a92cf; }
+.ac_area table .file a {
+  color: #1a92cf; }
+.ac_area #left_bar .content {
+  border: 1px solid #1a92cf;
+  background-color: #daedfe; }
+.ac_area #left_bar li {
+  border-top: 1px solid #1a92cf; }
+  .ac_area #left_bar li a:hover, .ac_area #left_bar li a.active {
+    color: white;
+    background-color: #1a92cf; }
+.ac_area #left_bar li:first-child {
+  border-top: none; }
+.ac_area #left_bar ul ul li {
+  border: none; }
+.ac_area #right_bar .schedule .file a {
+  color: #1a92cf; }
+.ac_area button.contact, .ac_area button.register {
+  background-color: #1a92cf; }
+.ac_area h2.schedule {
+  background-color: #1a92cf; }
+
 .neutral_area .page_content_header {
   background-color: #d27d34; }
 .neutral_area #main_pane h2 {

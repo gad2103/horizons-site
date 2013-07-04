@@ -75,7 +75,7 @@ def index(request, type=None, identifier=None):
             left_nav_image = None
         initializer['header_text'] = _('curriculum consulting')
         initializer['content_url'] = reverse('cc_home_page')
-    elif type ==  TargetCategory.ADMISSIONSCONSULTING:
+    elif type ==  TargetCategory.ADMISSIONSCOUNSELING:
         template = 'courses/index_ac.html'
         banners = None #getBanners(request, BannerCategory.CC_COURSE)
         try:
@@ -84,10 +84,7 @@ def index(request, type=None, identifier=None):
             left_nav_image = None
         initializer['header_text'] = _('admissions consulting')
         initializer['content_url'] = reverse('ac_home_page')
-        initializer['nav_url'] = reverse('testprep_nav')
-        initializer['current_classes_url'] = reverse('current_la_classes')
-        initializer['upcoming_classes_url'] = reverse('upcoming_la_classes')
-
+        initializer['nav_url'] = reverse('languagearts_nav')
     else:
         template = 'courses/index.html'
         banners = None
@@ -241,7 +238,10 @@ def navigation(request, type=None, area='course'):
     
     #course_queryset = Course.objects.filter(category=type, data_state=DataState.PUBLISHED)
     if category_type:
-        targets = Target.objects.filter(category=category_type, data_state=DataState.PUBLISHED)
+        if type == 7:
+            targets = Target.objects.filter(category=category_type, data_state=DataState.PUBLISHED, course__name="Admissions Counseling") #TODO fix this to use database instead of string
+        else:
+            targets = Target.objects.filter(category=category_type, data_state=DataState.PUBLISHED)
     else:
         targets = Target.objects.filter(data_state=DataState.PUBLISHED)
     
@@ -255,14 +255,10 @@ def navigation(request, type=None, area='course'):
             for target in targets:
                 target.courses = Course.objects.filter(target=target, data_state=DataState.PUBLISHED).exclude(name__iexact="Admissions Counseling")
         elif admissions_nav:
-            back_link = reverse('admissionsconsulting_home')
-            template = 'courses/navigation_tp.html'
+            back_link = reverse('admissionscounseling_home')
+            template = 'courses/navigation_ac.html'
             for target in targets:
-                if target == "Graduate Admissions":
-                    target.courses = None
-                    print hello
-                    continue
-                target.courses = Course.objects.filter(target=target, name__iexact="Admissions Counseling")
+                target.courses = Course.objects.filter(target=target)
         elif type == TargetCategory.CURRICULUMCONSULTING:
             back_link = reverse('curriculumconsulting_home')
             template = 'courses/navigation.html'

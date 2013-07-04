@@ -544,6 +544,7 @@ img.icon {
 .la_area { @include area-theme($la-color, $la-color-light, $la-color-dark); }
 .tp_area { @include area-theme($tp-color, $tp-color-light, $tp-color-dark); }
 .cc_area { @include area-theme($cc-color, $cc-color-light, $cc-color-dark); }
+.ac_area { @include area-theme($la-color, $la-color-light, $la-color-dark); }
 .neutral_area {
     @include area-theme($gold, $light-gold, $gold);
     #main_pane {

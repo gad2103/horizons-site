@@ -87,7 +87,7 @@
       "pk": 13, 
       "model": "page.PageCategory", 
       "fields": {
-         "name": "Admissions Consulting"
+         "name": "Admissions Counseling"
          }
    }
 ]

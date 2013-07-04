@@ -3,9 +3,11 @@ from django.db import models
 from node.models import Node, LocalizedNode, Language
 from node.views import LocalItem
 from tinymce.models import HTMLField
+from django.contrib.auth.models import User
     
 class Blog(Node):
     picture = models.ImageField(upload_to='blog/%Y/%m', blank=True, null=True, help_text="Please select a square picture.")
+    author = models.ForeignKey(User)
     
     def __unicode__(self):
         local_item = LocalItem(self, LocalizedBlog)

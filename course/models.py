@@ -9,7 +9,7 @@ class TargetCategory(models.Model):
     TESTPREPARATIONS = 1
     LANGUAGEARTS = 2
     CURRICULUMCONSULTING = 3
-    ADMISSIONSCONSULTING=7
+    ADMISSIONSCOUNSELING=7
     
     name = models.CharField(max_length=63)
     picture = models.ImageField(upload_to='portals', blank=True, null=True)

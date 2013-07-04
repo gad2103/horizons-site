@@ -16,7 +16,7 @@ class PageCategory(models.Model):
     LA_SCHEDULES = 10
     TP_SCHEDULES = 11
     CONTACT = 12
-    ADMISSIONSCONSULTING = 13
+    ADMISSIONSCOUNSELING = 13
     
     name = models.CharField(max_length=63)
     
