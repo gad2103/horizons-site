@@ -8,6 +8,23 @@
             setContent("{% url 'location_home_page' %}");
         });
     </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        function mapsLoaded() {
+          directionsDisplay = new google.maps.DirectionsRenderer();
+          var chicago = new google.maps.LatLng(31.2000, 121.5000);
+          var mapOptions = {
+            zoom:15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: chicago
+          }
+          map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+          directionsDisplay.setMap(map);
+        }
+        function loadMaps(){
+            google.load("maps", "3", {"callback" : mapsLoaded,"language" : "{{ LANGUAGE_CODE }}",  "other_params" : "sensor=false"});
+        }
+      </script>
 {% endblock %}
 
 {% block page_class %}location_page neutral_area{% endblock %}

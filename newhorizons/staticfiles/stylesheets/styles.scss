@@ -24,6 +24,9 @@ $text: $dark-blue;
 $la-color: #1a92cf;
 $la-color-dark: #4486aa;
 $la-color-light: #daedfe;
+$ac-color: #95b638;
+$ac-color-dark: #637828;
+$ac-color-light: #E3FC9A;
 $tp-color: #48834c;
 $tp-color-dark: #59885c;
 $tp-color-light: #ecfee5;
@@ -35,6 +38,7 @@ $footer: $dark-blue;
 
 /* Measurements */
 $home-page-panels: 306px;
+$home-page-course-panels: 230px;
 $leftbar: 200px;
 $main: 508px;
 $main-padding: 0 26px;
@@ -544,7 +548,7 @@ img.icon {
 .la_area { @include area-theme($la-color, $la-color-light, $la-color-dark); }
 .tp_area { @include area-theme($tp-color, $tp-color-light, $tp-color-dark); }
 .cc_area { @include area-theme($cc-color, $cc-color-light, $cc-color-dark); }
-.ac_area { @include area-theme($la-color, $la-color-light, $la-color-dark); }
+.ac_area { @include area-theme($ac-color, $ac-color-light, $ac-color-dark); }
 .neutral_area {
     @include area-theme($gold, $light-gold, $gold);
     #main_pane {
@@ -633,13 +637,15 @@ img.icon {
 .portals {
     width: 970px;
     img {
-	width: 100px;
+	width: 73px;
 	margin: 0 0 0 10px;
+    float:right;
     }
     padding-bottom: 16px;
     .portal_panel {
 	float: left;
-	width: $home-page-panels;
+	width: $home-page-course-panels;
+    margin-right: 12px;
 	.header {
 	    @include shadow($shadow);
 	    height: 22px;
@@ -650,12 +656,12 @@ img.icon {
 	}
 	.content {
 	    @include shadow($shadow);
-	    min-height: 112px;
-	    font-size: 0.9em;
+	    min-height: 150px;
+	    font-size: 0.825em;
 	    #font-style: italic;
 	    padding: 30px 10px;
 	    .text {
-		float: left;
+		//float: left;
 		width: 166px;
 	    }
 	}
@@ -676,10 +682,10 @@ img.icon {
 	    @include radius($radius);
 	}
     }
-    a:nth-child(2) .portal_panel {
-	margin: 0 20px;
-    }
-    a:nth-child(3) .portal_panel {
+    // a:nth-child(2) .portal_panel {
+	//margin: 0 20px;
+    // }
+    a:nth-child(4) .portal_panel {
 	.header {
 	    $radius: 0 10px 0 0;
 	    @include radius($radius);
@@ -699,6 +705,18 @@ img.icon {
 	}
 	.content {
 	    border: 1px solid $la-color;
+	}
+    }
+    #ac {
+	.header {
+	    background-color: $ac-color;
+	    border: 1px solid $ac-color;
+	}
+	.content, .footer {
+	    color: $ac-color;
+	}
+	.content {
+	    border: 1px solid $ac-color;
 	}
     }
     #tp {
@@ -912,7 +930,7 @@ img.icon {
 }
 .home_page {
     .panel {
-	width: $home-page-panels;
+	width: 306px;
 	.footer {
 	    position: absolute;
 	    bottom: 0;

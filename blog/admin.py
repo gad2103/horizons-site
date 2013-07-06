@@ -1,14 +1,17 @@
 from django.contrib import admin
 from django.contrib.auth.models import User
 
-from blog.models import Blog, LocalizedBlog
+from blog.models import Blog, LocalizedBlog, Author, LocalizedAuthor
 from node.admin import NodeAdmin, LocalizedNodeAdmin
 
 class LocalizedBlogInline(LocalizedNodeAdmin):
     model = LocalizedBlog
     
-class BlogAdmin(NodeAdmin, admin.ModelAdmin):
-    inlines = [ LocalizedBlogInline, ]
+class LocalizedAuthorInline(LocalizedNodeAdmin):
+    model = LocalizedAuthor
+
+class AuthorAdmin(NodeAdmin):
+    inlines = [ LocalizedAuthorInline, ]
 
     """
 
@@ -17,14 +20,13 @@ class BlogAdmin(NodeAdmin, admin.ModelAdmin):
     name too (if they have one and it differs from the username).
 
     """
-
     always_show_username = True
 
 
 
     def formfield_for_foreignkey(self, db_field, request=None, **kwargs):
 
-        field = super(BlogAdmin, self).formfield_for_foreignkey(
+        field = super(AuthorAdmin, self).formfield_for_foreignkey(
 
                                                 db_field, request, **kwargs)
 
@@ -38,7 +40,7 @@ class BlogAdmin(NodeAdmin, admin.ModelAdmin):
 
     def formfield_for_manytomany(self, db_field, request=None, **kwargs):
 
-        field = super(BlogAdmin, self).formfield_for_manytomany(
+        field = super(AuthorAdmin, self).formfield_for_manytomany(
 
                                                 db_field, request, **kwargs)
 
@@ -62,4 +64,9 @@ class BlogAdmin(NodeAdmin, admin.ModelAdmin):
 
         return (name and name != username and '%s (%s)' % (name, username) or username)
 
+
+class BlogAdmin(NodeAdmin):
+    inlines = [ LocalizedBlogInline, ]
+
 admin.site.register(Blog, BlogAdmin)
+admin.site.register(Author, AuthorAdmin)

@@ -460,36 +460,36 @@ img.icon {
   background-color: #b66685; }
 
 .ac_area .page_content_header {
-  background-color: #1a92cf; }
+  background-color: #95b638; }
 .ac_area #main_pane h2 {
-  color: #1a92cf; }
+  color: #95b638; }
 .ac_area #main_pane .schedule h2 {
-  background-color: #1a92cf; }
+  background-color: #95b638; }
 .ac_area #left_bar h2, .ac_area #left_bar h2 a, .ac_area #left_bar h3, .ac_area #left_bar h3 a {
-  color: #1a92cf; }
+  color: #95b638; }
 .ac_area table hr {
-  color: #1a92cf;
-  background-color: #1a92cf; }
+  color: #95b638;
+  background-color: #95b638; }
 .ac_area table .file a {
-  color: #1a92cf; }
+  color: #95b638; }
 .ac_area #left_bar .content {
-  border: 1px solid #1a92cf;
-  background-color: #daedfe; }
+  border: 1px solid #95b638;
+  background-color: #e3fc9a; }
 .ac_area #left_bar li {
-  border-top: 1px solid #1a92cf; }
+  border-top: 1px solid #95b638; }
   .ac_area #left_bar li a:hover, .ac_area #left_bar li a.active {
     color: white;
-    background-color: #1a92cf; }
+    background-color: #95b638; }
 .ac_area #left_bar li:first-child {
   border-top: none; }
 .ac_area #left_bar ul ul li {
   border: none; }
 .ac_area #right_bar .schedule .file a {
-  color: #1a92cf; }
+  color: #95b638; }
 .ac_area button.contact, .ac_area button.register {
-  background-color: #1a92cf; }
+  background-color: #95b638; }
 .ac_area h2.schedule {
-  background-color: #1a92cf; }
+  background-color: #95b638; }
 
 .neutral_area .page_content_header {
   background-color: #d27d34; }
@@ -589,11 +589,13 @@ img.icon {
   width: 970px;
   padding-bottom: 16px; }
   .portals img {
-    width: 100px;
-    margin: 0 0 0 10px; }
+    width: 73px;
+    margin: 0 0 0 10px;
+    float: right; }
   .portals .portal_panel {
     float: left;
-    width: 306px; }
+    width: 230px;
+    margin-right: 12px; }
     .portals .portal_panel .header {
       -moz-box-shadow: 2px 2px 5px #444444;
       -webkit-box-shadow: 2px 2px 5px #444444;
@@ -607,12 +609,11 @@ img.icon {
       -moz-box-shadow: 2px 2px 5px #444444;
       -webkit-box-shadow: 2px 2px 5px #444444;
       box-shadow: 2px 2px 5px #444444;
-      min-height: 112px;
-      font-size: 0.9em;
+      min-height: 150px;
+      font-size: 0.825em;
       #font-style: italic;
       padding: 30px 10px; }
       .portals .portal_panel .content .text {
-        float: left;
         width: 166px; }
     .portals .portal_panel .footer {
       text-align: right;
@@ -627,13 +628,11 @@ img.icon {
     -moz-border-radius: 0 0 0 10px;
     -webkit-border-radius: 0 0 0 10px;
     bordert-radius: 0 0 0 10px; }
-  .portals a:nth-child(2) .portal_panel {
-    margin: 0 20px; }
-  .portals a:nth-child(3) .portal_panel .header {
+  .portals a:nth-child(4) .portal_panel .header {
     -moz-border-radius: 0 10px 0 0;
     -webkit-border-radius: 0 10px 0 0;
     bordert-radius: 0 10px 0 0; }
-  .portals a:nth-child(3) .portal_panel .content {
+  .portals a:nth-child(4) .portal_panel .content {
     -moz-border-radius: 0 0 10px 0;
     -webkit-border-radius: 0 0 10px 0;
     bordert-radius: 0 0 10px 0; }
@@ -644,6 +643,13 @@ img.icon {
     color: #1a92cf; }
   .portals #la .content {
     border: 1px solid #1a92cf; }
+  .portals #ac .header {
+    background-color: #95b638;
+    border: 1px solid #95b638; }
+  .portals #ac .content, .portals #ac .footer {
+    color: #95b638; }
+  .portals #ac .content {
+    border: 1px solid #95b638; }
   .portals #tp .header {
     background-color: #48834c;
     border: 1px solid #48834c; }

@@ -29,7 +29,7 @@ class Testimonial(Node):
     
 class LocalizedTestimonial(LocalizedNode):
     meta = models.ForeignKey(Testimonial)
-    author = HTMLField(blank=True, null=True)
+    created_by = HTMLField(blank=True, null=True)
     exerpt = models.CharField(max_length=200, blank=True, null=True)
     description = HTMLField(blank=True, null=True)
         
