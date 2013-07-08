@@ -1,12 +1,21 @@
 # -*- coding: utf-8 -*-
 
-import os
+import os, socket
+
+if socket.gethostname().startswith('gabriel'):
+    LIVEHOST = False
+else:
+    LIVEHOST = True
 
 
 PROJECT_ROOT = os.path.dirname(__file__)  
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+if LIVEHOST: 
+    DEBUG = False
+    TEMPLATE_DEBUG = DEBUG
+else:
+    DEBUG = True
+    TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     #('Jérôme Beaulieu', 'jerome.beaulieu@trepantech.com'),
@@ -131,8 +140,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # Enabling translation
     'django.middleware.locale.LocaleMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
+
+if not LIVEHOST:
+    MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 
 ROOT_URLCONF = 'newhorizons.urls'
 
@@ -181,7 +192,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -203,6 +213,9 @@ INSTALLED_APPS = (
     'testimonial',
     'tinymce',
 )
+
+if not LIVEHOST:
+    INSTALLED_APPS += ('debug_toolbar',)
 
 # Grappelli settings (custom backend)
 GRAPPELLI_ADMIN_TITLE = 'New Horizons'
