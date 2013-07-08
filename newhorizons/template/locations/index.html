@@ -10,19 +10,45 @@
     </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+        var directionsDisplay,map, directionsService, cityRequested,
+        hpSchools = { hongqiao: [31.188978,121.396372], huacao: [31.207461,121.281991], jinqiao: [31.243329,121.586229] };
         function mapsLoaded() {
           directionsDisplay = new google.maps.DirectionsRenderer();
-          var chicago = new google.maps.LatLng(31.2000, 121.5000);
+          directionsService = new google.maps.DirectionsService();
+          cityRequested = $('a.active').text().toLowerCase();
+          school = new google.maps.LatLng(hpSchools[cityRequested][0], hpSchools[cityRequested][1]);
           var mapOptions = {
             zoom:15,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            center: chicago
+            center: school
           }
           map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+          var marker = new google.maps.Marker({ 
+                position: school,
+                map: map,
+                title: 'horizons'
+          });
           directionsDisplay.setMap(map);
+            $('button.get-directions, submit').click(function(e){
+                e.preventDefault();
+                calcRoute();
+            });
         }
         function loadMaps(){
-            google.load("maps", "3", {"callback" : mapsLoaded,"language" : "{{ LANGUAGE_CODE }}",  "other_params" : "sensor=false"});
+            google.load("maps", "3", {"callback" : mapsLoaded, "other_params" : "sensor=false&language={{ LANGUAGE_CODE }}"});
+        }
+        function calcRoute() {
+            var start = $('#start').val();
+            var request = {
+                origin: start,
+                destination: hpSchools[cityRequested],
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            };
+            directionsService.route(request, function(response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                }
+            });
         }
       </script>
 {% endblock %}

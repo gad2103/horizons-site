@@ -329,6 +329,11 @@ img.icon {
   .page_number_list .current, .page_number_list a .current, .previous_page .current, .previous_page a .current, .next_page .current, .next_page a .current, .back_link .current, .back_link a .current {
     text-decoration: underline; }
 
+.author_link, .author_link a {
+  color: #d27d34;
+  font-size: 12px;
+  font-style: italic; }
+
 .page_number_list span:before, .page_number_list a:before {
   content: "- "; }
 
@@ -585,6 +590,17 @@ img.icon {
 #content .exerpt, #content .weblinks {
   font-size: 0.8em; }
 
+#map-canvas img {
+  max-width: none !important; }
+#map-canvas label {
+  width: auto !important;
+  display: inline !important; }
+#map-canvas .gm-style img {
+  max-width: none; }
+#map-canvas .gm-style label {
+  width: auto;
+  display: inline; }
+
 .portals {
   width: 970px;
   padding-bottom: 16px; }
@@ -612,7 +628,7 @@ img.icon {
       min-height: 150px;
       font-size: 0.825em;
       #font-style: italic;
-      padding: 30px 10px; }
+      padding: 15px 10px; }
       .portals .portal_panel .content .text {
         width: 166px; }
     .portals .portal_panel .footer {
@@ -672,6 +688,8 @@ img.icon {
       background-color: #ecfee5; }
     .portals a:hover #cc .content {
       background-color: #e8d9de; }
+    .portals a:hover #ac .content {
+      background-color: #e3fc9a; }
 
 /* Left Sidebar */
 #left_bar {
@@ -941,7 +959,7 @@ img.icon {
   .instructor_page #main_pane li h2 {
     padding-top: 0; }
   .instructor_page #main_pane .person_name span:first-child {
-    text-transform: uppercase; }
+    text-transform: capitalize; }
   .instructor_page #main_pane .message {
     padding-top: 1em; }
 .instructor_page ul.courses {
@@ -1030,6 +1048,22 @@ img.icon {
 .location_page #main_pane #content img {
   float: left;
   max-width: 100%; }
+.location_page #directionsToSchool {
+  color: #d27d34;
+  font-size: 0.9em;
+  margin: 12px 0; }
+  .location_page #directionsToSchool label, .location_page #directionsToSchool input, .location_page #directionsToSchool button {
+    float: left;
+    margin: 7px 0; }
+  .location_page #directionsToSchool label {
+    text-transform: capitalize; }
+  .location_page #directionsToSchool input {
+    width: 98%;
+    color: #d27d34;
+    height: 22px;
+    padding: 2px; }
+  .location_page #directionsToSchool button {
+    font-size: 0.8em; }
 
 .aboutus_page #main_pane {
   width: 508px; }

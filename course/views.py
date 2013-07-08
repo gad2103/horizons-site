@@ -24,7 +24,7 @@ def index_redirect(request, identifier):
     elif type == TargetCategory.LANGUAGEARTS:
         next_page = reverse('languagearts_home', kwargs={'type': type, 'identifier': identifier})
     
-    return HttpResponseRedirect(a_course)
+    return HttpResponseRedirect(next_page)
     
 def index(request, type=None, identifier=None):
     initializer = {}
@@ -152,7 +152,7 @@ def current_classes(request, type, course=None, pages='5'):
 def upcoming_classes(request, type, course=None, pages='5'):
     
     if course:
-        class_list = Class.objects.filter(course=course, start_time__gt = datetime.now())
+        class_list = Class.objects.filter(course=course, start_time__gt = datetime.now()) 
         sorted_target_list = None
         target = None
     else:

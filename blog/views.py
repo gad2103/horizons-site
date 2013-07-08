@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.utils.translation import ugettext as _
 
-from blog.models import Blog, LocalizedBlog
+from blog.models import Blog, LocalizedBlog,Author, LocalizedAuthor
 from course.models import Target, TargetCategory
 from node.models import DataState, Language
 from node.views import Paginate, LocalSet
@@ -118,4 +118,23 @@ def navigation(request, year=None):
          'trimester_list': trimester_list,
          },
         context_instance=RequestContext(request))
+def author_list(request):
+    meta_queryset = Author.objects.filter(data_state=DataState.PUBLISHED)
+    queryset = LocalizedAuthor.objects.filter(data_state=DataState.PUBLISHED)
+    new_queryset = LocalSet(request, meta_queryset, queryset)
     
+    list = Paginate(request, new_queryset, 3)
+    '''if type == TargetCategory.TESTPREPARATIONS:
+        url = reverse('tp_instructor_list')
+    elif type == TargetCategory.LANGUAGEARTS:
+        url = reverse('la_instructor_list')
+   ''' 
+    url="dummy"
+    return render_to_response(
+        'authors/details.html',
+        {
+            'details_list': list,
+            'url': url,
+        },
+        context_instance=RequestContext(request)
+    )

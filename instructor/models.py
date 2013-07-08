@@ -11,7 +11,7 @@ class Instructor(Node):
     def __unicode__(self):
         try:
             Loc = LocalizedInstructor.objects.get(meta__pk = self.pk, language=Language.DEFAULT)
-            return '%s, %s' % (Loc.last_name, Loc.first_name)
+            return '%s, %s' % (Loc.first_name, Loc.last_name)
         except LocalizedNode.DoesNotExist:
             return '%s' % (self.pk)
             

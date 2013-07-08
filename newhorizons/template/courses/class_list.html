@@ -19,7 +19,7 @@
             <div class="title">{{ item.course.name|truncatechars:16 }}</div>
             <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
             <div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">PDF</a>{% endif %}</div>
-            <div class="location">{{ item.location }}</div>
+            <div class="location">{{ item.location.all|join:", " }}</div>
         </div>
     {% empty %}
         <div class="message">{{ none_message|safe }}</div>

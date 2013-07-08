@@ -29,8 +29,6 @@
                     <a href="{{ item.file.url }}">{% trans "read more" %}</a>
                 {% elif item.url %}
                     <a href="{{ item.url }}">{% trans "read more" %}</a>
-                {% elif item.author %}
-                    {{ item.author }}
                     <div class="link"><a href="{% url 'aboutus' %}">{% trans "more testimonials" %}</a></div>
                 {% else %}
                     <a href="#" onclick="setContent( '{{ item.details_url }}?page_no={{ list.number }}{% if year %}&year={{ year }}{% endif %}{% if trimester %}&trimester={{ trimester }}{% endif %}' ); return false;">

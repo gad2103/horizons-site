@@ -454,6 +454,11 @@ img.icon {
 	text-decoration: underline;
     }
 }
+.author_link, .author_link a {
+    color: $gold;
+    font-size: 12px;
+    font-style: italic;
+}
 .page_number_list span:before, .page_number_list a:before {
     content: "- ";
 }
@@ -634,6 +639,12 @@ img.icon {
 	font-size: 0.8em;
     }
 }
+#map-canvas {
+    img { max-width: none !important;}
+    label { width:auto !important; display:inline !important;}
+    .gm-style img { max-width: none;}
+    .gm-style label { width: auto; display: inline;}
+}
 .portals {
     width: 970px;
     img {
@@ -659,7 +670,7 @@ img.icon {
 	    min-height: 150px;
 	    font-size: 0.825em;
 	    #font-style: italic;
-	    padding: 30px 10px;
+	    padding: 15px 10px;
 	    .text {
 		//float: left;
 		width: 166px;
@@ -748,6 +759,7 @@ img.icon {
 	#la .content { background-color: $la-color-light; }
 	#tp .content { background-color: $tp-color-light; }
 	#cc .content { background-color: $cc-color-light; }
+    #ac .content { background-color: $ac-color-light; }
     }
 }
 
@@ -1088,7 +1100,7 @@ img.icon {
 	}
 	width: $no-rightbar-main; 
 	.person_name span:first-child {
-	    text-transform: uppercase;
+	    text-transform: capitalize;
 	}
 	.message {
 	    padding-top: 1em;
@@ -1210,6 +1222,15 @@ img.icon {
     }
     #main_pane #content {
 	img { float: left; max-width: 100%; }
+    }
+    #directionsToSchool {
+        color: $gold;
+        font-size: 0.9em;
+        margin: 12px 0;
+        label, input, button { float: left; margin:7px 0;}
+        label{ text-transform: capitalize;}
+        input { width:98%; color: $gold; height:22px;padding:2px;}
+        button { font-size: 0.8em;}
     }
 }
 .aboutus_page {

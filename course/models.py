@@ -74,21 +74,24 @@ class Class(Node):
     start_time = models.DateField()
     end_time = models.DateField()
     schedule = models.FileField(upload_to="schedules/%Y/%m", blank=True, null=True)
-    location = models.ForeignKey(Location, blank=True, null=True)
+    location = models.ManyToManyField(Location, blank=True, null=True)
     priority = models.IntegerField(help_text="'1' means the first item of a list.", default='1000')
     
     class Meta:
         verbose_name_plural = 'Classes'
         ordering = ['start_time', 'location__priority']
         
+    def get_locations(self):
+        return ", ".join([l.name for l in self.location.all()])
+
     def __unicode__(self):
         DATE_FORMAT = "%Y-%m-%d"
         TIME_FORMAT = "%H:%M:%S"
         
         if self.schedule==None:
-            return '%s - %s %s (no schedule file) at %s' % (self.code, self.course, self.pk, self.location)
+            return '%s - %s %s (no schedule file) at %s' % (self.code, self.course, self.pk, self.get_locations())
         else:
-            return '%s - %s %s at %s' % (self.code, self.course, self.pk, self.location)
+            return '%s - %s %s at %s' % (self.code, self.course, self.pk, self.get_locations())
         #if self.schedule==None:
         #    return '%s %s (no schedule file) at %s' % (self.course, self.pk, self.location)
         #else:

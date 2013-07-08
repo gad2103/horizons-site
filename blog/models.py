@@ -11,13 +11,13 @@ class Author(Node):
     def __unicode__(self):
         try:
             Loc = LocalizedAuthor.objects.get(meta__pk = self.pk, language=Language.DEFAULT)
-            return u'%s, %s' % (Loc.last_name, Loc.first_name)
+            return u'%s %s' % (Loc.first_name, Loc.last_name)
         except LocalizedNode.DoesNotExist:
             return u'%s' % (self.pk)
-    def __init__(self, *args, **kwargs):
+    '''def __init__(self, *args, **kwargs):
         self._meta.get_field('data_state').default = 2
         self._meta.get_field('data_state').editable = False
-        super(Author, self).__init__(*args, **kwargs)
+        super(Author, self).__init__(*args, **kwargs)'''
 
 class LocalizedAuthor(LocalizedNode):
     meta = models.ForeignKey(Author)
@@ -30,7 +30,7 @@ class LocalizedAuthor(LocalizedNode):
         
 class Blog(Node):
     picture = models.ImageField(upload_to='blog/%Y/%m', blank=True, null=True, help_text="Please select a square picture.")
-    created_by = models.ForeignKey(Author, blank=True, null=True)
+    created_by = models.ForeignKey(Author, blank=True, null=True, limit_choices_to={'data_state': 2})
     
     def __unicode__(self):
         local_item = LocalItem(self, LocalizedBlog)

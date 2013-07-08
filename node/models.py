@@ -35,6 +35,13 @@ class Node(models.Model):
     def __unicode__(self):
         #return '%s' % (self.pk)
         return unicode(self.pk) or u''
+
+    '''def __init__(self, *args, **kwargs):
+        if self.__class__.__name__ == "Author":
+            self._meta.get_field('data_state').default = DataState.PUBLISHED
+        else:
+            self._meta.get_field('data_state').default = DataState.SUBMITTED
+        super(Node,self).__init__(*args, **kwargs)'''
         
     def save(self, request=None, *args, **kwargs):
         self.modified = datetime.datetime.today()
