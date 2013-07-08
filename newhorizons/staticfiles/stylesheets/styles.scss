@@ -39,11 +39,11 @@ $footer: $dark-blue;
 /* Measurements */
 $home-page-panels: 306px;
 $home-page-course-panels: 230px;
-$leftbar: 200px;
-$main: 508px;
-$main-padding: 0 26px;
+$leftbar: 195px;
+$main: 460px;
+$main-padding: 0 20px;
 $main-full: 960px;
-$rightbar: 200px;
+$rightbar: 265px;
 $no-rightbar-main: 708px;
 
 /* Effects */
@@ -425,6 +425,9 @@ img.icon {
 	>div {
 	    float: left;
 	}
+    .last-child {
+        float: right;
+    }
     }
     .item:nth-child(odd) {
 	background-color: $gray;
@@ -540,8 +543,8 @@ img.icon {
 	    border: none;
 	}
     }
-    #right_bar .schedule .file a {
-	color: $color;
+    #right_bar .schedule a {
+	color: $la-color;
     }
     button.contact, button.register {
 	background-color: $color;
@@ -832,24 +835,25 @@ img.icon {
 	    height: 28px;
 	}
 	.title {
-	    position: absolute;
-	    top: $padding;
-	    left: $padding * 3;
+	    //position: absolute;
+	    //top: $padding;
+	    //left: $padding * 3;
+        width: 100%;
 	}
 	.time {
-	    position: absolute;
-	    top: $padding;
-	    right: $padding * 3;
+	    //position: absolute;
+	    //top: $padding;
+	    //right: $padding * 3;
 	}
 	.file {
-	    position: absolute;
-	    bottom: $padding;
-	    left: $padding * 3;
+	    //position: absolute;
+	    //bottom: $padding;
+	    //left: $padding * 3;
 	}
 	.location {
-	    position: absolute;
-	    bottom: $padding;
-	    right: $padding * 3;
+	    //position: absolute;
+	    //bottom: $padding;
+	    //right: $padding * 3;
 	}
     }
     #advert_space {
@@ -1448,7 +1452,7 @@ img.icon {
 
 #news_panel, #blog_panel {
     .item {
-        padding: 15px;
+        padding: 10px;
     }
     .item:nth-child(even) {
 	background-color: $gray;

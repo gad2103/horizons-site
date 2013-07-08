@@ -308,6 +308,8 @@ img.icon {
   padding: 4px 10px; }
   .schedule .item > div {
     float: left; }
+  .schedule .item .last-child {
+    float: right; }
 .schedule .item:nth-child(odd) {
   background-color: #d5d5d5; }
 
@@ -393,7 +395,7 @@ img.icon {
   border-top: none; }
 .la_area #left_bar ul ul li {
   border: none; }
-.la_area #right_bar .schedule .file a {
+.la_area #right_bar .schedule a {
   color: #1a92cf; }
 .la_area button.contact, .la_area button.register {
   background-color: #1a92cf; }
@@ -425,8 +427,8 @@ img.icon {
   border-top: none; }
 .tp_area #left_bar ul ul li {
   border: none; }
-.tp_area #right_bar .schedule .file a {
-  color: #48834c; }
+.tp_area #right_bar .schedule a {
+  color: #1a92cf; }
 .tp_area button.contact, .tp_area button.register {
   background-color: #48834c; }
 .tp_area h2.schedule {
@@ -457,8 +459,8 @@ img.icon {
   border-top: none; }
 .cc_area #left_bar ul ul li {
   border: none; }
-.cc_area #right_bar .schedule .file a {
-  color: #b66685; }
+.cc_area #right_bar .schedule a {
+  color: #1a92cf; }
 .cc_area button.contact, .cc_area button.register {
   background-color: #b66685; }
 .cc_area h2.schedule {
@@ -489,8 +491,8 @@ img.icon {
   border-top: none; }
 .ac_area #left_bar ul ul li {
   border: none; }
-.ac_area #right_bar .schedule .file a {
-  color: #95b638; }
+.ac_area #right_bar .schedule a {
+  color: #1a92cf; }
 .ac_area button.contact, .ac_area button.register {
   background-color: #95b638; }
 .ac_area h2.schedule {
@@ -521,8 +523,8 @@ img.icon {
   border-top: none; }
 .neutral_area #left_bar ul ul li {
   border: none; }
-.neutral_area #right_bar .schedule .file a {
-  color: #d27d34; }
+.neutral_area #right_bar .schedule a {
+  color: #1a92cf; }
 .neutral_area button.contact, .neutral_area button.register {
   background-color: #d27d34; }
 .neutral_area h2.schedule {
@@ -532,8 +534,8 @@ img.icon {
 
 /* Main Pane */
 #main_pane {
-  width: 508px;
-  margin: 0 26px;
+  width: 460px;
+  margin: 0 20px;
   float: left; }
   #main_pane h2, #main_pane h2 a {
     text-transform: capitalize;
@@ -693,7 +695,7 @@ img.icon {
 
 /* Left Sidebar */
 #left_bar {
-  width: 200px;
+  width: 195px;
   float: left; }
   #left_bar h2, #left_bar h3 {
     padding: 6px 0; }
@@ -727,43 +729,29 @@ img.icon {
   #left_bar #advert_space {
     margin-bottom: 20px; }
     #left_bar #advert_space img {
-      width: 200px; }
+      width: 195px; }
   #left_bar .image {
     text-align: center; }
     #left_bar .image img {
-      max-width: 200px; }
+      max-width: 195px; }
 
 /* Right Sidebar */
 #right_bar {
   width: 200px;
   float: left; }
   #right_bar .panel {
-    width: 200px;
+    width: 265px;
     font-size: 0.85em; }
     #right_bar .panel h2 {
       font-size: 0.9em; }
   #right_bar .schedule .item {
     height: 28px; }
   #right_bar .schedule .title {
-    position: absolute;
-    top: 4px;
-    left: 12px; }
-  #right_bar .schedule .time {
-    position: absolute;
-    top: 4px;
-    right: 12px; }
-  #right_bar .schedule .file {
-    position: absolute;
-    bottom: 4px;
-    left: 12px; }
-  #right_bar .schedule .location {
-    position: absolute;
-    bottom: 4px;
-    right: 12px; }
+    width: 100%; }
   #right_bar #advert_space {
     padding-top: 10px; }
     #right_bar #advert_space img {
-      width: 200px; }
+      width: 265px; }
 
 /**********************************************************************************************/
 /***  Footer                                                                                ***/
@@ -1066,7 +1054,7 @@ img.icon {
     font-size: 0.8em; }
 
 .aboutus_page #main_pane {
-  width: 508px; }
+  width: 460px; }
   .aboutus_page #main_pane #content img {
     float: left;
     width: 200px; }
@@ -1230,7 +1218,7 @@ img.icon {
 /***  Panel-Specific Styles                                                                 ***/
 /**********************************************************************************************/
 #news_panel .item, #blog_panel .item {
-  padding: 15px; }
+  padding: 10px; }
 #news_panel .item:nth-child(even), #blog_panel .item:nth-child(even) {
   background-color: #d5d5d5; }
 
