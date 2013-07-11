@@ -305,7 +305,7 @@ img.icon {
 
 .schedule .item {
   height: 14px;
-  padding: 4px 10px; }
+  padding: 4px 7px; }
   .schedule .item > div {
     float: left; }
   .schedule .item .last-child {
@@ -349,7 +349,8 @@ img.icon {
   .page_category_list span.current {
     text-decoration: underline; }
   .page_category_list a, .page_category_list span {
-    padding: 0 6px; }
+    padding: 0 11px;
+    margin-bottom: 4px; }
 
 .previous_page, .next_page {
   position: absolute;
@@ -395,8 +396,29 @@ img.icon {
   border-top: none; }
 .la_area #left_bar ul ul li {
   border: none; }
+.la_area #right_bar .schedule .page_category_list a {
+  color: #1a92cf;
+  float: left;
+  width: 32px;
+  text-align: center; }
+  .la_area #right_bar .schedule .page_category_list a + a {
+    border-left: 1px solid; }
+  .la_area #right_bar .schedule .page_category_list a + span {
+    border-left: 1px solid;
+    border-right: 1px solid; }
+  .la_area #right_bar .schedule .page_category_list a + span:last-child {
+    border-right: none; }
+.la_area #right_bar .schedule .page_category_list span {
+  float: left;
+  width: 32px;
+  text-align: center; }
+.la_area #right_bar .schedule .page_category_list span:first-child {
+  border-left: none;
+  border-right: 1px solid; }
 .la_area #right_bar .schedule a {
   color: #1a92cf; }
+.la_area #right_bar .schedule .content {
+  clear: both; }
 .la_area button.contact, .la_area button.register {
   background-color: #1a92cf; }
 .la_area h2.schedule {
@@ -427,8 +449,29 @@ img.icon {
   border-top: none; }
 .tp_area #left_bar ul ul li {
   border: none; }
+.tp_area #right_bar .schedule .page_category_list a {
+  color: #1a92cf;
+  float: left;
+  width: 32px;
+  text-align: center; }
+  .tp_area #right_bar .schedule .page_category_list a + a {
+    border-left: 1px solid; }
+  .tp_area #right_bar .schedule .page_category_list a + span {
+    border-left: 1px solid;
+    border-right: 1px solid; }
+  .tp_area #right_bar .schedule .page_category_list a + span:last-child {
+    border-right: none; }
+.tp_area #right_bar .schedule .page_category_list span {
+  float: left;
+  width: 32px;
+  text-align: center; }
+.tp_area #right_bar .schedule .page_category_list span:first-child {
+  border-left: none;
+  border-right: 1px solid; }
 .tp_area #right_bar .schedule a {
   color: #1a92cf; }
+.tp_area #right_bar .schedule .content {
+  clear: both; }
 .tp_area button.contact, .tp_area button.register {
   background-color: #48834c; }
 .tp_area h2.schedule {
@@ -459,8 +502,29 @@ img.icon {
   border-top: none; }
 .cc_area #left_bar ul ul li {
   border: none; }
+.cc_area #right_bar .schedule .page_category_list a {
+  color: #1a92cf;
+  float: left;
+  width: 32px;
+  text-align: center; }
+  .cc_area #right_bar .schedule .page_category_list a + a {
+    border-left: 1px solid; }
+  .cc_area #right_bar .schedule .page_category_list a + span {
+    border-left: 1px solid;
+    border-right: 1px solid; }
+  .cc_area #right_bar .schedule .page_category_list a + span:last-child {
+    border-right: none; }
+.cc_area #right_bar .schedule .page_category_list span {
+  float: left;
+  width: 32px;
+  text-align: center; }
+.cc_area #right_bar .schedule .page_category_list span:first-child {
+  border-left: none;
+  border-right: 1px solid; }
 .cc_area #right_bar .schedule a {
   color: #1a92cf; }
+.cc_area #right_bar .schedule .content {
+  clear: both; }
 .cc_area button.contact, .cc_area button.register {
   background-color: #b66685; }
 .cc_area h2.schedule {
@@ -491,8 +555,29 @@ img.icon {
   border-top: none; }
 .ac_area #left_bar ul ul li {
   border: none; }
+.ac_area #right_bar .schedule .page_category_list a {
+  color: #1a92cf;
+  float: left;
+  width: 32px;
+  text-align: center; }
+  .ac_area #right_bar .schedule .page_category_list a + a {
+    border-left: 1px solid; }
+  .ac_area #right_bar .schedule .page_category_list a + span {
+    border-left: 1px solid;
+    border-right: 1px solid; }
+  .ac_area #right_bar .schedule .page_category_list a + span:last-child {
+    border-right: none; }
+.ac_area #right_bar .schedule .page_category_list span {
+  float: left;
+  width: 32px;
+  text-align: center; }
+.ac_area #right_bar .schedule .page_category_list span:first-child {
+  border-left: none;
+  border-right: 1px solid; }
 .ac_area #right_bar .schedule a {
   color: #1a92cf; }
+.ac_area #right_bar .schedule .content {
+  clear: both; }
 .ac_area button.contact, .ac_area button.register {
   background-color: #95b638; }
 .ac_area h2.schedule {
@@ -523,8 +608,29 @@ img.icon {
   border-top: none; }
 .neutral_area #left_bar ul ul li {
   border: none; }
+.neutral_area #right_bar .schedule .page_category_list a {
+  color: #1a92cf;
+  float: left;
+  width: 32px;
+  text-align: center; }
+  .neutral_area #right_bar .schedule .page_category_list a + a {
+    border-left: 1px solid; }
+  .neutral_area #right_bar .schedule .page_category_list a + span {
+    border-left: 1px solid;
+    border-right: 1px solid; }
+  .neutral_area #right_bar .schedule .page_category_list a + span:last-child {
+    border-right: none; }
+.neutral_area #right_bar .schedule .page_category_list span {
+  float: left;
+  width: 32px;
+  text-align: center; }
+.neutral_area #right_bar .schedule .page_category_list span:first-child {
+  border-left: none;
+  border-right: 1px solid; }
 .neutral_area #right_bar .schedule a {
   color: #1a92cf; }
+.neutral_area #right_bar .schedule .content {
+  clear: both; }
 .neutral_area button.contact, .neutral_area button.register {
   background-color: #d27d34; }
 .neutral_area h2.schedule {
@@ -534,7 +640,7 @@ img.icon {
 
 /* Main Pane */
 #main_pane {
-  width: 460px;
+  width: 489px;
   margin: 0 20px;
   float: left; }
   #main_pane h2, #main_pane h2 a {
@@ -737,10 +843,10 @@ img.icon {
 
 /* Right Sidebar */
 #right_bar {
-  width: 200px;
+  width: 236px;
   float: left; }
   #right_bar .panel {
-    width: 265px;
+    width: 236px;
     font-size: 0.85em; }
     #right_bar .panel h2 {
       font-size: 0.9em; }
@@ -751,7 +857,7 @@ img.icon {
   #right_bar #advert_space {
     padding-top: 10px; }
     #right_bar #advert_space img {
-      width: 265px; }
+      width: 236px; }
 
 /**********************************************************************************************/
 /***  Footer                                                                                ***/
@@ -1054,7 +1160,7 @@ img.icon {
     font-size: 0.8em; }
 
 .aboutus_page #main_pane {
-  width: 460px; }
+  width: 489px; }
   .aboutus_page #main_pane #content img {
     float: left;
     width: 200px; }

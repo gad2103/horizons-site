@@ -40,10 +40,10 @@ $footer: $dark-blue;
 $home-page-panels: 306px;
 $home-page-course-panels: 230px;
 $leftbar: 195px;
-$main: 460px;
+$main: 489px;
 $main-padding: 0 20px;
 $main-full: 960px;
-$rightbar: 265px;
+$rightbar: 236px;
 $no-rightbar-main: 708px;
 
 /* Effects */
@@ -421,7 +421,7 @@ img.icon {
 .schedule {
     .item {
 	height: 14px;
-	padding: 4px 10px;
+	padding: 4px 7px;
 	>div {
 	    float: left;
 	}
@@ -476,7 +476,8 @@ img.icon {
 	text-decoration: underline;
     }
     a, span {
-	padding: 0 6px;
+	padding: 0 11px;
+    margin-bottom: 4px;
     }
 }
 .previous_page, .next_page {
@@ -543,8 +544,31 @@ img.icon {
 	    border: none;
 	}
     }
+    #right_bar .schedule .page_category_list {
+        a {
+            color: $la-color;
+            float:left;
+            width: 32px;
+            text-align:center;
+            +a { border-left: 1px solid;}
+            +span { border-left: 1px solid; border-right: 1px solid;}
+            +span:last-child { border-right: none;}
+        }
+        span {
+            float:left;
+            width:32px;
+            text-align:center;
+        }
+        span:first-child {
+            border-left:none;
+            border-right: 1px solid;
+        }
+    }
     #right_bar .schedule a {
-	color: $la-color;
+        color: $la-color;
+    }
+    #right_bar .schedule .content {
+        clear:both;
     }
     button.contact, button.register {
 	background-color: $color;
@@ -822,7 +846,7 @@ img.icon {
 /* Right Sidebar */
 
 #right_bar {
-    width: 200px;
+    width: $rightbar;
     float:left;
     .panel {
 	width: $rightbar;

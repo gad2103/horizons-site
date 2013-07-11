@@ -12,7 +12,7 @@
             <div class="content">
                 <div class="title">{{ item.course.name }}</div>
                 <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
-                <div class="location">{{ item.location }}</div>
+                <div class="location">{{ item.location.all|join:", " }}</div>
                 <div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">Download PDF</a>{% endif %}</div>
             </div>
         </div>
@@ -32,7 +32,7 @@
             <div class="content">
                 <div class="title">{{ item.course.name }}</div>
                 <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
-                <div class="location">{{ item.location }}</div>
+                <div class="location">{{ item.location.all|join:", " }}</div>
                 <div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">Download PDF</a>{% endif %}</div>
             </div>
         </div>

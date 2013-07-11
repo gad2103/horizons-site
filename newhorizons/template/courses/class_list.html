@@ -1,14 +1,14 @@
 {% load url from future %}
 {% load i18n %}
-
+{% load replace %} 
 
 <h2>{{ title }}</h2>
 <div class="page_category_list">
     {% for item in sub_nav %}
         {% ifequal item.pk|stringformat:"s" target|stringformat:"s" %}
-            <span class="current">{{ item }}</span>
+        <span class="current">{{ item|replace:"\((.*)\),"}}</span>
         {% else %}   
-            <a href="#" onclick="$(' {{ panel }} ').load( '{{ url }}?target={{ item.pk }}' ); return false;" >{{ item.shortname }}</a>
+            <a href="#" onclick="$(' {{ panel }} ').load( '{{ url }}?target={{ item.pk }}' ); return false;" >{{ item|replace:"\((.*)\),"}}</a>
         {% endifequal %}
     {% endfor %}
 </div>
@@ -16,7 +16,7 @@
 <div class="content">
     {% for item in class_list %}
         <div class="item">
-            <div class="title">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">{{ item.course.name }}(PDF)</a>{% else %}{{ item.course.name }}{% endif %}</div>
+            <div class="title">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">{{ item.course.name }}   (PDF)</a>{% else %}{{ item.course.name }}{% endif %}</div>
             <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
             <!--<div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">PDF</a>{% endif %}</div>-->
             <div class="location last-child">{{ item.location.all|join:", " }}</div>

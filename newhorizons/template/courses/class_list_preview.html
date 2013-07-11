@@ -6,9 +6,9 @@
 <div class="content">
     {% for item in class_list %}
         <div class="item">
-            <div class="title">{{ item.course.name|truncatechars:16 }}</div>
+            <div class="title">{{ item.course.name|truncatechars:14 }}</div>
             <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
-            <div class="location">{{ item.location }}</div>
+            <div class="location">{{ item.location.all|join:", " }}</div>
         </div>
     {% endfor %}
 </div>

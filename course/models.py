@@ -1,5 +1,5 @@
 from django.db import models
-
+import re
 from instructor.models import Instructor
 from location.models import Location
 from node.models import Node, LocalizedNode, Language
@@ -80,18 +80,19 @@ class Class(Node):
     class Meta:
         verbose_name_plural = 'Classes'
         ordering = ['start_time', 'location__priority']
-        
-    def get_locations(self):
-        return ", ".join([l.name for l in self.location.all()])
+    
+    @property
+    def get_class_type(self):
+        return re.sub("\((.*)\)", r"", self.course)
 
     def __unicode__(self):
         DATE_FORMAT = "%Y-%m-%d"
         TIME_FORMAT = "%H:%M:%S"
         
         if self.schedule==None:
-            return '%s - %s %s (no schedule file) at %s' % (self.code, self.course, self.pk, self.get_locations())
+            return '%s - %s %s (no schedule file) at %s' % (self.code, self.course, self.pk, ", ".join([l.name for l in self.location.all()]))
         else:
-            return '%s - %s %s at %s' % (self.code, self.course, self.pk, self.get_locations())
+            return '%s - %s %s at %s' % (self.code, self.course, self.pk, ", ".join([l.name for l in self.location.all()]))
         #if self.schedule==None:
         #    return '%s %s (no schedule file) at %s' % (self.course, self.pk, self.location)
         #else:

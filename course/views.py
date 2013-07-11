@@ -1,4 +1,4 @@
-import sys
+import sys, re
 from datetime import datetime
 from django.core.urlresolvers import reverse
 from django.db import models
@@ -135,6 +135,8 @@ def current_classes(request, type, course=None, pages='5'):
         list = Paginate(request, class_list, pages)
     else:
         list = None
+
+    #return HttpResponse(sorted_target_list)
         
     return render_to_response(
         'courses/class_list.html',
