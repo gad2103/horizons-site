@@ -11,6 +11,7 @@
             <a href="#" onclick="$(' {{ panel }} ').load( '{{ url }}?target={{ item.pk }}' ); return false;" >{{ item|replace:"\((.*)\),"}}</a>
         {% endifequal %}
     {% endfor %}
+    <div class="clearfix"></div>
 </div>
 
 <div class="content">

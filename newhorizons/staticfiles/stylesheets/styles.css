@@ -304,14 +304,15 @@ img.icon {
     font-weight: bold; }
 
 .schedule .item {
+  background-color: #d5d5d5;
   height: 14px;
-  padding: 4px 7px; }
+  padding: 7px; }
   .schedule .item > div {
     float: left; }
   .schedule .item .last-child {
     float: right; }
-.schedule .item:nth-child(odd) {
-  background-color: #d5d5d5; }
+  .schedule .item + .item {
+    border-top: 1px solid; }
 
 #relatedlinks_panel .item {
   padding: 12px 0 8px 12px; }
@@ -343,14 +344,12 @@ img.icon {
   content: ""; }
 
 .page_category_list {
-  padding: 6px;
   font-size: 0.8em;
-  font-weight: 600; }
+  font-weight: bold; }
   .page_category_list span.current {
     text-decoration: underline; }
   .page_category_list a, .page_category_list span {
-    padding: 0 11px;
-    margin-bottom: 4px; }
+    padding: 0 11px; }
 
 .previous_page, .next_page {
   position: absolute;
@@ -371,6 +370,8 @@ img.icon {
 /**********************************************************************************************/
 /***  Area-Specific Styles                                                                  ***/
 /**********************************************************************************************/
+.la_area .page_category_list {
+  background: #1a92cf; }
 .la_area .page_content_header {
   background-color: #1a92cf; }
 .la_area #main_pane h2 {
@@ -397,24 +398,20 @@ img.icon {
 .la_area #left_bar ul ul li {
   border: none; }
 .la_area #right_bar .schedule .page_category_list a {
-  color: #1a92cf;
+  color: #fff;
   float: left;
   width: 32px;
-  text-align: center; }
-  .la_area #right_bar .schedule .page_category_list a + a {
-    border-left: 1px solid; }
-  .la_area #right_bar .schedule .page_category_list a + span {
-    border-left: 1px solid;
-    border-right: 1px solid; }
-  .la_area #right_bar .schedule .page_category_list a + span:last-child {
-    border-right: none; }
+  padding: 7px 8px;
+  text-align: center;
+  background: #1a92cf; }
 .la_area #right_bar .schedule .page_category_list span {
   float: left;
   width: 32px;
-  text-align: center; }
+  text-align: center;
+  padding: 7px 8px;
+  background: #d5d5d5; }
 .la_area #right_bar .schedule .page_category_list span:first-child {
-  border-left: none;
-  border-right: 1px solid; }
+  border-left: none; }
 .la_area #right_bar .schedule a {
   color: #1a92cf; }
 .la_area #right_bar .schedule .content {
@@ -424,6 +421,8 @@ img.icon {
 .la_area h2.schedule {
   background-color: #1a92cf; }
 
+.tp_area .page_category_list {
+  background: #48834c; }
 .tp_area .page_content_header {
   background-color: #48834c; }
 .tp_area #main_pane h2 {
@@ -450,26 +449,22 @@ img.icon {
 .tp_area #left_bar ul ul li {
   border: none; }
 .tp_area #right_bar .schedule .page_category_list a {
-  color: #1a92cf;
+  color: #fff;
   float: left;
-  width: 32px;
-  text-align: center; }
-  .tp_area #right_bar .schedule .page_category_list a + a {
-    border-left: 1px solid; }
-  .tp_area #right_bar .schedule .page_category_list a + span {
-    border-left: 1px solid;
-    border-right: 1px solid; }
-  .tp_area #right_bar .schedule .page_category_list a + span:last-child {
-    border-right: none; }
+  width: 50%;
+  padding: 7px 6px;
+  text-align: center;
+  background: #48834c; }
 .tp_area #right_bar .schedule .page_category_list span {
   float: left;
-  width: 32px;
-  text-align: center; }
+  width: 38.2%;
+  text-align: center;
+  padding: 7px 8px;
+  background: #d5d5d5; }
 .tp_area #right_bar .schedule .page_category_list span:first-child {
-  border-left: none;
-  border-right: 1px solid; }
+  border-left: none; }
 .tp_area #right_bar .schedule a {
-  color: #1a92cf; }
+  color: #48834c; }
 .tp_area #right_bar .schedule .content {
   clear: both; }
 .tp_area button.contact, .tp_area button.register {
@@ -477,6 +472,8 @@ img.icon {
 .tp_area h2.schedule {
   background-color: #48834c; }
 
+.cc_area .page_category_list {
+  background: #b66685; }
 .cc_area .page_content_header {
   background-color: #b66685; }
 .cc_area #main_pane h2 {
@@ -503,26 +500,22 @@ img.icon {
 .cc_area #left_bar ul ul li {
   border: none; }
 .cc_area #right_bar .schedule .page_category_list a {
-  color: #1a92cf;
+  color: #fff;
   float: left;
-  width: 32px;
-  text-align: center; }
-  .cc_area #right_bar .schedule .page_category_list a + a {
-    border-left: 1px solid; }
-  .cc_area #right_bar .schedule .page_category_list a + span {
-    border-left: 1px solid;
-    border-right: 1px solid; }
-  .cc_area #right_bar .schedule .page_category_list a + span:last-child {
-    border-right: none; }
+  width: 50%;
+  padding: 7px 6px;
+  text-align: center;
+  background: #b66685; }
 .cc_area #right_bar .schedule .page_category_list span {
   float: left;
-  width: 32px;
-  text-align: center; }
+  width: 38.2%;
+  text-align: center;
+  padding: 7px 8px;
+  background: #d5d5d5; }
 .cc_area #right_bar .schedule .page_category_list span:first-child {
-  border-left: none;
-  border-right: 1px solid; }
+  border-left: none; }
 .cc_area #right_bar .schedule a {
-  color: #1a92cf; }
+  color: #b66685; }
 .cc_area #right_bar .schedule .content {
   clear: both; }
 .cc_area button.contact, .cc_area button.register {
@@ -530,6 +523,8 @@ img.icon {
 .cc_area h2.schedule {
   background-color: #b66685; }
 
+.ac_area .page_category_list {
+  background: #95b638; }
 .ac_area .page_content_header {
   background-color: #95b638; }
 .ac_area #main_pane h2 {
@@ -556,26 +551,22 @@ img.icon {
 .ac_area #left_bar ul ul li {
   border: none; }
 .ac_area #right_bar .schedule .page_category_list a {
-  color: #1a92cf;
+  color: #fff;
   float: left;
-  width: 32px;
-  text-align: center; }
-  .ac_area #right_bar .schedule .page_category_list a + a {
-    border-left: 1px solid; }
-  .ac_area #right_bar .schedule .page_category_list a + span {
-    border-left: 1px solid;
-    border-right: 1px solid; }
-  .ac_area #right_bar .schedule .page_category_list a + span:last-child {
-    border-right: none; }
+  width: 50%;
+  padding: 7px 6px;
+  text-align: center;
+  background: #95b638; }
 .ac_area #right_bar .schedule .page_category_list span {
   float: left;
-  width: 32px;
-  text-align: center; }
+  width: 38.2%;
+  text-align: center;
+  padding: 7px 8px;
+  background: #d5d5d5; }
 .ac_area #right_bar .schedule .page_category_list span:first-child {
-  border-left: none;
-  border-right: 1px solid; }
+  border-left: none; }
 .ac_area #right_bar .schedule a {
-  color: #1a92cf; }
+  color: #95b638; }
 .ac_area #right_bar .schedule .content {
   clear: both; }
 .ac_area button.contact, .ac_area button.register {
@@ -583,6 +574,8 @@ img.icon {
 .ac_area h2.schedule {
   background-color: #95b638; }
 
+.neutral_area .page_category_list {
+  background: #d27d34; }
 .neutral_area .page_content_header {
   background-color: #d27d34; }
 .neutral_area #main_pane h2 {
@@ -609,26 +602,22 @@ img.icon {
 .neutral_area #left_bar ul ul li {
   border: none; }
 .neutral_area #right_bar .schedule .page_category_list a {
-  color: #1a92cf;
+  color: #fff;
   float: left;
-  width: 32px;
-  text-align: center; }
-  .neutral_area #right_bar .schedule .page_category_list a + a {
-    border-left: 1px solid; }
-  .neutral_area #right_bar .schedule .page_category_list a + span {
-    border-left: 1px solid;
-    border-right: 1px solid; }
-  .neutral_area #right_bar .schedule .page_category_list a + span:last-child {
-    border-right: none; }
+  width: 50%;
+  padding: 7px 6px;
+  text-align: center;
+  background: #d27d34; }
 .neutral_area #right_bar .schedule .page_category_list span {
   float: left;
-  width: 32px;
-  text-align: center; }
+  width: 38.2%;
+  text-align: center;
+  padding: 7px 8px;
+  background: #d5d5d5; }
 .neutral_area #right_bar .schedule .page_category_list span:first-child {
-  border-left: none;
-  border-right: 1px solid; }
+  border-left: none; }
 .neutral_area #right_bar .schedule a {
-  color: #1a92cf; }
+  color: #d27d34; }
 .neutral_area #right_bar .schedule .content {
   clear: both; }
 .neutral_area button.contact, .neutral_area button.register {
@@ -640,7 +629,7 @@ img.icon {
 
 /* Main Pane */
 #main_pane {
-  width: 489px;
+  width: 485px;
   margin: 0 20px;
   float: left; }
   #main_pane h2, #main_pane h2 a {
@@ -843,10 +832,10 @@ img.icon {
 
 /* Right Sidebar */
 #right_bar {
-  width: 236px;
+  width: 240px;
   float: left; }
   #right_bar .panel {
-    width: 236px;
+    width: 240px;
     font-size: 0.85em; }
     #right_bar .panel h2 {
       font-size: 0.9em; }
@@ -857,7 +846,7 @@ img.icon {
   #right_bar #advert_space {
     padding-top: 10px; }
     #right_bar #advert_space img {
-      width: 236px; }
+      width: 240px; }
 
 /**********************************************************************************************/
 /***  Footer                                                                                ***/
@@ -1160,7 +1149,7 @@ img.icon {
     font-size: 0.8em; }
 
 .aboutus_page #main_pane {
-  width: 489px; }
+  width: 485px; }
   .aboutus_page #main_pane #content img {
     float: left;
     width: 200px; }

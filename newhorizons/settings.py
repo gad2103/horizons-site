@@ -129,6 +129,7 @@ TEMPLATE_LOADERS = (
 # Turn off in production
 
 INTERNAL_IPS=('127.0.0.1',)
+ADMIN_LANGUAGE_CODE = 'en'
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
@@ -140,6 +141,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # Enabling translation
     'django.middleware.locale.LocaleMiddleware',
+    'newhorizons.custom_middleware.AdminLocaleURLMiddleware',
 )
 
 if not LIVEHOST:
