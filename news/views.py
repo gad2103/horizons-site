@@ -16,6 +16,7 @@ from sitemessage.views import get_message
 def list(request, year=None, trimester=None):
 
     from_time, to_time = date_helper(trimester,year)
+    print to_time
     meta_queryset = News.objects.filter(published__gt=from_time, published__lt=to_time, data_state=DataState.PUBLISHED).order_by('-published')
     queryset = LocalizedNews.objects.filter(published__gt=from_time, published__lt=to_time, data_state=DataState.PUBLISHED).order_by('-published')
     new_queryset = LocalSet(request, meta_queryset, queryset)

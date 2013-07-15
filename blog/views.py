@@ -9,10 +9,11 @@ from course.models import Target, TargetCategory
 from node.models import DataState, Language
 from node.views import Paginate, LocalSet
 from sitemessage.views import get_message
+from news.views import date_helper
 
 def list(request, year=None, trimester=None):
     
-    if not year or not trimester:
+    '''if not year or not trimester:
         this_date = datetime.datetime.today()
         year = this_date.year
         this_trimester = (this_date.month-1)/3
@@ -25,7 +26,9 @@ def list(request, year=None, trimester=None):
         
     from_time = datetime.datetime.strptime(str(int(trimester)*3-2) + ' 1 '+ str(year), '%m %d %Y')
     to_time = datetime.datetime.strptime(str((int(trimester)*3+1)%12) + ' 1 '+ str(to_year), '%m %d %Y')
-        
+    print to_time
+      '''  
+    from_time, to_time = date_helper(trimester,year)
     meta_queryset = Blog.objects.filter(published__gt=from_time, published__lt=to_time, data_state=DataState.PUBLISHED).order_by('-published')
     queryset = LocalizedBlog.objects.filter(published__gt=from_time, published__lt=to_time, data_state=DataState.PUBLISHED).order_by('-published')
     new_queryset = LocalSet(request, meta_queryset, queryset)
@@ -37,6 +40,7 @@ def list(request, year=None, trimester=None):
     
     # Set pagination
     list = Paginate(request, new_queryset, 5)
+    #HttpResponse(list)
     
     return render_to_response(
         'list2.html',

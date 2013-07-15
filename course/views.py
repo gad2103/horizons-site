@@ -77,14 +77,14 @@ def index(request, type=None, identifier=None):
         initializer['content_url'] = reverse('cc_home_page')
     elif type ==  TargetCategory.ADMISSIONSCOUNSELING:
         template = 'courses/index_ac.html'
-        banners = None #getBanners(request, BannerCategory.CC_COURSE)
+        banners = getBanners(request, BannerCategory.AC_COURSE)
         try:
             left_nav_image = SiteImage.objects.get(category=SiteImageCategory.AC_COURSE)
         except Exception:
             left_nav_image = None
-        initializer['header_text'] = _('admissions consulting')
+        initializer['header_text'] = _('admissions counseling')
         initializer['content_url'] = reverse('ac_home_page')
-        initializer['nav_url'] = reverse('languagearts_nav')
+        initializer['nav_url'] = reverse('admissions_nav')
     else:
         template = 'courses/index.html'
         banners = None
@@ -154,7 +154,7 @@ def current_classes(request, type, course=None, pages='5'):
 def upcoming_classes(request, type, course=None, pages='5'):
     
     if course:
-        class_list = Class.objects.filter(course=course, start_time__gt = datetime.now()) 
+        class_list = Class.objects.filter(course=course, start_time__gt = datetime.now()).distinct()
         sorted_target_list = None
         target = None
     else:
@@ -390,11 +390,11 @@ def schedule(request, type):  # This is the index page of the schedule section
     
 def class_list(request, target=None, course=None):
     if course:
-        current_queryset = Class.objects.filter(course = course, start_time__lt = timezone.now(), end_time__gt = timezone.now())
-        upcoming_queryset = Class.objects.filter(course = course, start_time__gt = timezone.now())
+        current_queryset = Class.objects.filter(course = course, start_time__lt = timezone.now(), end_time__gt = timezone.now()).distinct().order_by('start_time')
+        upcoming_queryset = Class.objects.filter(course = course, start_time__gt = timezone.now()).distinct().order_by('start_time')
     else:
-        current_queryset = Class.objects.filter(course__target = target, start_time__lt = timezone.now(), end_time__gt = timezone.now())
-        upcoming_queryset = Class.objects.filter(course__target = target, start_time__gt = timezone.now())
+        current_queryset = Class.objects.filter(course__target = target, start_time__lt = timezone.now(), end_time__gt = timezone.now()).distinct().order_by('start_time')
+        upcoming_queryset = Class.objects.filter(course__target = target, start_time__gt = timezone.now()).distinct().order_by('start_time')
     
     return render_to_response(
         'courses/schedule_list.html',
@@ -416,21 +416,21 @@ def link_list(request, identifier):
 def current_class_list(request, target=None, category=None):
     
     if target:
-        queryset = Class.objects.filter(course__target = target, start_time__lt = datetime.now(), end_time__gt = datetime.now())
+        queryset = Class.objects.filter(course__target = target, start_time__lt = datetime.now(), end_time__gt = datetime.now()).distinct().order_by('start_time')
     elif category: 
-        queryset = Class.objects.filter(course__target__category = category, start_time__lt = datetime.now(), end_time__gt = datetime.now())
+        queryset = Class.objects.filter(course__target__category = category, start_time__lt = datetime.now(), end_time__gt = datetime.now()).distinct().order_by('start_time')
     else:
-        queryset = Class.objects.filter(start_time__lt = datetime.now(), end_time__gt = datetime.now())
+        queryset = Class.objects.filter(start_time__lt = datetime.now(), end_time__gt = datetime.now()).distinct().order_by('start_time')
     
     return queryset
     
 def upcoming_class_list(request, target=None, category=None):
     if target:
-        queryset = Class.objects.filter(course__target = target, start_time__gt = datetime.now())
+        queryset = Class.objects.filter(course__target = target, start_time__gt = datetime.now()).distinct().order_by('start_time')
     elif category:
-        queryset = Class.objects.filter(course__target__category = category, start_time__gt = datetime.now())
+        queryset = Class.objects.filter(course__target__category = category, start_time__gt = datetime.now()).distinct().order_by('start_time')
     else:
-        queryset = Class.objects.filter(start_time__gt = datetime.now())
+        queryset = Class.objects.filter(start_time__gt = datetime.now()).distinct().order_by('start_time')
     
     return queryset
     

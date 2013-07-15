@@ -24,6 +24,6 @@ class News(Node):
     
 class LocalizedNews(LocalizedNode):
     meta = models.ForeignKey(News)
-    title = models.CharField(max_length=63)
+    title = models.CharField(max_length=63, blank=True)
     exerpt = models.CharField(max_length=200, blank=True, null=True)
     description = HTMLField(blank=True, null=True)

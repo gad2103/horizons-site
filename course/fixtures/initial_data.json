@@ -3,21 +3,32 @@
       "pk": 1, 
       "model": "course.TargetCategory", 
       "fields": {
-         "name": "Test Preparation"
+         "name": "Test Preparation",
+         "picture": "portals/testprep_1.png"
          }
    }, 
    {
       "pk": 2, 
       "model": "course.TargetCategory", 
       "fields": {
-         "name": "Language Arts"
+         "name": "Language Arts",
+         "picture": "portals/languagearts_1.png"
          }
    }, 
    {
       "pk": 3, 
       "model": "course.TargetCategory", 
       "fields": {
-         "name": "Curriculum Consulting"
+         "name": "Curriculum Consulting",
+         "picture": "portals/curriculum_1.png"
+         }
+   },
+   {
+      "pk": 7, 
+      "model": "course.TargetCategory", 
+      "fields": {
+         "name": "Curriculum Consulting",
+         "picture": "portals/admissions_1.png"
          }
    }
 ]

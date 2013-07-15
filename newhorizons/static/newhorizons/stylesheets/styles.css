@@ -524,7 +524,7 @@ img.icon {
   background-color: #b66685; }
 
 .ac_area .page_category_list {
-  background: #95b638; }
+  display: none; }
 .ac_area .page_content_header {
   background-color: #95b638; }
 .ac_area #main_pane h2 {
@@ -553,13 +553,13 @@ img.icon {
 .ac_area #right_bar .schedule .page_category_list a {
   color: #fff;
   float: left;
-  width: 50%;
-  padding: 7px 6px;
+  width: 32px;
+  padding: 7px 8px;
   text-align: center;
   background: #95b638; }
 .ac_area #right_bar .schedule .page_category_list span {
   float: left;
-  width: 38.2%;
+  width: 32px;
   text-align: center;
   padding: 7px 8px;
   background: #d5d5d5; }
@@ -921,10 +921,6 @@ img.icon {
 
 .home_page .panel {
   width: 306px; }
-  .home_page .panel .footer {
-    position: absolute;
-    bottom: 0;
-    right: 10px; }
 .home_page .testimonial ul {
   height: 223px;
   display: table;
@@ -972,9 +968,10 @@ img.icon {
 .home_page .bottom > div:first-child, .home_page .bottom > div:nth-child(2) {
   margin-right: 20px; }
 .home_page .schedule {
-  position: relative;
-  padding: 10px;
-  height: 110px; }
+  padding: 0 10px; }
+  .home_page .schedule .item {
+    height: auto;
+    padding: 3px 6px; }
   .home_page .schedule h2 {
     padding: 5px 0 3px 0;
     color: #202f5f;
@@ -987,11 +984,13 @@ img.icon {
       font-size: 1em;
       font-weight: bold; }
   .home_page .schedule .content .title {
-    width: 100px; }
-  .home_page .schedule .content .time {
-    width: 100px; }
+    width: 100%;
+    font-size: 11px;
+    font-weight: bold; }
+  .home_page .schedule .content .time, .home_page .schedule .content .location {
+    font-size: 75%; }
   .home_page .schedule .content .location {
-    width: 60px; }
+    float: right; }
   .home_page .schedule .footer {
     font-weight: bold; }
 

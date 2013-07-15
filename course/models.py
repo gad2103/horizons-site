@@ -79,7 +79,7 @@ class Class(Node):
     
     class Meta:
         verbose_name_plural = 'Classes'
-        ordering = ['start_time', 'location__priority']
+        ordering = ['start_time']
     
     @property
     def get_class_type(self):

@@ -1,7 +1,19 @@
 
 function setContent(url) {
-    $( "#content" ).load(url);
-    return false;
+    if (url.split(',')[1] == "admissions_counseling") {
+        $.get(url.split(',')[0], function(data) {
+            var $data = $(data);
+            var len = $data.children().length
+            $data.children().each(function(i,v){
+                if (i != len-1) $(this).remove();
+            });
+            $('#content').html($data);
+        });
+        return false;
+    } else {
+        $( "#content" ).load(url);
+        return false;
+    }
 }
 
 /*function setPartial (url, appendAfterEl) {

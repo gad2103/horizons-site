@@ -172,7 +172,6 @@ def newsandevents(request, identifier=None):
         context_instance=RequestContext(request))
     
 def blog(request, identifier=None):
-    
     if identifier:
         content_url = reverse('blog_details', kwargs={'identifier':getItem(request, Blog, LocalizedBlog, identifier).pk})
     else:

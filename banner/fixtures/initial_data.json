@@ -96,5 +96,12 @@
       "fields": {
          "name": "Registration Form"
          }
+   },
+   {
+      "pk": 15, 
+      "model": "banner.BannerCategory", 
+      "fields": {
+         "name": "Admissions Counseling"
+         }
    }
 ]

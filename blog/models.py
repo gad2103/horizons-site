@@ -45,7 +45,7 @@ class Blog(Node):
     
 class LocalizedBlog(LocalizedNode):
     meta = models.ForeignKey(Blog)
-    title = models.CharField(max_length=63)
+    title = models.CharField(max_length=63, blank=True)
     exerpt = models.CharField(max_length=511, blank=True, null=True)
     description = HTMLField(blank=True, null=True)
         

@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import render_to_response
 from django.template import loader, Context, RequestContext
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 
 from banner.models import Banner, LocalizedBanner, BannerCategory
 from blog.models import Blog, LocalizedBlog
@@ -56,7 +56,7 @@ def home(request):
         context_instance=RequestContext(request))
     
 def news_list(request, number):
-    
+    return HttpResponse('hello')
     meta_queryset = News.objects.filter(data_state=DataState.PUBLISHED).order_by('published')
     queryset = LocalizedNews.objects.filter(data_state=DataState.PUBLISHED).order_by('published')[:number]
     new_queryset = LocalSet(request, meta_queryset, queryset)
@@ -64,7 +64,6 @@ def news_list(request, number):
     return new_queryset
     
 def blog_list(request, number):
-    
     meta_queryset = Blog.objects.filter(data_state=DataState.PUBLISHED).order_by('published')
     queryset = LocalizedBlog.objects.filter(data_state=DataState.PUBLISHED).order_by('published')[:number]
     new_queryset = LocalSet(request, meta_queryset, queryset)

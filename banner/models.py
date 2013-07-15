@@ -17,6 +17,7 @@ class BannerCategory(models.Model):
     TP_SCHEDULE = 12
     CONTACT = 13
     REGISTRATION = 14
+    AC_COURSE = 15
 
     name = models.CharField(max_length=63)   
     
@@ -36,4 +37,4 @@ class Banner(Node):
     
 class LocalizedBanner(LocalizedNode):
     meta = models.ForeignKey(Banner)
-    description = models.CharField(max_length=127, verbose_name='overlay text')
+    description = models.CharField(max_length=127, verbose_name='overlay text', blank=True)

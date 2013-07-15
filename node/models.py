@@ -90,7 +90,7 @@ class Language(models.Model):
         return language
         
 class LocalizedNode(Node):
-    language = models.ForeignKey(Language, related_name="localization language")
+    language = models.ForeignKey(Language, related_name="localization language", blank=True, default=12)
     
     def __unicode__(self):
         #return '%s' % (self.pk)
