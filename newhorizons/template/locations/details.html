@@ -2,24 +2,24 @@
 <!--<div class="description">{{ location.description|safe }}</div>-->
 <script>
     loadMaps();
-</script>
-<div id="map-canvas" style="width:100%;height:320px;"></div>
-<div class="directions-form">
-    <form id="directionsToSchool" action="" method="">
-        <label>{% trans 'enter starting address:' %}</label>
-        <input id="start" />
-        <button type="submit" class="get-directions">{% trans 'Get Directions' %}</button>
-        <div class="clearfix"></div>
-    </form>
-</div>
-{% if location.meta.picture %}
-   <!--<div class="image"><img src="{{ MEDIA_URL }}{{ location.meta.picture }}" /></div>
+    setTimeout(function(){
+                    if (!window.google || !window.google.maps) {
+                    $('#map-canvas, .directions-form').hide();
+                    var map_replacement = {% if location.meta.picture %}
+   '<div class="image"><img src="{{ MEDIA_URL }}{{ location.meta.picture }}" /></div>'
 {% elif location.picture %}
-<div class="image"><img src="{{ MEDIA_URL }}{{ location.picture }}" /></div>-->
-{% endif %}
+'<div class="image"><img src="{{ MEDIA_URL }}{{ location.picture }}" /></div>'
+{% endif %};
+$('#content').prepend(map_replacement);
+$('.directions').show();
+$('#load-directions').hide();
+                    }
+                    }, 6000);
+</script>
+<div id="load-directions">{% trans 'Loading Directions...' %}</div>
 {% if location.meta.file %}
     <div class="link">{% trans 'For a printable version of our map and bilingual driving directions' %}, <a target="_blank" href="{{ location.meta.file.url }}">{% trans 'click here' %}</a>.</div>
 {% elif location.file %}
     <div class="link">{% trans 'For a printable version of our map and bilingual driving directions' %}, <a target="_blank" href="{{ location.file.url }}">{% trans 'click here' %}</a>.</div>
 {% endif %}
-<!--<div class="directions">{{ location.directions|safe }}</div>-->
+<div class="directions" style="display:none;">{{ location.directions|safe }}</div>

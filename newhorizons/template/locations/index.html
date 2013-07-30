@@ -11,11 +11,13 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
         var directionsDisplay,map, directionsService, cityRequested,
-        hpSchools = { hongqiao: [31.188978,121.396372], huacao: [31.207461,121.281991], jinqiao: [31.243329,121.586229] };
+        //hpSchools = { hongqiao: [31.188978,121.396372], huacao: [31.207461,121.281991], jinqiao: [31.243329,121.586229] };
+        hpSchools = [[31.188978,121.396372],[31.207461,121.281991],[31.243329,121.586229]];
         function mapsLoaded() {
           directionsDisplay = new google.maps.DirectionsRenderer();
           directionsService = new google.maps.DirectionsService();
-          cityRequested = $('a.active').text().toLowerCase();
+          cityRequested = $('a.active').parent().parent().index(); //.text().toLowerCase();
+          //alert(cityRequested);
           school = new google.maps.LatLng(hpSchools[cityRequested][0], hpSchools[cityRequested][1]);
           var mapOptions = {
             zoom:15,
@@ -35,7 +37,11 @@
             });
         }
         function loadMaps(){
-            google.load("maps", "3", {"callback" : mapsLoaded, "other_params" : "sensor=false&language={{ LANGUAGE_CODE }}"});
+            if (window.google) { 
+                google.load("maps", "3", {"callback" : mapsLoaded, "other_params" : "sensor=false&language={{ LANGUAGE_CODE }}"});
+                $('#content').append('<div id="map-canvas" style="width:100%;height:320px;"></div><div class="directions-form"><form id="directionsToSchool" action="" method=""><label>{% trans "enter starting address:" %}</label><input id="start" /><button type="submit" class="get-directions">{% trans "Get Directions" %}</button><div class="clearfix"></div></form></div>');
+                $('#load-directions').hide();
+            }
         }
         function calcRoute() {
             var start = $('#start').val();
@@ -67,7 +73,7 @@
     {% for location in object_list %}
         <li>
             <h3>
-                <a href="#" onclick="setActive(this); setContent('{% url 'location_details' location.pk %}'); setHeader('<a href=&quot;{% url 'location_home' %}&quot;>{% trans "our locations" %}</a><div class=&quot;divider&quot;></div>{{ location.name }}'); return false;">{{ location.name }}</a>
+                <a href="#" onclick="setActive(this); setContent('{% url 'location_details' location.meta_id %}'); setHeader('<a href=&quot;{% url 'location_home' %}&quot;>{% trans "our locations" %}</a><div class=&quot;divider&quot;></div>{{ location.name }}'); return false;">{{ location.name }}</a>
             </h3>
         </li>
     {% endfor %}

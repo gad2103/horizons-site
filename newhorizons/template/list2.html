@@ -18,8 +18,7 @@
                     {% if type == 'inthenews' %}
                         <div class="source">{{ item.source }}</div>
                     {% endif %}
-                        
-                    <div class="pub_date">{% trans "posted on" %} {{ item.published|date:"Y - m - d" }} {%if item.created_by %} {% trans "by " %}<a href="#" onclick="setContent('/blogs/authors/list'); return false;">{{item.created_by}}</a>{% endif %}</div>
+                    <div class="pub_date">{% trans "posted on" %} {{ item.published|date:"Y - m - d" }} {%if item.meta.created_by %} {% trans "by " %}<a href="#" onclick="setContent('/blogs/authors/list'); return false;">{{item.meta.created_by}}</a>{% endif %}</div>
                     {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
                     
                     <div class="exerpt">

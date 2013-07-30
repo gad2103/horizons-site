@@ -12,6 +12,7 @@ class SiteImageCategory(models.Model):
     BLOG = 10
     LA_SCHEDULE = 11
     TP_SCHEDULE = 12
+    AC_COURSE = 13
 
     name = models.CharField(max_length=63)   
     

@@ -10,7 +10,7 @@
 <h2>{{ item.title }}</h2>
 {% if item.subtitle %}<h3>{{ item.subtitle }}</h3>{% endif %}
 <div class="publication_date">{{ item.modified|date:"M d, Y" }}</div>
-{% if item.created_by %}<div class="author_link">{% trans 'by' %} <a href="#" onclick="setContent('/blogs/authors/list', 'div.page_nav'); return false;">{{ item.created_by }}</a></div>{% endif %}
+{% if item.meta.created_by %}<div class="author_link">{% trans 'by' %} <a href="#" onclick="setContent('/blogs/authors/list', 'div.page_nav'); return false;">{{ item.meta.created_by }}</a></div>{% endif %}
 {% comment %}
 {% if item.meta.picture %}
     <img src="{{ MEDIA_URL }}{{ item.meta.picture }}" />

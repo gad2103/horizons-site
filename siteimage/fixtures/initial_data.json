@@ -75,5 +75,12 @@
       "fields": {
          "name": "Test Prep Schedules"
          }
+   },
+   {
+      "pk": 13, 
+      "model": "siteimage.SiteImageCategory", 
+      "fields": {
+         "name": "Admissions Counseling"
+         }
    }
 ]

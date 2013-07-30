@@ -722,7 +722,7 @@ img.icon {
       -moz-box-shadow: 2px 2px 5px #444444;
       -webkit-box-shadow: 2px 2px 5px #444444;
       box-shadow: 2px 2px 5px #444444;
-      min-height: 150px;
+      min-height: 110px;
       font-size: 0.825em;
       #font-style: italic;
       padding: 15px 10px; }
@@ -920,7 +920,12 @@ img.icon {
   display: none; }
 
 .home_page .panel {
-  width: 306px; }
+  width: 306px;
+  height: 326px; }
+  .home_page .panel > ul + .footer {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 .home_page .testimonial ul {
   height: 223px;
   display: table;
@@ -950,7 +955,7 @@ img.icon {
   height: 250px; }
 .home_page .news li {
   position: relative;
-  margin: 10px 5px;
+  margin: 10px 5px 35px 5px;
   height: 96px; }
   .home_page .news li h2 {
     color: #202f5f;
@@ -972,6 +977,8 @@ img.icon {
   .home_page .schedule .item {
     height: auto;
     padding: 3px 6px; }
+  .home_page .schedule .item:nth-child(even) {
+    background: #f2f2f6 !important; }
   .home_page .schedule h2 {
     padding: 5px 0 3px 0;
     color: #202f5f;
@@ -992,7 +999,8 @@ img.icon {
   .home_page .schedule .content .location {
     float: right; }
   .home_page .schedule .footer {
-    font-weight: bold; }
+    font-weight: bold;
+    padding: 6px 0; }
 
 .schedule_page #content {
   font-size: 1.0em; }
@@ -1268,6 +1276,8 @@ img.icon {
   color: white;
   background-color: #d27d34;
   text-transform: capitalize; }
+.contactus_page #right_bar, .registration_page #right_bar {
+  width: 204px; }
 
 .contactus_page .legend {
   margin-bottom: 20px; }

@@ -11,8 +11,12 @@ def index(request):
     
     # Get the client language from the session
     language = Language.get_language(request)
-        
-    queryset = Location.objects.filter(data_state=DataState.PUBLISHED)
+    
+    if language.pk != Language.DEFAULT:  # If a non-default language is requested, retrieve pages in that language.
+        queryset = LocalizedLocation.objects.filter(language=language)
+    else:
+        queryset = LocalizedLocation.objects.filter(data_state=DataState.SUBMITTED,language=Language.DEFAULT)
+
     banners = getBanners(request, BannerCategory.LOCATIONS)
     try:
         left_nav_image = SiteImage.objects.get(category=SiteImageCategory.LOCATIONS)
@@ -21,6 +25,7 @@ def index(request):
     recent_news = news_list(request, 5)
     recent_blogs = blog_list(request, 5)
     
+    print DataState.PUBLISHED 
     return render_to_response(
         'locations/index.html',
         {'object_list': queryset,
@@ -49,7 +54,6 @@ def details(request, identifier=None):
             queryset = LocalizedLocation.objects.get(meta=identifier, language=Language.DEFAULT)
         except:
             queryset = Location.objects.get(pk=identifier)
-        
     return render_to_response(
         'locations/details.html',
         {'location': queryset,},

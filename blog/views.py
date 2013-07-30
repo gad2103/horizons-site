@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.utils.translation import ugettext as _
+from django.http import HttpResponse
 
 from blog.models import Blog, LocalizedBlog,Author, LocalizedAuthor
 from course.models import Target, TargetCategory
@@ -40,7 +41,6 @@ def list(request, year=None, trimester=None):
     
     # Set pagination
     list = Paginate(request, new_queryset, 5)
-    #HttpResponse(list)
     
     return render_to_response(
         'list2.html',
