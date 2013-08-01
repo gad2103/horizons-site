@@ -3,3 +3,42 @@
 {% load i18n %}
 
 {% block page_class %}course_page ac_area{% endblock %}
+        {% block right_bar %}
+            {% block blog_panel %}
+            <div id="blog_panel" class="panel">
+                <h2>{% trans "blog" %}</h2>
+                <div class="content">
+                    {% for item in blog_list %}
+                        <div class="item"><a href="{% url "blog" %}" >
+                            <div class="title">{{ item.title }}</div>
+                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                        </a></div>
+                    {% endfor %}
+                </div>
+                <div class="footer"><a href="{% url 'blog' %}">{% trans "more blog posts..." %}</a></div> 
+            </div>
+            {% endblock %}
+            
+            {% block news_panel %}
+            <div id="news_panel" class="panel">
+                <h2>{% trans "news feed" %}</h2>
+                <div class="content">
+                    {% for item in news_list %}
+                        <div class="item"><a href="{% url "newsandevents" %}">
+                            <div class="title">{{ item.title }}</div>
+                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                        </a></div>
+                    {% endfor %}
+                </div>
+                <div class="footer"><a href="{% url 'newsandevents' %}">{% trans "more news..." %}</a></div>
+            </div>
+            {% endblock %}
+        
+            {% block relatedlinks_panel %}
+            {% endblock %}
+        
+            {% block registrationpolicy_panel %}
+            {% endblock %}
+        
+        </div>
+        {% endblock %}

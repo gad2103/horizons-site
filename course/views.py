@@ -28,6 +28,7 @@ def index_redirect(request, identifier):
     
 def index(request, type=None, identifier=None):
     initializer = {}
+    response_payload = {}
     if type == TargetCategory.TESTPREPARATIONS:
         template = 'courses/index_tp.html'
         banners = getBanners(request, BannerCategory.TP_COURSE)
@@ -88,6 +89,9 @@ def index(request, type=None, identifier=None):
     else:
         template = 'courses/index.html'
         banners = None
+    if type == TargetCategory.ADMISSIONSCOUNSELING or type == TargetCategory.CURRICULUMCONSULTING:
+        response_payload['blog_list'] = blog_list(request, 5)
+        response_payload['news_list'] = news_list(request, 5)
     return render_to_response(
         template,
         {'banners': banners,

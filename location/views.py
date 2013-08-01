@@ -5,18 +5,13 @@ from banner.models import BannerCategory
 from location.models import Location, LocalizedLocation
 from newhorizons.views import news_list, blog_list, getBanners
 from node.models import Language, DataState
+from node.views import LocalSet
 from siteimage.models import SiteImage, SiteImageCategory
     
 def index(request):
-    
-    # Get the client language from the session
-    language = Language.get_language(request)
-    
-    if language.pk != Language.DEFAULT:  # If a non-default language is requested, retrieve pages in that language.
-        queryset = LocalizedLocation.objects.filter(language=language)
-    else:
-        queryset = LocalizedLocation.objects.filter(data_state=DataState.SUBMITTED,language=Language.DEFAULT)
-
+    meta_queryset = Location.objects.all()
+    queryset = LocalizedLocation.objects.filter(data_state=DataState.SUBMITTED)
+    new_queryset = LocalSet(request,meta_queryset,queryset)
     banners = getBanners(request, BannerCategory.LOCATIONS)
     try:
         left_nav_image = SiteImage.objects.get(category=SiteImageCategory.LOCATIONS)
@@ -28,7 +23,7 @@ def index(request):
     print DataState.PUBLISHED 
     return render_to_response(
         'locations/index.html',
-        {'object_list': queryset,
+        {'object_list': new_queryset,
          'banners': banners,
          'left_nav_image': left_nav_image,
          'news_list': recent_news,

@@ -313,6 +313,8 @@ img.icon {
     float: right; }
   .schedule .item + .item {
     border-top: 1px solid; }
+.schedule .item:nth-child(even) {
+  background: #f2f2f6 !important; }
 
 #relatedlinks_panel .item {
   padding: 12px 0 8px 12px; }
@@ -1000,7 +1002,7 @@ img.icon {
     float: right; }
   .home_page .schedule .footer {
     font-weight: bold;
-    padding: 6px 0; }
+    padding: 10px 0 0 0; }
 
 .schedule_page #content {
   font-size: 1.0em; }

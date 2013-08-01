@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-31 03:12+0800\n"
+"POT-Creation-Date: 2013-08-02 04:21+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,8 @@ msgid "news & blog"
 msgstr ""
 
 #: template/base.html:168 template/panel_blog.html:5 template/room.html:46
-#: template/trimester_nav.html:21 template/page/blog.html:19
+#: template/trimester_nav.html:21 template/courses/index_ac.html:9
+#: template/page/blog.html:19
 msgid "blog"
 msgstr ""
 
@@ -88,8 +89,8 @@ msgstr ""
 msgid "register"
 msgstr ""
 
-#: template/base.html:182 template/locations/index.html:65
-#: template/locations/index.html.py:74
+#: template/base.html:182 template/locations/index.html:67
+#: template/locations/index.html.py:76
 msgid "our locations"
 msgstr "학원 위치"
 
@@ -183,6 +184,7 @@ msgid "more news"
 msgstr ""
 
 #: template/panel_news.html:5 template/room.html:61
+#: template/courses/index_ac.html:24
 msgid "news feed"
 msgstr ""
 
@@ -190,11 +192,11 @@ msgstr ""
 msgid "No news for now."
 msgstr ""
 
-#: template/room.html:55
+#: template/room.html:55 template/courses/index_ac.html:18
 msgid "more blog posts..."
 msgstr ""
 
-#: template/room.html:70
+#: template/room.html:70 template/courses/index_ac.html:33
 msgid "more news..."
 msgstr ""
 
@@ -380,11 +382,11 @@ msgstr ""
 msgid "click here"
 msgstr ""
 
-#: template/locations/index.html:40
+#: template/locations/index.html:42
 msgid "enter starting address:"
 msgstr ""
 
-#: template/locations/index.html:40
+#: template/locations/index.html:42
 msgid "Get Directions"
 msgstr ""
 

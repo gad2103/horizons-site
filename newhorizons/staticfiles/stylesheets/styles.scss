@@ -432,6 +432,7 @@ img.icon {
     }
     + .item { border-top: 1px solid;}
     }
+    .item:nth-child(even) { background: #f2f2f6 !important;}
 }
 #relatedlinks_panel {
     .item {
@@ -1083,7 +1084,7 @@ img.icon {
 	}
 	.footer {
 	    font-weight: bold;
-        padding: 6px 0;
+        padding: 10px 0 0 0;
 	}
     }
 }
