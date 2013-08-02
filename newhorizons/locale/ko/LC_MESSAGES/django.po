@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-02 04:21+0800\n"
+"POT-Creation-Date: 2013-08-02 18:15-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: template/base.html:168 template/panel_blog.html:5 template/room.html:46
 #: template/trimester_nav.html:21 template/courses/index_ac.html:9
-#: template/page/blog.html:19
+#: template/courses/index_cc.html:28 template/page/blog.html:19
 msgid "blog"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgid "more news"
 msgstr ""
 
 #: template/panel_news.html:5 template/room.html:61
-#: template/courses/index_ac.html:24
+#: template/courses/index_ac.html:24 template/courses/index_cc.html:43
 msgid "news feed"
 msgstr ""
 
@@ -193,10 +193,12 @@ msgid "No news for now."
 msgstr ""
 
 #: template/room.html:55 template/courses/index_ac.html:18
+#: template/courses/index_cc.html:37
 msgid "more blog posts..."
 msgstr ""
 
 #: template/room.html:70 template/courses/index_ac.html:33
+#: template/courses/index_cc.html:52
 msgid "more news..."
 msgstr ""
 
@@ -204,7 +206,19 @@ msgstr ""
 msgid "news"
 msgstr ""
 
-#: template/courses/class_list.html:32
+#: template/courses/class_list.html:26
+msgid "Huacao"
+msgstr "华漕"
+
+#: template/courses/class_list.html:28
+msgid "Jinqiao"
+msgstr "金桥"
+
+#: template/courses/class_list.html:30
+msgid "Hongqiao"
+msgstr "虹桥"
+
+#: template/courses/class_list.html:43
 msgid "page"
 msgstr ""
 

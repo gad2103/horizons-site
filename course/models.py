@@ -1,7 +1,7 @@
 from django.db import models
 import re
 from instructor.models import Instructor
-from location.models import Location
+from location.models import Location, LocalizedLocation
 from node.models import Node, LocalizedNode, Language
 from tinymce.models import HTMLField
 

@@ -5,6 +5,7 @@ from course.models import Target, LocalizedTarget
 from course.models import Course, LocalizedCourse
 from course.models import Class
 from course.models import Weblink
+from location.models import LocalizedLocation
 from node.admin import NodeAdmin, LocalizedNodeAdmin
 
 class LocalizedTargetCategoryInline(LocalizedNodeAdmin):
@@ -24,6 +25,12 @@ class TargetAdmin(NodeAdmin):
     
 class CourseAdmin(NodeAdmin):
     inlines = [ LocalizedCourseInline, ]
+
+'''class ClassAdmin(admin.ModelAdmin):
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name == "location":
+            kwargs["queryset"] = LocalizedLocation.objects.filter(language=12)
+        return super(ClassAdmin, self).formfield_for_manytomany(db_field, request, **kwargs)'''
 
 
 admin.site.register(TargetCategory, TargetCategoryAdmin)

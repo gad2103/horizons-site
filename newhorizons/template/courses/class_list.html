@@ -20,7 +20,18 @@
             <div class="title">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">{{ item.course.name }}   (PDF)</a>{% else %}{{ item.course.name }}{% endif %}</div>
             <div class="time">{{ item.start_time|date:"M d" }}-{{ item.end_time|date:"M d" }}</div>
             <!--<div class="file">{% if item.schedule %}<a target="_blank" href="{{ item.schedule.url }}">PDF</a>{% endif %}</div>-->
-            <div class="location last-child">{{ item.location.all|join:", " }}</div>
+            <div class="location last-child">
+                {% for location in item.location.all %}
+                {% if location|stringformat:"s" == "Huacao" %}
+                        {% trans "Huacao" %}
+                    {% elif location|stringformat:"s" == "Jinqiao" %}
+                        {% trans "Jinqiao" %}
+                    {% elif location|stringformat:"s" == "Hongqiao" %}
+                        {% trans "Hongqiao" %}
+                    {% endif %}
+                    {% if not forloop.last %}, {% endif %}
+                {% endfor %}
+                </div>
         </div>
     {% empty %}
         <div class="message">{{ none_message|safe }}</div>

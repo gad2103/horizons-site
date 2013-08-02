@@ -56,7 +56,6 @@ def home(request):
         context_instance=RequestContext(request))
     
 def news_list(request, number):
-    return HttpResponse('hello')
     meta_queryset = News.objects.filter(data_state=DataState.PUBLISHED).order_by('published')
     queryset = LocalizedNews.objects.filter(data_state=DataState.PUBLISHED).order_by('published')[:number]
     new_queryset = LocalSet(request, meta_queryset, queryset)

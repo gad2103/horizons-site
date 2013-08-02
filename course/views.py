@@ -92,12 +92,12 @@ def index(request, type=None, identifier=None):
     if type == TargetCategory.ADMISSIONSCOUNSELING or type == TargetCategory.CURRICULUMCONSULTING:
         response_payload['blog_list'] = blog_list(request, 5)
         response_payload['news_list'] = news_list(request, 5)
+    response_payload['banners'] = banners
+    response_payload['left_nav_image'] = left_nav_image
+    response_payload['initializer'] = initializer
     return render_to_response(
         template,
-        {'banners': banners,
-         'left_nav_image': left_nav_image,
-         'initializer': initializer,
-         },
+        response_payload,
         context_instance=RequestContext(request))
     
 def current_classes(request, type, course=None, pages='5'):
@@ -154,7 +154,15 @@ def current_classes(request, type, course=None, pages='5'):
             'none_message': get_message('no current schedules (short)'),
         },
         context_instance=RequestContext(request))
-    
+'''this is a necessary evil due to the original database design and to
+keep the admin location selection simple
+#get the localized location for each class
+def add_localized_location(request, queryset):
+    #loop through classes UGH
+    for item in queryset:
+        #loop through locations and get localized locations
+        for locs in item.location.all():'''
+
 def upcoming_classes(request, type, course=None, pages='5'):
     
     if course:
@@ -382,6 +390,7 @@ def schedule(request, type):  # This is the index page of the schedule section
         template = 'courses/schedule.html'
     
     recent_news = news_list(request, 5)
+    print recent_news
     recent_blogs = blog_list(request, 5)
         
     return render_to_response(
@@ -427,7 +436,7 @@ def current_class_list(request, target=None, category=None):
         queryset = Class.objects.filter(start_time__lt = datetime.now(), end_time__gt = datetime.now()).distinct().order_by('start_time')
     
     return queryset
-    
+
 def upcoming_class_list(request, target=None, category=None):
     if target:
         queryset = Class.objects.filter(course__target = target, start_time__gt = datetime.now()).distinct().order_by('start_time')
