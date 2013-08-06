@@ -1,5 +1,4 @@
 {% load i18n %}
-<!--<div class="description">{{ location.description|safe }}</div>-->
 <script>
     loadMaps();
     setTimeout(function(){
@@ -23,3 +22,4 @@ $('#load-directions').hide();
     <div class="link">{% trans 'For a printable version of our map and bilingual driving directions' %}, <a target="_blank" href="{{ location.file.url }}">{% trans 'click here' %}</a>.</div>
 {% endif %}
 <div class="directions" style="display:none;">{{ location.directions|safe }}</div>
+<div class="description">{{ location.description|safe }}</div>

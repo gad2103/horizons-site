@@ -56,18 +56,18 @@ def home(request):
         context_instance=RequestContext(request))
     
 def news_list(request, number):
-    meta_queryset = News.objects.filter(data_state=DataState.PUBLISHED).order_by('published')
-    queryset = LocalizedNews.objects.filter(data_state=DataState.PUBLISHED).order_by('published')[:number]
+    meta_queryset = News.objects.filter(data_state=DataState.PUBLISHED).order_by('-published')
+    queryset = LocalizedNews.objects.filter(data_state=DataState.PUBLISHED).order_by('-published')
     new_queryset = LocalSet(request, meta_queryset, queryset)
     
-    return new_queryset
+    return new_queryset[:number]
     
 def blog_list(request, number):
-    meta_queryset = Blog.objects.filter(data_state=DataState.PUBLISHED).order_by('published')
-    queryset = LocalizedBlog.objects.filter(data_state=DataState.PUBLISHED).order_by('published')[:number]
+    meta_queryset = Blog.objects.filter(data_state=DataState.PUBLISHED).order_by('-published')
+    queryset = LocalizedBlog.objects.filter(data_state=DataState.PUBLISHED).order_by('-published')
     new_queryset = LocalSet(request, meta_queryset, queryset)
                 
-    return new_queryset
+    return new_queryset[:number]
 
 def contactus(request):
     if request.method == 'POST':

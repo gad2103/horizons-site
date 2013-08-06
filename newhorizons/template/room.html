@@ -48,7 +48,7 @@
                     {% for item in blog_list %}
                         <div class="item"><a href="{% url "blog" %}" >
                             <div class="title">{{ item.title }}</div>
-                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                                <!--<div class="time">{{ item.created|date:"Y-m-d" }}</div>-->
                         </a></div>
                     {% endfor %}
                 </div>
@@ -63,7 +63,7 @@
                     {% for item in news_list %}
                         <div class="item"><a href="{% url "newsandevents" %}">
                             <div class="title">{{ item.title }}</div>
-                            <div class="time">{{ item.created|date:"Y-m-d" }}</div>
+                            <!--<div class="time">{{ item.created|date:"Y-m-d" }}</div>-->
                         </a></div>
                     {% endfor %}
                 </div>

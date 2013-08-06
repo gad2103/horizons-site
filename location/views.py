@@ -20,7 +20,6 @@ def index(request):
     recent_news = news_list(request, 5)
     recent_blogs = blog_list(request, 5)
     
-    print DataState.PUBLISHED 
     return render_to_response(
         'locations/index.html',
         {'object_list': new_queryset,
