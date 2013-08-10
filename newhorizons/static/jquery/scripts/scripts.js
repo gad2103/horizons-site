@@ -1,31 +1,13 @@
 
 function setContent(url) {
     if (url.split(',')[1] == "admissions_counseling") {
-        $.get(url.split(',')[0], function(data) {
-            var $data = $(data);
-            var len = $data.children().length
-            $data.children().each(function(i,v){
-                if (i != len-1) $(this).remove();
-            });
-            $('#content').html($data);
+        $( "#content" ).load(url.split(',')[0], function(text, status, object) {
+            console.log(object);
         });
         return false;
     } else {
-        var ajax_url = url.split("/");
-        if ( ajax_url[1] == "blogs" ){ 
-            $('#content').data('next',$('#content').children());
-        }
-        $('#content').slideToggle('1500', function(){
-        $( "#content" ).load(url, function(){
-            $('#content').slideToggle('1500');
-            if ( ajax_url[1] == "blogs" && ajax_url[ajax_url.length-1] ) {
-                if ( !linkSignal.clickState ) return false; //check if initial page load
-                url = '/page/blog'+url;
-                History.pushState({urlPath:url},null,url);
-            }
-        });
+        $( "#content" ).load(url);
         return false;
-        });
     }
 }
 

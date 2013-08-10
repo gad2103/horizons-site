@@ -178,6 +178,7 @@ def blog(request, identifier=None):
         content_url = reverse('blog_list')
     
     recent_news = news_list(request, 10)
+    return HttpResponse(content_url)
     
     banners = getBanners(request, BannerCategory.BLOG)
     try:

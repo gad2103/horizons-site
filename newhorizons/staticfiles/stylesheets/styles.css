@@ -145,7 +145,7 @@ img.icon {
   #main_navigation > ul a {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    bordert-radius: 4px;
+    border-radius: 4px;
     color: white;
     background-color: #d27d34; }
     #main_navigation > ul a:hover {
@@ -172,7 +172,7 @@ img.icon {
   #main_navigation > ul ul {
     -moz-border-radius: 0 0 10px 10px;
     -webkit-border-radius: 0 0 10px 10px;
-    bordert-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     -moz-box-shadow: 2px 2px 5px #444444;
     -webkit-box-shadow: 2px 2px 5px #444444;
     box-shadow: 2px 2px 5px #444444;
@@ -220,7 +220,7 @@ img.icon {
 #slider .nivo-caption {
   -moz-border-radius: 0 10px 10px 0;
   -webkit-border-radius: 0 10px 10px 0;
-  bordert-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
   opacity: 0.9;
   -moz-opacity: 0.9;
   filter: alpha(opacity=0.9);
@@ -259,7 +259,7 @@ img.icon {
   margin-bottom: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  bordert-radius: 5px;
+  border-radius: 5px;
   text-transform: capitalize;
   color: white;
   background-color: #d27d34; }
@@ -283,7 +283,7 @@ img.icon {
   .panel h2 {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    bordert-radius: 3px;
+    border-radius: 3px;
     padding: 5px 0 3px 10px;
     font-size: 0.8em;
     color: white;
@@ -649,7 +649,7 @@ img.icon {
   #main_pane button.contact, #main_pane button.register {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    bordert-radius: 4px;
+    border-radius: 4px;
     margin-top: 30px;
     width: 140px;
     height: 20px;
@@ -738,19 +738,19 @@ img.icon {
   .portals a:first-child .portal_panel .header {
     -moz-border-radius: 10px 0 0 0;
     -webkit-border-radius: 10px 0 0 0;
-    bordert-radius: 10px 0 0 0; }
+    border-radius: 10px 0 0 0; }
   .portals a:first-child .portal_panel .content {
     -moz-border-radius: 0 0 0 10px;
     -webkit-border-radius: 0 0 0 10px;
-    bordert-radius: 0 0 0 10px; }
+    border-radius: 0 0 0 10px; }
   .portals a:nth-child(4) .portal_panel .header {
     -moz-border-radius: 0 10px 0 0;
     -webkit-border-radius: 0 10px 0 0;
-    bordert-radius: 0 10px 0 0; }
+    border-radius: 0 10px 0 0; }
   .portals a:nth-child(4) .portal_panel .content {
     -moz-border-radius: 0 0 10px 0;
     -webkit-border-radius: 0 0 10px 0;
-    bordert-radius: 0 0 10px 0; }
+    border-radius: 0 0 10px 0; }
   .portals #la .header {
     background-color: #1a92cf;
     border: 1px solid #1a92cf; }
@@ -811,7 +811,7 @@ img.icon {
     margin-bottom: 20px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    bordert-radius: 10px; }
+    border-radius: 10px; }
   #left_bar ul {
     margin: 0 10px; }
     #left_bar ul ul {
@@ -819,7 +819,7 @@ img.icon {
   #left_bar li a:hover, #left_bar li a.active {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    bordert-radius: 4px;
+    border-radius: 4px;
     text-decoration: none; }
   #left_bar li li {
     padding: 0; }
@@ -949,7 +949,7 @@ img.icon {
 .home_page .news img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  bordert-radius: 4px;
+  border-radius: 4px;
   width: 90px;
   float: left;
   margin-right: 10px; }
@@ -1038,7 +1038,7 @@ img.icon {
   .schedule_page #content .panel h2 {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    bordert-radius: 4px;
+    border-radius: 4px;
     padding: 5px 8px 3px;
     color: white;
     font-size: 0.9em;
@@ -1167,7 +1167,7 @@ img.icon {
   .aboutus_page #main_pane #content .testimonial .bubble {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    bordert-radius: 10px;
+    border-radius: 10px;
     -moz-box-shadow: 2px 2px 5px #444444;
     -webkit-box-shadow: 2px 2px 5px #444444;
     box-shadow: 2px 2px 5px #444444;
@@ -1247,7 +1247,7 @@ img.icon {
   height: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  bordert-radius: 5px; }
+  border-radius: 5px; }
 .contactus_page select, .registration_page select {
   width: 220px;
   font-size: 16px; }
@@ -1268,7 +1268,7 @@ img.icon {
 .contactus_page button, .registration_page button {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  bordert-radius: 4px;
+  border-radius: 4px;
   float: right;
   margin-top: 10px;
   width: 140px;
@@ -1288,7 +1288,7 @@ img.icon {
   .contactus_page #contact_message textarea {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    bordert-radius: 4px;
+    border-radius: 4px;
     height: 200px;
     width: 594px; }
 .contactus_page .form_block {

@@ -1,0 +1,423 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-02 18:15-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: settings.py:159
+msgid "English"
+msgstr ""
+
+#: settings.py:160
+msgid "Chinese"
+msgstr ""
+
+#: settings.py:161
+msgid "Korean"
+msgstr ""
+
+#: template/base.html:120 template/base.html.py:277
+msgid "home"
+msgstr "홈"
+
+#: template/base.html:127 template/base.html.py:288 template/base.html:296
+msgid "instructors"
+msgstr "강사 소개"
+
+#: template/base.html:131 template/base.html.py:143 template/base.html:156
+#: template/base.html.py:285
+msgid "language arts"
+msgstr ""
+
+#: template/base.html:132 template/base.html.py:144 template/base.html:157
+#: template/base.html.py:293
+msgid "test preparation"
+msgstr ""
+
+#: template/base.html:139 template/base.html.py:287 template/base.html:295
+msgid "courses"
+msgstr "강좌 안내"
+
+#: template/base.html:145
+msgid "admissions counseling"
+msgstr ""
+
+#: template/base.html:152 template/base.html.py:289 template/base.html:297
+#: template/courses/navigation_schedule.html:8
+#: template/courses/navigation_schedule_la.html:8
+msgid "schedules"
+msgstr ""
+
+#: template/base.html:164 template/base.html.py:301
+msgid "news & blog"
+msgstr ""
+
+#: template/base.html:168 template/panel_blog.html:5 template/room.html:46
+#: template/trimester_nav.html:21 template/courses/index_ac.html:9
+#: template/courses/index_cc.html:28 template/page/blog.html:19
+msgid "blog"
+msgstr ""
+
+#: template/base.html:169 template/base.html.py:303
+msgid "news & events"
+msgstr ""
+
+#: template/base.html:176 template/base.html.py:180
+#: template/forms/contactus.html:31
+msgid "contact us"
+msgstr ""
+
+#: template/base.html:181 template/base.html.py:280
+#: template/courses/course_details.html:25
+#: template/courses/course_details.html:29
+#: template/courses/target_details.html:36
+#: template/courses/target_details.html:56
+msgid "register"
+msgstr ""
+
+#: template/base.html:182 template/locations/index.html:67
+#: template/locations/index.html.py:76
+msgid "our locations"
+msgstr "학원 위치"
+
+#: template/base.html:192 template/page/navigation_aboutus.html:8
+#: template/page/navigation_aboutus.html:14
+#: template/page/navigation_aboutus.html:19
+msgid "about us"
+msgstr "학원 연혁"
+
+#: template/base.html:199 template/page/navigation_aboutus.html:14
+msgid "testimonials"
+msgstr ""
+
+#: template/base.html:200 template/page/navigation_aboutus.html:19
+msgid "new horizons in the news"
+msgstr ""
+
+#: template/base.html:279
+#, fuzzy
+msgid "about"
+msgstr "학원 연혁"
+
+#: template/base.html:281 template/courses/course_details.html:24
+#: template/courses/course_details.html:28
+#: template/courses/target_details.html:35
+#: template/courses/target_details.html:55
+msgid "contact"
+msgstr ""
+
+#: template/base.html:304
+msgid "blog posts"
+msgstr ""
+
+#: template/details.html:7 template/page/details.html:7
+msgid "back to list"
+msgstr ""
+
+#: template/details.html:13
+msgid "by"
+msgstr ""
+
+#: template/home.html:50
+msgid "upcoming class schedules"
+msgstr ""
+
+#: template/list.html:29 template/list.html.py:31 template/list.html.py:35
+#: template/list2.html:29 template/list2.html.py:32 template/list2.html:36
+#: template/panel_list.html:31 template/panel_list.html.py:33
+#: template/panel_list.html:41 template/page/list.html:21
+msgid "read more"
+msgstr ""
+
+#: template/list.html:32 template/testimonials/panel_list.html:31
+msgid "more testimonials"
+msgstr ""
+
+#: template/list2.html:21
+msgid "posted on"
+msgstr ""
+
+#: template/list2.html:21
+msgid "by "
+msgstr ""
+
+#: template/page_nav.html:8 template/page/page_nav.html:9
+msgid "next news"
+msgstr ""
+
+#: template/page_nav.html:13 template/page/page_nav.html:14
+msgid "previous news"
+msgstr ""
+
+#: template/panel_blog.html:12
+msgid "No posts for now."
+msgstr ""
+
+#: template/panel_blog.html:15
+msgid "more blog"
+msgstr ""
+
+#: template/panel_links.html:4
+msgid "useful links"
+msgstr ""
+
+#: template/panel_list.html:38
+msgid "more"
+msgstr ""
+
+#: template/panel_list.html:56 template/panel_news.html:15
+msgid "more news"
+msgstr ""
+
+#: template/panel_news.html:5 template/room.html:61
+#: template/courses/index_ac.html:24 template/courses/index_cc.html:43
+msgid "news feed"
+msgstr ""
+
+#: template/panel_news.html:12
+msgid "No news for now."
+msgstr ""
+
+#: template/room.html:55 template/courses/index_ac.html:18
+#: template/courses/index_cc.html:37
+msgid "more blog posts..."
+msgstr ""
+
+#: template/room.html:70 template/courses/index_ac.html:33
+#: template/courses/index_cc.html:52
+msgid "more news..."
+msgstr ""
+
+#: template/trimester_nav.html:19
+msgid "news"
+msgstr ""
+
+#: template/courses/class_list.html:26
+msgid "Huacao"
+msgstr "华漕"
+
+#: template/courses/class_list.html:28
+msgid "Jinqiao"
+msgstr "金桥"
+
+#: template/courses/class_list.html:30
+msgid "Hongqiao"
+msgstr "虹桥"
+
+#: template/courses/class_list.html:43
+msgid "page"
+msgstr ""
+
+#: template/courses/class_list_preview.html:17
+msgid "more schedules"
+msgstr ""
+
+#: template/courses/course_details.html:11
+#: template/courses/target_details.html:19
+msgid "skills"
+msgstr ""
+
+#: template/courses/navigation_schedule_tp.html:14
+#: template/courses/schedule_tp.html:9
+msgid "test preparation schedules"
+msgstr ""
+
+#: template/courses/schedule.html:10
+msgid "Schedules"
+msgstr ""
+
+#: template/courses/schedule_la.html:9
+msgid "language arts schedules"
+msgstr ""
+
+#: template/courses/schedule_list.html:5
+msgid "upcoming schedules"
+msgstr ""
+
+#: template/courses/schedule_list.html:10
+#: template/courses/schedule_list.html:30
+#, fuzzy
+msgid "course code"
+msgstr "강좌 안내"
+
+#: template/courses/schedule_list.html:25
+msgid "current schedules"
+msgstr ""
+
+#: template/courses/target_details.html:41
+msgid "related links:"
+msgstr ""
+
+#: template/forms/class_select.html:5
+msgid "class"
+msgstr ""
+
+#: template/forms/contactus.html:43
+msgid "name"
+msgstr ""
+
+#: template/forms/contactus.html:50
+msgid "e-mail address"
+msgstr ""
+
+#: template/forms/contactus.html:57
+#, fuzzy
+msgid "location"
+msgstr "학원 위치"
+
+#: template/forms/contactus.html:66 template/forms/register.html:110
+msgid "prefered language"
+msgstr ""
+
+#: template/forms/contactus.html:73
+msgid "how did you hear about us?"
+msgstr ""
+
+#: template/forms/contactus.html:77 template/forms/register.html:155
+msgid "required field"
+msgstr ""
+
+#: template/forms/contactus.html:82
+msgid "email subject"
+msgstr ""
+
+#: template/forms/contactus.html:89
+msgid "message"
+msgstr ""
+
+#: template/forms/contactus.html:93 template/forms/register.html:157
+msgid "send"
+msgstr ""
+
+#: template/forms/course_select.html:5
+#, fuzzy
+msgid "course"
+msgstr "강좌 안내"
+
+#: template/forms/register.html:55
+msgid "registration"
+msgstr ""
+
+#: template/forms/register.html:67
+msgid "student name"
+msgstr ""
+
+#: template/forms/register.html:72
+msgid "student email"
+msgstr ""
+
+#: template/forms/register.html:78
+msgid "current grade"
+msgstr ""
+
+#: template/forms/register.html:83
+msgid "student mobile"
+msgstr ""
+
+#: template/forms/register.html:89
+msgid "school"
+msgstr ""
+
+#: template/forms/register.html:99
+msgid "parent name"
+msgstr ""
+
+#: template/forms/register.html:104
+msgid "parent email"
+msgstr ""
+
+#: template/forms/register.html:115
+msgid "parent mobile"
+msgstr ""
+
+#: template/forms/register.html:121
+msgid "address"
+msgstr ""
+
+#: template/forms/register.html:135
+msgid "division"
+msgstr ""
+
+#: template/forms/target_select.html:5
+msgid "program"
+msgstr ""
+
+#: template/instructors/index_cc.html:19
+#, fuzzy
+msgid "curriculum consulting instructors"
+msgstr "커리큘럼 컨설팅"
+
+#: template/instructors/index_la.html:19
+#: template/instructors/navigation_la.html:7
+#: template/instructors/navigation_la.html:15
+#, fuzzy
+msgid "language arts instructors"
+msgstr "강사 소개"
+
+#: template/instructors/index_tp.html:19
+#: template/instructors/navigation_tp.html:7
+#: template/instructors/navigation_tp.html:15
+#: template/instructors/navigation_tp.html:21
+msgid "test preparation instructors"
+msgstr ""
+
+#: template/instructors/navigation.html:8
+#: template/instructors/navigation_la.html:7
+#: template/instructors/navigation_la.html:8
+#: template/instructors/navigation_tp.html:7
+#: template/instructors/navigation_tp.html:8
+#, fuzzy
+msgid "all instructors"
+msgstr "강사 소개"
+
+#: template/locations/details.html:19
+msgid "Loading Directions..."
+msgstr ""
+
+#: template/locations/details.html:21 template/locations/details.html.py:23
+msgid "For a printable version of our map and bilingual driving directions"
+msgstr ""
+
+#: template/locations/details.html:21 template/locations/details.html.py:23
+msgid "click here"
+msgstr ""
+
+#: template/locations/index.html:42
+msgid "enter starting address:"
+msgstr ""
+
+#: template/locations/index.html:42
+msgid "Get Directions"
+msgstr ""
+
+#: template/page/navigation_aboutus.html:19
+msgid "New Horizons in the News"
+msgstr ""
+
+#: template/page/news_and_events.html:19
+#: template/page/news_and_events_extra.html:19
+msgid "News & Events"
+msgstr ""
+
+#~ msgid "Better Grades, Better Scores, Brighter Futures"
+#~ msgstr "보다 좋은 성적, 보다 높은 점수, 밝아진 미래"
+
+#~ msgid "find us"
+#~ msgstr "찾아 오시는길"
+
+#~ msgid "tests"
+#~ msgstr "테스트"

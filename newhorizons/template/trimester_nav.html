@@ -18,7 +18,7 @@
                                 {% if type == 'news' %}
                                     <a href="#" onclick="setActive(this); setContent('{% url 'news_list_year_tri' year trimester.0 %}'); setHeader('<a href=&quot;{% url "news_list" %}&quot;>{% trans "news" %}</a> > {{ year }} {{ trimester.1 }}'); return false;">{{ trimester.1 }}</a>
                                 {% elif type == 'blog' %}
-                                    <a href="#" onclick="setActive(this); setContent('{% url 'blog_list_year_tri' year trimester.0 %}'); setHeader('<a href=&quot;{% url "blog_list" %}&quot;>{% trans "blog" %}</a> > {{ year }} {{ trimester.1 }}'); return false;">{{ trimester.1 }}</a>
+                                <a href="#" onclick="setActive(this); setContent('{% url 'blog_list_year_tri' year trimester.0 %}'); return false;">{{ trimester.1 }}</a>
                                 {% endif %}
                             </h4>
                         </li>

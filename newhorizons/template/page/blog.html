@@ -5,11 +5,57 @@
 {% block page_class %}blog_page neutral_area{% endblock %}
 
 {% block extra_scripts %}
+    <script type="text/javascript" src="http://balupton.github.com/history.js/scripts/bundled/html4+html5/jquery.history.js"></script> 
     <script>
+        var linkSignal = {}; //namespace a variable to check if link clicked or back/forward button activated in state change
+        linkSignal.clickState = false;
+        $(document).on('click', '.page_content a', function(e){
+            linkSignal.clickState = true;
+            e.preventDefault();
+        });
+        var setLeftHandNavData = function(){
+            var curr_trimester, curr_course, $trimester;
+            $trimester = $('a.active').parent().parent();
+            curr_trimester = $trimester.index();
+            curr_course = $trimester.parent().parent().parent().index();
+            $('#secondary_navigation').data('prev_course_info', {course:curr_course,trimester:curr_trimester});
+        }
+
+        var updateContent = function(State){
+            console.log(State);
+            if (linkSignal.clickState){
+                linkSignal.clickState = false;
+                return false;
+            }
+            else {
+                var url,re;
+                //check last state to see if sidebar link was clicked
+                re = /\/[0-9]{4}\/[0-9][0-9]?/; 
+                if (History.savedStates[History.savedStates.length-2].data.urlPath.match(re)){
+                    setLeftHandNavData();
+                    $('a.active').removeClass('active');
+               }
+               //check if current/upcoming state emulates left sidebar link click
+               else if (History.savedStates[History.savedStates.length-1].data.urlPath.match(re))
+               {
+                   if ( !$('#secondary_navigation').data('prev_course_info') ) setLeftHandNavData();
+                   curr_trimester = $('#secondary_navigation').data('prev_course_info').trimester;
+                   curr_course = $('#secondary_navigation').data('prev_course_info').course;
+                   $('#secondary_navigation > ul > li').eq(curr_course).children().children('ul').children().eq(curr_trimester).children().children().addClass('active');
+               }
+               re = /\/page\/blog(\/blogs)?/;
+               url = State.data.urlPath.replace(re, "/blogs");
+               setContent(url);
+            }
+        }
         $( document ).ready(function() {
             setNav('{% url 'blog_navigation' %}');
             setContent('{{ content_url }}');
-        });
+         });
+         History.Adapter.bind(window, 'statechange', function() {
+                updateContent(History.getState());
+         });
+         History.replaceState({urlPath:window.location.pathname}, 'New Horizons', window.location.pathname);
     </script>
 {% endblock %}
 

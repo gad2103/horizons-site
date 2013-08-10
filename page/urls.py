@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, url
+from django.views.generic.simple import redirect_to
 
 from page.models import PageCategory
 
@@ -7,7 +8,9 @@ urlpatterns = patterns('page.views',
     url(r'^newsandevents$', 'newsandevents', name='newsandevents'),
     url(r'^newsandevents/(?P<identifier>\d+)$', 'newsandevents', name='newsandevents_page'),
     url(r'^blog$', 'blog', name='blog'),
-    url(r'^blog/(?P<identifier>\d+)$', 'blog', name='blog_page'),
+    url(r'^blog/$', redirect_to, {'url':'/page/blog'}),
+    url(r'^blog/blogs/(?P<identifier>\d+)$', 'blog', name='blog_page'),
+    #url(r'^blog/blogs/(\d+)/(\d+)', redirect_to , {'url':'/page/blog'}), #TODO group with two up...
     url(r'^aboutus$', 'aboutus', name='aboutus'),
     url(r'^aboutus/navigation$', 'navigation',       {'type': PageCategory.ABOUTUS}, name='aboutus_navigation'),
     url(r'^aboutus/home$', 'home_content',        {'type': PageCategory.ABOUTUS}, name='aboutus_home'),

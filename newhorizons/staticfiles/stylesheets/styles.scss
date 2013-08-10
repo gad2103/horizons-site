@@ -52,7 +52,7 @@ $menu-radius: 0 0 10px 10px;
 @mixin radius($opt) {
     -moz-border-radius: $opt;
     -webkit-border-radius: $opt;
-    bordert-radius: $opt;
+    border-radius: $opt;
 }
 $shadow: 2px 2px 5px #444;
 @mixin shadow($opt) {
