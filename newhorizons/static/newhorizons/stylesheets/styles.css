@@ -1003,6 +1003,11 @@ img.icon {
   .home_page .schedule .footer {
     font-weight: bold;
     padding: 10px 0 0 0; }
+.home_page .content > .schedule + .schedule .footer {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding-top: 0; }
 
 .schedule_page #content {
   font-size: 1.0em; }

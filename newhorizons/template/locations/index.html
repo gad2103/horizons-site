@@ -47,7 +47,7 @@
             var start = $('#start').val();
             var request = {
                 origin: start,
-                destination: hpSchools[cityRequested],
+                destination: school,//hpSchools[cityRequested],
                 travelMode: google.maps.DirectionsTravelMode.DRIVING
             };
             directionsService.route(request, function(response, status) {

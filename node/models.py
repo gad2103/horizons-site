@@ -9,6 +9,7 @@ from django.utils.safestring import mark_safe
 import os
 import Image
 
+
 class DataState(models.Model):
     SUBMITTED = 1
     PUBLISHED = 2
@@ -90,8 +91,15 @@ class Language(models.Model):
         return language
         
 class LocalizedNode(Node):
-    language = models.ForeignKey(Language, related_name="localization language", blank=True, default=12)
-    
+    language = models.ForeignKey(Language, related_name="localization language", blank=True, null=True)
+
+    def clean(self, *args, **kwargs):
+        from django.core.exceptions import ValidationError
+        if self.data_state.name == "Published" and self.language is None:
+            raise ValidationError('Check the "Language" field below. A "Published" entry MUST have a UNIQUE language assigned to it. \
+                    !!! WARNING !!! ASSIGNING TWO OR MORE ENTRIES TO SAME LANGUAGE WILL CAUSE BIG PROBLEMS. MAKE SURE LANGUAGE IS UNIQUE') 
+        super(LocalizedNode, self).clean(*args, **kwargs)
+   
     def __unicode__(self):
         #return '%s' % (self.pk)
         return unicode(self.pk) or u''

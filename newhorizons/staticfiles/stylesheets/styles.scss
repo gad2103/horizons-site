@@ -1086,6 +1086,14 @@ img.icon {
 	    font-weight: bold;
         padding: 10px 0 0 0;
 	}
+}
+    .content > .schedule + .schedule {
+       .footer {
+        position: absolute;
+        bottom:0;
+        right:10px;
+        padding-top:0;
+        }
     }
 }
 .schedule_page #content {
